@@ -115,7 +115,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = maud_focus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 1
 				category = nuclear
 			}
@@ -744,7 +744,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = UK_secret_focus
-				bonus = 0.3
+				bonus = 0.5
 				uses = 4
 				category = electronics
 				category = rocketry
@@ -978,7 +978,7 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = fighter_command_focus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 2
 				category = light_fighter
 			}
@@ -1002,7 +1002,7 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = bomber_command_focus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 2
 				category = heavy_air
 			}
@@ -1025,13 +1025,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = coastal_command_focus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 2
 				category = naval_bomber
 			}
 			add_tech_bonus = {
 				name = coastal_command_focus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 2
 				category = tactical_bomber
 			}
