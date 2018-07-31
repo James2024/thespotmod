@@ -14,7 +14,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_four_year_plan
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_generic_construction  # HELLO ITS KLS TESTING HERE
 		x = 6
 		y = 0
 		cost = 10
@@ -2514,8 +2514,8 @@ focus_tree = {
 						}
 					}
 				}
-				ENG = {
-					country_event = germany.40
+				GER = {
+					country_event = germany.50
 				}
 				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
 			}
