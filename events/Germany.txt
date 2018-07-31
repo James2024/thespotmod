@@ -195,7 +195,6 @@ country_event = {
 				}
 			}
 		}
-		hidden_effect = {
 		add_opinion_modifier = { target = GER modifier = MR_pact }# pact		
 		custom_effect_tooltip = germany.11.a.tt
 		add_state_claim = 96
@@ -216,30 +215,17 @@ country_event = {
 		add_state_claim = 95
 		add_state_claim = 96
 		add_state_claim = 97
-		add_state_claim = 80 
-		add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 }
-		SOV = {
-		    country_event = { days = 1 id = soviet.4 }
-			country_event = { days = 1 id = soviet.6 }
-			country_event = { days = 1 id = soviet.8 }
-			country_event = { days = 1 id = soviet.10 }
-			country_event = { days = 1 id = soviet.13 }
-			add_political_power = -90
-			}
+		add_state_claim = 80
+		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
 		GER = {
 			country_event = { days = 1 id = germany.12 }
 			effect_tooltip = {
 				add_opinion_modifier = { target = SOV modifier = MR_pact }# pact
 			}
-		  }
 		}
 		set_global_flag = sov_yes_pact
 	}
-  }
- }
-} 
- 
-
+}
 
 # Soviets Sign MR Pact
 country_event = {
