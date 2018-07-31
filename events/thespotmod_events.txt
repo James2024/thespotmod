@@ -2,8 +2,8 @@ add_namespace = thespot
 
 country_event = {
 	id = thespot.1
-	title = Loss of key cities
-	desc =  The loss of our key cities has lead to our people losing the will to fight
+	title = thespot.sov.1.t
+	desc =  thespot.sov.1.d
 	picture = GFX_report_event_iww_demonstration
 
 	fire_only_once = yes
@@ -28,7 +28,7 @@ country_event = {
 		ai_chance = {
 			factor = 20
 		}
-		name = Our spirit may be weakened but our fight will go on. No matter how fruitlessly.
+		name = thespotmod.soviet.1.a
 		
 		hidden_effect = {
 			add_war_support = -0.5
