@@ -1,0 +1,37 @@
+add_namespace = thespot
+
+country_event = {
+	id = thespot.1
+	title = Loss of key cities
+	desc =  The loss of our key cities has lead to our people losing the will to fight
+	picture = GFX_report_event_iww_demonstration
+
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1942.3.1
+		tag = SOV
+		NOT = { SOV = { controls_state = 219 }} #Moscow
+        NOT = { SOV = { controls_state = 217 }} #Stalingrad
+        NOT = { SOV = { controls_state = 195 }} #Leningrad		
+		NOT = { has_global_flag = total_surrender }
+		NOT = { SOV = { controls_state = 252 }} #Gorki
+        NOT = { SOV = { controls_state = 251 }} #Kuibyshev
+        NOT = { SOV = { controls_state = 229 }} #Azerbaijan	
+	}
+	
+	immediate = {
+		set_global_flag = total_surrender
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 20
+		}
+		name = Our spirit may be weakened but our fight will go on. No matter how fruitlessly.
+		
+		hidden_effect = {
+			add_war_support = -0.5
+		}
+	}
+}
