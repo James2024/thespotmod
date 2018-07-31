@@ -2514,8 +2514,8 @@ focus_tree = {
 						}
 					}
 				}
-				ENG = {
-					country_event = germany.40
+				GER = {
+					country_event = germany.50
 				}
 				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
 			}
