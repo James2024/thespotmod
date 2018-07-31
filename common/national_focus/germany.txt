@@ -14,7 +14,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_four_year_plan
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_generic_construction  # HELLO ITS KLS TESTING HERE
 		x = 6
 		y = 0
 		cost = 10
