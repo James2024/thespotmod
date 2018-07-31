@@ -253,21 +253,6 @@ country_event = {
 	}
 }
 
-# Soviets Reject MR Pact
-country_event = {
-	id = germany.13
-	title = germany.13.t
-	desc = germany.13.d
-	picture = GFX_report_event_stalin_01
-
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.13.a	#bah
-		add_opinion_modifier = { target = SOV modifier = refused_MR_pact }# no pact
-	}
-}
-
 # Poland conquered... honor MR Pact?
 country_event = {
 	id = germany.14
@@ -462,47 +447,6 @@ country_event = {
 		}
 		SOV = { country_event = germany.15 }
 	}
-	option = {
-		name = germany.14.b
-		ai_chance = {
-			base = 1
-			modifier = {
-				add = -1
-				is_historical_focus_on = yes
-				NOT = {
-					AND = {
-						POL = {
-							is_ai = no
-							has_civil_war = no
-						}
-						is_in_faction_with = POL
-					}
-				}
-			}
-		}
-		SOV = { country_event = germany.16 }
-		clr_global_flag = sov_yes_pact
-		diplomatic_relation = {
-			country = SOV
-			relation = non_aggression_pact
-			active = no
-		}		
-		SOV = {
-			add_state_claim = 96
-			add_state_claim = 95
-			add_state_claim = 94
-			add_state_claim = 93
-			add_state_claim = 91
-			add_state_claim = 97
-			add_state_claim = 89
-			effect_tooltip = {
-				create_wargoal = {
-					type = annex_everything
-					target = GER
-				}
-			}
-		}
-	}
 }
 
 # Germany honors MR Pact (Soviets)
@@ -526,111 +470,6 @@ country_event = {
 			hidden_effect = {
 				news_event = { hours = 6 id = news.33 }
 			}
-		}
-	}
-}
-
-# Germany betrays MR Pact (Soviets)
-country_event = {
-	id = germany.16
-	title = germany.16.t
-	desc = germany.16.d
-	picture = GFX_report_event_german_troops
-
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.16.a
-		create_wargoal = {
-			type = annex_everything
-			target = GER
-		}
-	}
-}
-
-# Second Vienna Award
-country_event = {
-	id = germany.20
-	title = germany.20.t
-	desc = germany.20.d
-	picture = GFX_report_event_vienna_award_hungary
-	
-	is_triggered_only = yes
-	
-	option = { # Give Hungary Northern Transylvania
-		name = germany.20.a
-		ai_chance = { factor = 80 }
-		add_named_threat = { threat = 2 name = GER_second_vienna_award_HUN_north }
-		HUN = {
-			set_country_flag = GER_second_vienna_award_HUN_north
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_HUN_north } 
-		}
-		ROM = {
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_ROM_north }
-			country_event = { id = romania.2 }
-		}
-	}
-	option = { # Give Hungary all of Transylvania
-		trigger = {
-			ROM = {
-				controls_state = 77
-				controls_state = 83
-				controls_state = 84
-			}
-		}
-		name = germany.20.b
-		ai_chance = { 
-			factor = 10 
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		add_named_threat = { threat = 3 name = GER_second_vienna_award_HUN_all }
-		HUN = { 
-			set_country_flag = GER_second_vienna_award_HUN_all
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_HUN_all } 
-		}
-		ROM = {
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_ROM_all }
-			country_event = { id = romania.3 }
-		}
-	}
-	option = { # Give Hungary nothing
-		name = germany.20.c
-		ai_chance = { 
-			factor = 10 
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		ROM = {
-			country_event = { id = romania.4 }
-		}
-		HUN = {
-			set_country_flag = GER_second_vienna_award_noland
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_noland }
-			country_event = { id = hungary.1 }
-		}
-	}
-}
-
-# Romania Rejects Decision!
-country_event = {
-	id = germany.21
-	title = germany.21.t
-	desc = germany.21.d
-	picture = GFX_report_event_vienna_award_hungary
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.21.a
-		create_wargoal = {
-			type = take_state_focus
-			target = ROM
-			generator = { 76 }
 		}
 	}
 }
