@@ -3,7 +3,7 @@
 
 oob = "BRA_1936"
 
-set_war_support = 0.15
+set_war_support = 0.16
 
 # Starting tech
 set_technology = {
