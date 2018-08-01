@@ -47,6 +47,7 @@ NDefines.NNavy.ANTI_AIR_TARGETING = 2.0   ---How good ships are at shooting plan
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1							-- Days to deploy one air wing
 NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.02                        -- Base chance % for ace pilot to be created. Happens only when successfully kill airplane/ship or damage the buildings.
 NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.80
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.65
 ---AI
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 0
