@@ -3583,5 +3583,33 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = annex_malaya
+		
+		prerequisite = { focus = uk_commonwealth_focus }
+		icon = GFX_goal_generic_trade
+		relative_position_id = uk_commonwealth_focus
+		x = 3
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		cancel = {
+			has_political_power < 300
+		}
+		
+		available = {
+			MAL = { exists = yes }
+			date > 1939.1.1
+			has_political_power > 300
+			NOT = { has_war_with = JAP }
+			}
+		
+		completion_reward = {
+			annex_country = { target = MAL }
+		   add_political_power = -300
+		}
+	}
 	
 }
