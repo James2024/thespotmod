@@ -1,9 +1,9 @@
 focus_tree = {
 	id = australian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = AST
@@ -16,9 +16,9 @@ focus_tree = {
 		#	has_dlc = "Together for Victory"
 		#}
 	}
-	
+
 	default = no
-	
+
 	continuous_focus_position = { x = 50 y = 1000 }
 
 #	focus = {
@@ -28,7 +28,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -1
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -39,7 +39,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -76,7 +76,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -113,7 +113,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -149,7 +149,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -178,7 +178,7 @@ focus_tree = {
 					planning_skill = 3
 					logistics_skill = 2
 				}
-			}		
+			}
 		}
 	}
 
@@ -199,7 +199,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -234,7 +234,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -277,7 +277,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -314,7 +314,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -324,7 +324,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			add_ideas = AST_australian_womens_army_service
 		}
 	}
@@ -346,7 +346,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -365,8 +365,8 @@ focus_tree = {
 				technology = tech_logistics_company3
 				technology = tech_logistics_company4
 			}
-			
-			
+
+
 		}
 	}
 
@@ -377,7 +377,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = AST_additional_militia_training
-		
+
 		cost = 10
 
 		ai_will_do = {
@@ -387,7 +387,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -423,7 +423,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -460,7 +460,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -496,7 +496,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -533,7 +533,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -570,7 +570,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -616,7 +616,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -627,7 +627,7 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
-			random_state = {				
+			random_state = {
 				limit = {
 					has_state_flag = AST_expand_the_raaf_AB
 				}
@@ -687,7 +687,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -731,7 +731,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -742,7 +742,7 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
-			random_state = {				
+			random_state = {
 				limit = {
 					has_state_flag = AST_expand_northern_presence_AB
 				}
@@ -803,7 +803,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -847,7 +847,7 @@ focus_tree = {
 		available = {
 			has_tech = radio
 		}
-		
+
 		bypass = {
 
 		}
@@ -1044,7 +1044,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1081,7 +1081,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1092,7 +1092,7 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
-			random_state = {				
+			random_state = {
 				limit = {
 					has_state_flag = AST_death_from_down_under_AB
 				}
@@ -1102,7 +1102,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_state = {				
+			random_state = {
 				limit = {
 					has_state_flag = AST_death_from_down_under_AA1
 				}
@@ -1112,7 +1112,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_state = {				
+			random_state = {
 				limit = {
 					has_state_flag = AST_death_from_down_under_AA2
 				}
@@ -1122,7 +1122,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_state = {				
+			random_state = {
 				limit = {
 					has_state_flag = AST_death_from_down_under_AA3
 				}
@@ -1228,7 +1228,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1266,7 +1266,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1277,7 +1277,7 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
-			random_state = {				
+			random_state = {
 				limit = {
 					has_state_flag = AST_dominate_the_skies_AB
 				}
@@ -1343,7 +1343,7 @@ focus_tree = {
 				is_controlled_by = ROOT
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -1408,7 +1408,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1446,7 +1446,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1482,7 +1482,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1519,7 +1519,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1556,7 +1556,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1591,7 +1591,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1629,7 +1629,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1669,7 +1669,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1761,7 +1761,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1776,7 +1776,7 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				category = industry
-			}			
+			}
 		}
 	}
 
@@ -1798,7 +1798,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1887,7 +1887,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1948,7 +1948,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2009,7 +2009,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2072,7 +2072,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2109,8 +2109,8 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				limit = {					
-					is_in_home_area = yes					
+				limit = {
+					is_in_home_area = yes
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -2127,7 +2127,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					is_in_home_area = yes					
+					is_in_home_area = yes
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -2162,7 +2162,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2220,7 +2220,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2256,7 +2256,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2298,7 +2298,7 @@ focus_tree = {
 		available = {
 			threat > 0.20
 		}
-		
+
 		bypass = {
 
 		}
@@ -2329,7 +2329,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2363,7 +2363,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2394,7 +2394,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2428,7 +2428,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2459,7 +2459,7 @@ focus_tree = {
 		available = {
 			has_war = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -2490,7 +2490,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2534,7 +2534,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2613,7 +2613,7 @@ focus_tree = {
 							controls_state = 552
 						}
 					}
-					load_oob = "AST_TFV_rats_africa"					
+					load_oob = "AST_TFV_rats_africa"
 					else = {
 						if = {
 							limit = {
@@ -2666,7 +2666,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2690,7 +2690,7 @@ focus_tree = {
 				limit = { has_idea = AST_great_depression_2 }
 				remove_ideas = AST_great_depression_2
 				add_ideas = AST_all_in
-				
+
 			}
 			if = {
 				limit = { has_idea = AST_great_depression_3 }
@@ -2764,7 +2764,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2798,7 +2798,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2861,7 +2861,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2936,7 +2936,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -2961,7 +2961,6 @@ focus_tree = {
 	focus = {
 		id = AST_support_the_policy_of_appeasement
 		icon = GFX_goal_generic_improve_relations
-		mutually_exclusive = { focus = AST_never_another_gallipoli }
 		x = 28
 		y = 0
 
@@ -2986,7 +2985,7 @@ focus_tree = {
 			is_subject_of = ENG
 			ENG = { has_war = no }
 		}
-		
+
 		bypass = {
 			is_subject_of = ENG
 			has_war_together_with = ENG
@@ -3000,7 +2999,7 @@ focus_tree = {
 
 		}
 
-		completion_reward = {			
+		completion_reward = {
 			modify_tech_sharing_bonus = {
  				id = commonwealth_research
  				bonus = 0.03
@@ -3037,7 +3036,7 @@ focus_tree = {
 			is_in_faction_with = ENG
 			ENG = { has_idea = ENG_george_vi }
 		}
-		
+
 		bypass = {
 
 		}
@@ -3076,7 +3075,7 @@ focus_tree = {
 				is_puppet_of = ENG
 			}
 		}
-		
+
 		bypass = {
 			OR = {
 				NOT = {
@@ -3129,7 +3128,7 @@ focus_tree = {
 		available = {
 			is_subject_of = ENG
 		}
-		
+
 		bypass = {
 
 		}
@@ -3171,7 +3170,7 @@ focus_tree = {
 			is_subject_of = ENG
 			is_in_tech_sharing_group = commonwealth_research
 		}
-		
+
 		bypass = {
 
 		}
@@ -3188,7 +3187,7 @@ focus_tree = {
 			AST = {
   				modify_tech_sharing_bonus = {
      				id = commonwealth_research
-     				bonus = 0.05  
+     				bonus = 0.05
 				}
 			}
 		}
@@ -3221,7 +3220,7 @@ focus_tree = {
 				controller = { is_in_faction_with = ROOT }
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -3353,7 +3352,7 @@ focus_tree = {
 		available = {
 			is_subject_of = ENG
 		}
-		
+
 		bypass = {
 
 		}
@@ -3388,7 +3387,7 @@ focus_tree = {
 		available = {
 			is_subject_of = ENG
 		}
-		
+
 		bypass = {
 
 		}
@@ -3406,4 +3405,4 @@ focus_tree = {
 		}
 	}
 
-}		
+}

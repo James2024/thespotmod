@@ -1,9 +1,9 @@
 focus_tree = {
 	id = indian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = RAJ
@@ -16,7 +16,7 @@ focus_tree = {
 		#	has_dlc = "Together for Victory"
 		#}
 	}
-	
+
 	default = no
 
 
@@ -28,7 +28,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -39,7 +39,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -92,7 +92,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 100			
+			add_political_power = 100
 			add_autonomy_ratio = {
 				value = 0.1
 				localization = RAJ_provincial_elections
@@ -109,7 +109,6 @@ focus_tree = {
 		id = RAJ_indian_national_congress
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = RAJ_provincial_elections }
-		mutually_exclusive = { focus = RAJ_swaraj }
 		x = 0
 		y = 1
 		relative_position_id = RAJ_provincial_elections
@@ -151,7 +150,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_quit_india_movement
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = RAJ_swaraj focus = RAJ_cripps_mission }
+		prerequisite = { focus = RAJ_cripps_mission }
 		x = 0
 		y = 3
 		relative_position_id = RAJ_swaraj
@@ -231,7 +230,7 @@ focus_tree = {
 			add_autonomy_ratio = {
 				value =	0.05
 				localization = RAJ_cripps_mission
-		 	}		 	
+		 	}
 		}
 	}
 
@@ -533,7 +532,7 @@ focus_tree = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-			
+
 	    	   		 	infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
@@ -548,13 +547,13 @@ focus_tree = {
         				engineer = { x = 0 y = 1 }
 					}
 				}
-	
+
 				random_owned_controlled_state = {
 					prioritize = { 439 }
 					create_unit = {
-						division = "name = \"Red Eagles Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
+						division = "name = \"Red Eagles Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75"
 						owner = RAJ
-					}	
+					}
 				}
 			}
 		}
@@ -774,9 +773,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = RAJ_indian_gurkhas			
+			add_ideas = RAJ_indian_gurkhas
 			custom_effect_tooltip = RAJ_create_unit_gurkas_tt
-			hidden_effect = {	
+			hidden_effect = {
 				division_template = {
 					name = "Gorkha Rifles"
 					priority = 2
@@ -785,7 +784,7 @@ focus_tree = {
 						mountaineers = { x = 0 y = 0 }
 						mountaineers = { x = 0 y = 1 }
 						mountaineers = { x = 0 y = 2 }
-			
+
 	    	   		 	mountaineers = { x = 1 y = 0 }
 						mountaineers = { x = 1 y = 1 }
 						mountaineers = { x = 1 y = 2 }
@@ -795,13 +794,13 @@ focus_tree = {
 						mountaineers = { x = 2 y = 2 }
 					}
 				}
-	
+
 				random_owned_controlled_state = {
 					prioritize = { 439 }
 					create_unit = {
-						division = "name = \"1. Gorkha Rifles\" division_template = \"Gorkha Rifles\" start_experience_factor = 1.0" 
+						division = "name = \"1. Gorkha Rifles\" division_template = \"Gorkha Rifles\" start_experience_factor = 1.0"
 						owner = RAJ
-					}	
+					}
 				}
 			}
 
@@ -839,7 +838,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = RAJ_indian_sandhurst_tt 
+			custom_effect_tooltip = RAJ_indian_sandhurst_tt
 			hidden_effect = {
 				create_corps_commander = {
 					name = "Kodandera Madappa Cariappa"
@@ -917,7 +916,7 @@ focus_tree = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-		
+
 		        		infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
@@ -927,14 +926,14 @@ focus_tree = {
 						infantry = { x = 2 y = 2 }
 							}
 						}
-		
+
 					random_owned_controlled_state = {
 							prioritize = { 439 }
-							create_unit = { 
-								division = "name = \"1. Sikh Regiment\" division_template = \"Sikh Regiment\" start_experience_factor = 0.5" 
+							create_unit = {
+								division = "name = \"1. Sikh Regiment\" division_template = \"Sikh Regiment\" start_experience_factor = 0.5"
 								owner = RAJ
 								}
-		
+
 					}
 				}
 
@@ -1476,7 +1475,7 @@ focus_tree = {
 
 		}
 
-		completion_reward = {			
+		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_air_support_effort
 				bonus = 0.5
@@ -2991,4 +2990,4 @@ focus_tree = {
 	}
 
 
-}		
+}

@@ -3,13 +3,13 @@ focus_tree = {
 
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = ITA
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1100 }
@@ -29,34 +29,34 @@ focus_tree = {
 		bypass = {
 			550 = { NOT = { is_owned_and_controlled_by = ITA } }
 			# Need province based trigger for this to work
-			#550 = {		
-			#	NOT = { 
+			#550 = {
+			#	NOT = {
 			#		free_building_slots = {
 			#			building = infrastructure
 			#			size > 1
-			#		} 
+			#		}
 			#	}
-			#	NOT = { 
+			#	NOT = {
 			#		free_building_slots = {
 			#			building = naval_base
 			#			size > 2
-			#		} 
+			#		}
 			#	}
 			#}
 			559 = { NOT = { is_owned_and_controlled_by = ITA } }
 			# Need province based trigger for this to work
 			#559 = {
-			#	NOT = { 
+			#	NOT = {
 			#		free_building_slots = {
 			#			building = infrastructure
 			#			size > 2
-			#		} 
+			#		}
 			#	}
-			#	NOT = { 
+			#	NOT = {
 			#		free_building_slots = {
 			#			building = naval_base
 			#			size > 3
-			#		} 
+			#		}
 			#	}
 			#}
 		}
@@ -206,7 +206,7 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-				}				
+				}
 			}
 		}
 	}
@@ -289,23 +289,6 @@ focus_tree = {
 							}
 							is_on_continent = europe
 						}
-					}					
-				}
-				random_owned_controlled_state = {
-					limit = {
-						arms_factory > 0
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-						is_on_continent = europe
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
 					}
 				}
 				random_owned_controlled_state = {
@@ -324,7 +307,24 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-				}			
+				}
+				random_owned_controlled_state = {
+					limit = {
+						arms_factory > 0
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+						is_on_continent = europe
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -337,21 +337,6 @@ focus_tree = {
 							}
 							is_on_continent = europe
 						}
-					}					
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
 					}
 				}
 				random_owned_controlled_state = {
@@ -368,7 +353,22 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-				}			
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 		}
 	}
@@ -383,7 +383,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			# French border
 			158 = {
@@ -482,7 +482,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			2 = {
 				if = {
@@ -573,12 +573,12 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}									
-			
+			}
+
 		}
-	}	
-	
-	
+	}
+
+
 	focus = {
 		id = ITA_prospect_for_oil
 		icon = GFX_goal_generic_production
@@ -594,7 +594,7 @@ focus_tree = {
 				has_state_flag = sirte_oil_developed
 			}
 		}
-		
+
 		x = 0
 		y = 1
 		relative_position_id = ITA_italian_highways
@@ -604,7 +604,7 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			add_resource = {
 				type = oil
@@ -616,7 +616,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = ITA_libyan_refineries
 		icon = GFX_goal_generic_oil_refinery
@@ -641,7 +641,7 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			add_resource = {
 				type = oil
@@ -656,13 +656,13 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}	
-		
+			}
+
 		}
-	}	
-	
-	
-	
+	}
+
+
+
 	focus = {
 		id = ITA_libyan_infrastructure
 		icon = GFX_goal_generic_construct_civilian
@@ -729,11 +729,11 @@ focus_tree = {
 					}
 				}
 			}
-			
-		}
-	}		
 
-		
+		}
+	}
+
+
 
 	focus = {
 		id = ITA_army_primacy
@@ -824,7 +824,7 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-				}				
+				}
 			}
 
 			add_tech_bonus = {
@@ -1041,7 +1041,7 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-				}				
+				}
 			}
 
 			add_tech_bonus = {
@@ -1497,13 +1497,13 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = 0.1
 		}
 	}
-	
+
 	focus = {
 		id = ITA_slovenia_dalmatia_claims
 		icon = GFX_goal_generic_demand_territory
@@ -1540,7 +1540,7 @@ focus_tree = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						ROOT = { has_government = communism }
 						NOT = { has_government = communism }
 						NOT = { has_idea_with_trait = communist_revolutionary }
@@ -1571,7 +1571,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = ITA_yugoslavia_friend
 		icon = GFX_goal_generic_improve_relations
@@ -1640,7 +1640,7 @@ focus_tree = {
 		cost = 4.4
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			random_other_country = {
 				limit = {
@@ -1656,7 +1656,6 @@ focus_tree = {
 		id = ITA_demand_balearic_islands
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = ITA_support_nationalist_spain }
-		mutually_exclusive = { focus = ITA_spanish_italian_faction }
 		available = {
 			any_other_country = {
 				original_tag = SPR
@@ -1680,7 +1679,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			random_other_country = {
 				limit = {
@@ -1739,7 +1738,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ITA_slovenia_dalmatia_claims
-		
+
 		available = {
 			country_exists = ALB
 		}
@@ -1750,8 +1749,8 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1937.1.1
-			}	
-		}	
+			}
+		}
 		completion_reward = {
 			ALB = { country_event = { id = italy.3 } }
 		}
@@ -1767,14 +1766,14 @@ focus_tree = {
 			OR = {
 				AND = {
 					has_government = fascism
-					GER = { 
-						has_government = fascism 
+					GER = {
+						has_government = fascism
 						country_exists = GER
 					}
 				}
 				AND = {
 					has_government = neutrality
-					GER = { 
+					GER = {
 						has_government = neutrality
 						country_exists = GER
 					}
@@ -1829,20 +1828,20 @@ focus_tree = {
 		available = {
 			NOT = { has_war_with = GER }
 		}
-		
+
 		x = -3
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 10
 		ai_will_do = {
 			factor = 10
-		}	
+		}
 		completion_reward = {
 			add_ideas = ITA_german_millitary_cooperation_focus
 		}
 	}
 
-	
+
 	focus = {
 		id = ITA_romania_friend
 		icon = GFX_goal_generic_improve_relations
@@ -1958,7 +1957,7 @@ focus_tree = {
 	focus = {
 		id = ITA_greece_war_goal
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = ITA_pact_of_steel focus = ITA_italy_first }
+		prerequisite = { focus = ITA_pact_of_steel }
 		available = {
 			NOT = { is_in_faction_with = GRE }
 			NOT = { has_war_with = GRE }
@@ -1972,7 +1971,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 10
-		}	
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
@@ -1981,7 +1980,7 @@ focus_tree = {
 			}
 
 			hidden_effect = {
-				news_event = { hours = 6 id = news.186 } 
+				news_event = { hours = 6 id = news.186 }
 			}
 		}
 	}

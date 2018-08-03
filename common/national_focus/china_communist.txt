@@ -1,6 +1,6 @@
 focus_tree = {
 	id = china_communist_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -9,7 +9,7 @@ focus_tree = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	
+
 
 	default = no
 
@@ -22,7 +22,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -33,7 +33,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -81,7 +81,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = PRC_agrarian_socialism
@@ -224,7 +224,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_proclaim_the_peoples_republic
-		icon = GFX_focus_prc_proclaim_the_peoples_republic 
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
 		prerequisite = { focus = PRC_socialism_with_chinese_characteristics }
 		x = 0
 		y = 4
@@ -307,7 +307,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_idea = PRC_the_long_march_2 }
-				remove_ideas = PRC_the_long_march_2 
+				remove_ideas = PRC_the_long_march_2
 			}
 		}
 	}
@@ -649,7 +649,6 @@ focus_tree = {
 	focus = {
 		id = PRC_revolutionary_military_commission
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = PRC_confrontation_with_the_warlords focus = PRC_infiltration }
 		x = 0
 		y = 1
 		relative_position_id = PRC_confrontation_with_the_warlords
