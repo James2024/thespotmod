@@ -43,6 +43,12 @@ idea_categories = {
 		slot = army_chief 
 		slot = navy_chief 
 		slot = air_chief
+		
+		cost = 150
+		removal_cost = 0
+	}
+	
+	high_command2 = {
 		slot = high_command
 		slot = high_command
 		slot = high_command
