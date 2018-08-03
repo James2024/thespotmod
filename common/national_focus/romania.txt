@@ -3219,7 +3219,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_ideas = ROM_expand_the_marine_regiment
 			add_tech_bonus = {
 				name = ROM_expand_the_marine_regiment
 				bonus = 0.5
