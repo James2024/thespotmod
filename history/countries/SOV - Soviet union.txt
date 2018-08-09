@@ -563,11 +563,11 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Vasily Kuznetsov"
 		picture = "Portrait_Soviet_Vasily_Kuznetsov.dds"
-	traits = { commando infantry_officer }
-	skill = 3
+	traits = { commando infantry_officer infantry_leader }
+	skill = 5
 	
-	attack_skill = 3
-	defense_skill = 3
+	attack_skill = 4
+	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 2
 }
@@ -575,9 +575,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Andrey Vlasov"
 		picture = "Portrait_Soviet_Andrey_Vlasov.dds"
-	traits = { winter_specialist infantry_officer }
+	traits = { winter_specialist infantry_officer infantry_leader }
 	id = 412
-	skill = 3
+	skill = 4
 	
 	attack_skill = 3
 	defense_skill = 3

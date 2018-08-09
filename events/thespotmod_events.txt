@@ -16,7 +16,7 @@ country_event = {
         NOT = { SOV = { controls_state = 195 }} #Leningrad		
 		NOT = { has_global_flag = total_surrender }
 		NOT = { SOV = { controls_state = 252 }} #Gorki
-        NOT = { SOV = { controls_state = 251 }} #Kuibyshev
+        NOT = { SOV = { controls_state = 239 }} #Saratov
         NOT = { SOV = { controls_state = 229 }} #Azerbaijan	
 	}
 	
@@ -32,6 +32,34 @@ country_event = {
 		
 		hidden_effect = {
 			add_war_support = -0.5
+		}
+	}
+}
+
+country_event = {
+
+	id = thespot.2
+	title = thespot.sov.2.t
+	desc = thespot.sov.2.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { SOV = { controls_state = 206 }} #Minsk	
+		NOT = { has_global_flag = men_1 }
+		}
+		
+	immediate = {
+		set_global_flag = men_1
+	}
+		
+	option = {
+	name = thespot.sov.2.a
+	
+	hidden_effect = {
+		load_oob = "THESPOT_SOV_1"
+		set_equipment_fraction = 1
 		}
 	}
 }
