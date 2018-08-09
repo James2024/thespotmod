@@ -3098,4 +3098,7 @@
  thespot.sov.1.t: "Loss of key cities"
  thespot.sov.1.d: "The loss of our key cities has lead to our people losing the will to fight"
  thespotmod.soviet.1.a: "Our spirit may be weakened but our fight will go on. No matter how fruitlessly."
+ thespot.sov.2.t: "The fall of Minsk"
+ thespot.sov.2.d: "We have faced a great defeat in losing the city of Minsk but we were able to sneak out a massive portion of the recruitible population before the loss of the city and train these men up"
+ thespot.sov.2.a: "Good for the men!"
  
