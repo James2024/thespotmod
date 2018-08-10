@@ -354,7 +354,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			news_event = { id = news.325 }
 		}
 	}
 
