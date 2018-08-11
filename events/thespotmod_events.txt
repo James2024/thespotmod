@@ -46,6 +46,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		tag = SOV
 		NOT = { SOV = { controls_state = 206 }} #Minsk	
 		NOT = { has_global_flag = men_1 }
 		}

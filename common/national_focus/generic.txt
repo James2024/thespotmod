@@ -129,7 +129,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				ahead_reduction = 0.5
+				bonus = 0.5
 				uses = 1
 				category = motorized_equipment
 			}
@@ -196,7 +196,16 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 2
-				category = armor
+				technology = basic_light_tank
+				technology = improved_light_tank
+				technology = advanced_light_tank
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = advanced_medium_tank
+				technology = main_battle_tank
+				technology = basic_heavy_tank
+				technology = improved_heavy_tank
+				technology = advanced_heavy_tank
 			}
 		}
 	}
@@ -1570,7 +1579,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
-				ahead_reduction = 0.5
+				bonus = 0.5
 				category = nuclear
 			}
 		}

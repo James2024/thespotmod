@@ -198,7 +198,7 @@ leader_traits = {
 		cost = 1000
 		
 		field_marshal_modifier = {
-			supply_consumption_factor = -0.20
+			supply_consumption_factor = -0.10
 		}
 		enable_ability = extra_suplies
 		ai_will_do = {
@@ -226,24 +226,6 @@ leader_traits = {
 		mutually_exclusive = defensive_doctrine
 		gui_row = 5
 
-	}
-
-	defensive_doctrine = { 
-		type = field_marshal
-		gain_xp = {
-			always = no # not gainable
-		}
-		cost = 1000
-		field_marshal_modifier = {
-			max_dig_in_factor = 0.30
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		trait_type = assignable_trait
-		mutually_exclusive = offensive_doctrine
-		gui_row = 6
 	}
 	
 	fast_planner = { 
@@ -318,7 +300,7 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			terrain_penalty_reduction = 0.5
+			terrain_penalty_reduction = 0.25
 			acclimatization_cold_climate_gain_factor = 0.1
 			acclimatization_hot_climate_gain_factor = 0.1
 		}
@@ -432,6 +414,7 @@ leader_traits = {
 		cost = 1000
 		modifier = {
 			planning_speed = 0.1
+			supply_consumption_factor = -0.20
 		}
 		
 		ai_will_do = {
@@ -1062,28 +1045,6 @@ leader_traits = {
 		parent = commando
 		
 		gui_row = 11
-	}
-	
-	
-	camouflage_expert = { 
-		type = corps_commander
-		gain_xp = {
-			always = no # not gainable
-		}
-		cost = 500
-		modifier = {
-			cas_damage_reduction = 0.5
-			air_superiority_bonus_in_combat = -0.5
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		trait_type = assignable_trait
-		parent = commando
-		
-		gui_row = 12
 	}
 	
 	expert_improviser = { 
