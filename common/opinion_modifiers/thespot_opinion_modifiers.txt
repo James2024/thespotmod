@@ -1,0 +1,4 @@
+opinion_modifiers = {
+anti_comintern_pact_opinion_rom = {
+		value = 100
+	}
