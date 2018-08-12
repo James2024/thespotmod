@@ -14,7 +14,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_four_year_plan
-		icon = GFX_goal_generic_construction  # HELLO ITS KLS TESTING HERE
+		icon = GFX_goal_generic_construction
 		x = 6
 		y = 0
 		cost = 10
@@ -1590,6 +1590,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_political_power = 150
 			SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
 			ROM = {add_opinion_modifier = {target = ROOT modifier = anti_comintern_pact_opinion_rom } }
 			every_other_country = {
