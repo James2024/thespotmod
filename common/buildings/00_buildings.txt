@@ -8,10 +8,10 @@ buildings = {
 	infrastructure = {
 		base_cost = 3000
 		icon_frame = 3
-		infrastructure = no
+		infrastructure = yes
 		max_level = 10
 		value = 1
-		infrastructure_construction_effect = yes
+		infrastructure_construction_effect = no
 	}
 
 	arms_factory = {
