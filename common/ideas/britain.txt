@@ -44,7 +44,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				special_forces_min = 56
+				special_forces_cap = 0.05
 			}
 		}
 
