@@ -768,12 +768,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			hidden_effect = {
-				set_rule = {
-					can_use_kamikaze_pilots = yes
-				}
-			}
-			custom_effect_tooltip = kamikaze_focus_tooltip
 		}
 	}
 
