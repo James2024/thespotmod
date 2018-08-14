@@ -21,7 +21,26 @@ ideas = {
 				join_faction_tension = 0.20
 			}
 		}
+		
+		USA_special_forces = {
+		
+			picture = FRA_scw_intervention_nationalists_focus
+		
+			allowed = {
+				always = no
+				}
+				
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
 
+			modifier = {
+				special_forces_min = 56
+			}
+		}
+		
 		USA_homeland_defense = {
 			allowed = {
 				always = no

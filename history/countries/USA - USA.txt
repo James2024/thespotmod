@@ -3,9 +3,6 @@
 oob = "USA_1936"
 
 
-SPECIAL_FORCES_CAP_MIN = 112
-
-
 set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
@@ -202,6 +199,7 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
+	USA_special_forces
 }
 
 

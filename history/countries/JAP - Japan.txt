@@ -12,6 +12,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	JAP_special_forces
 
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
