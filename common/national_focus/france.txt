@@ -1760,4 +1760,114 @@ focus_tree = {
 			}
 		}
 	}
+
+
+	focus = {
+		id = FRA_secure_our_african_position
+		icon = GFX_goal_generic_demand_territory
+		
+		x = 17
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_capitulated = yes
+		}
+		completion_reward = {
+			add_state_core = 539
+			add_political_power = 150
+			set_capital 539
+			539 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = FRA_fight_the_germans
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = FRA_secure_our_african_position }
+		relative_position_id = FRA_secure_our_african_position
+		
+		cost = 10
+		
+		x = 0
+		y = 1
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	focus = {
+		id = FRA_get_back_the_mainland
+		icon = GFX_goal_support_democracy
+		
+		prerequisite = { focus = FRA_fight_the_germans }
+		relative_position_id = FRA_fight_the_germans
+		
+		cost = 10
+		x = 0
+		y = 1
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}	
+	}
+	
+	focus = {
+		id = FRA_bring_out_the_museum_pieces
+		icon = GFX_goal_generic_small_arms
+		
+		cost = 10
+		
+		prerequisite = { focus = FRA_get_back_the_mainland }
+		relative_position_id = FRA_get_back_the_mainland 
+		
+		x = 0
+		y = 1
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 producer = FRA }
+		}
+	}
 }

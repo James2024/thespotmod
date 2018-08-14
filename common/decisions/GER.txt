@@ -1301,7 +1301,7 @@ GER_barbarossa_decision = {
 			original_tag = GER
 			}
 			
-
+	
 		complete_effect = {
 			declare_war_on = SOV
 			type = annex_everything
