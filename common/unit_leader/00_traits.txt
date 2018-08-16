@@ -198,7 +198,7 @@ leader_traits = {
 		cost = 1000
 		
 		field_marshal_modifier = {
-			supply_consumption_factor = -0.10
+			supply_consumption_factor = -0.05
 		}
 		enable_ability = extra_suplies
 		ai_will_do = {
@@ -432,7 +432,7 @@ leader_traits = {
 		cost = 1000
 		modifier = {
 			planning_speed = 0.1
-			supply_consumption_factor = -0.20
+			supply_consumption_factor = -0.05
 		}
 		
 		ai_will_do = {
