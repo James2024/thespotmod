@@ -33,7 +33,28 @@ ideas = {
 				conscription = 0.04
 				}
 		}
-	}
+		
+		SPR_indoctrinate_the_people = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				conscription = 0.005
+			}
+		}
 
 	political_advisor = {
 

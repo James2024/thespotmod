@@ -1679,6 +1679,7 @@ focus_tree = {
 				target = SOV
 		}
 	}
+}
 
 
 	focus = {

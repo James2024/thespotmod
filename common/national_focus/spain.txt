@@ -1226,7 +1226,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = indoctrination_focus
+			add_ideas = SPR_indoctrinate_the_people
 			add_political_power = 150
 		}
 	}
