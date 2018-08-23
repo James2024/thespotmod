@@ -292,7 +292,7 @@ create_corps_commander = {
 	name = "Semyon Krivoshein"
 		picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
 	traits = { trait_engineer armor_officer panzer_leader }
-	skill = 4
+	skill = 3
 	
 	attack_skill = 3
 	defense_skill = 2
@@ -305,12 +305,12 @@ create_corps_commander = {
 	id = 402
 		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
 	traits = { hill_fighter armor_officer panzer_leader trickster trait_cautious brilliant_strategist }
-	skill = 7
+	skill = 4
 	
-	attack_skill = 6
+	attack_skill = 3
 	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 5
+	planning_skill = 2
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -342,10 +342,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Nikolai Vatutin"
 		picture = "Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds"
-	traits = { infantry_officer trait_reckless infantry_leader }
+	traits = { infantry_officer trait_reckless }
 	skill = 3
 	
-	attack_skill = 3
+	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
@@ -370,7 +370,7 @@ create_corps_commander = {
 	name = "Semyon Timoshenko"
 	id = 404
 		picture = "Portrait_Soviet_Semyon_Timoshenko.dds"
-	traits = { cavalry_officer politically_connected career_officer hill_fighter }
+	traits = { cavalry_officer politically_connected career_officer }
 	skill = 3
 
 
@@ -385,22 +385,22 @@ create_field_marshal = {
 	name = "Kliment Voroshilov"
 	id = 405
 		picture = "Portrait_Soviet_Kliment_Voroshilov.dds"
-	traits = { old_guard politically_connected inflexible_strategist infantry_officer infantry_leader }
-	skill = 3
+	traits = { old_guard politically_connected inflexible_strategist }
+	skill = 1
 
 
 	
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_field_marshal = {
 	name = "Mikhail Tukhachevsky"
 	id = 401
 		picture = "Portrait_Soviet_Mikhail_Tukhachevsky.dds"
-	traits = { brilliant_strategist career_officer infantry_officer trait_reckless organizer infantry_leader }
+	traits = { offensive_doctrine brilliant_strategist career_officer infantry_officer trait_reckless infantry_leader organizer}
 	skill = 4
 
 	
@@ -475,12 +475,12 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Kirill Meretskov"
 		picture = "Portrait_Soviet_Kirill_Meretskov.dds"
-	traits = { trait_reckless infantry_officer infantry_leader }
+	traits = { trait_reckless infantry_officer }
 	skill = 3
 	
 
 	
-	attack_skill = 3
+	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 3
