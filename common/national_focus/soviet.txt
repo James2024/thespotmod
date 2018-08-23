@@ -93,7 +93,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_finish_five_year_plan
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -726,7 +726,7 @@ focus_tree = {
 	focus = {
 		id = SOV_aviation_cult
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = SOV_positive_heroism }
+		prerequisite = { focus = SOV_restructured_government }
 		x = 2
 		y = 2
 		relative_position_id = SOV_positive_heroism
@@ -754,12 +754,12 @@ focus_tree = {
 
 	
 	focus = {
-		id = SOV_new_soviet_man
+		id = SOV_restructured_government
 		icon = GFX_goal_support_communism
-		prerequisite = { focus = SOV_aviation_cult }
-		x = 0
+		prerequisite = { focus = SOV_positive_heroism }
+		x = 2
 		y = 1
-		relative_position_id = SOV_aviation_cult
+		relative_position_id = SOV_positive_heroism
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -767,7 +767,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		completion_reward = {
+		completion_reward = { add_ideas = SOV_restructured_government
 		}
 	}
 

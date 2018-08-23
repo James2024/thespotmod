@@ -657,6 +657,27 @@ ideas = {
 
 		}
 
+
+
+		SOV_restructured_government = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+
 		SOV_scientist_defect = {
 
 			picture = generic_research_bonus
