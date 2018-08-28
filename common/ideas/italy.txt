@@ -786,6 +786,21 @@ ideas = {
 	
 	naval_manufacturer = {
 	
+		spagettio_can_navy = {
+			
+			allowed = {
+				original_TAG = ITA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { spagettio_can_navy_manufacturer }
+		}
+	
 		designer = yes
 		
 		crda = {

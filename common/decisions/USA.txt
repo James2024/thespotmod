@@ -9,7 +9,7 @@ war_measures = {
 		}
 		
 		available = {
-			date = 1936.1.1 #1941.9.1
+			date = 1942.3.1
 			}
 			
 		visible = {
@@ -35,7 +35,7 @@ war_measures = {
 		}
 		
 		available = {
-			date = 1936.1.1 #1942.3.1
+			date = 1943.3.1
 			}
 			
 		visible = {

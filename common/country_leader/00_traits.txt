@@ -950,6 +950,28 @@ leader_traits = {
 		}
 	}
 	
+	spagettio_can_navy_manufacturer = { #longer ranged, CVs favor larger hangers over armor
+		random = no
+		equipment_bonus = {
+			carrier = {
+				carrier_size = 0.15 armor_value = -0.10 naval_range = 0.15
+			}
+			capital_ship = {
+				naval_range = 0.20
+			}
+			screen_ship = {
+				naval_range = 0.20
+			}
+			submarine = {
+				naval_range = 0.20
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	atlantic_fleet_naval_manufacturer = { #armored carriers, slightly buffed cap ships
 		random = no
 		equipment_bonus = {
