@@ -1703,7 +1703,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			521 = {
 				prioritize = { 285 }
 				limit = {
 					free_building_slots = {
@@ -1723,7 +1723,7 @@ focus_tree = {
 				set_state_flag = AST_standard_gauge_railway_Inf1
 			}
 
-			random_owned_controlled_state = {
+			285 = {
 				prioritize = { 674 }
 				limit = {
 					free_building_slots = {
@@ -1832,7 +1832,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			522 = {
 				prioritize = { 522 }
 				limit = {
 					free_building_slots = {
@@ -1852,7 +1852,7 @@ focus_tree = {
 				set_state_flag = AST_western_australian_government_railways_Inf1
 			}
 
-			random_owned_controlled_state = {
+			519 = {
 				prioritize = { 674 }
 				limit = {
 					free_building_slots = {

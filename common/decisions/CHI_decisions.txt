@@ -50,7 +50,7 @@ CHI_army_reform = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			has_army_experience > 99
+			has_army_experience > 49
 			has_completed_focus = CHI_army_reform
 		}
 

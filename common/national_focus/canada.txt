@@ -1130,7 +1130,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

@@ -995,6 +995,38 @@ GER_military_buildup = {
 }
 
 special_projects = {
+
+	GER_annex_iraq = {
+	
+		icon = ger_mefo_bills
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		allowed = {
+			original_tag = GER
+			}
+		
+		available = {
+			has_full_control_of_state = 447 #Alexandria
+			has_full_control_of_state = 453 #Sinai
+			has_full_control_of_state = 454 #Palestine
+			has_full_control_of_state = 553 #Lebanon
+			has_full_control_of_state = 554 #Damascus
+		}
+		
+		visible = {
+			has_war_with = ENG
+		}
+		
+		complete_effect = {
+			annex_country = {
+			target = IRQ
+			transfer_troops = no
+			}
+		}
+	}
 }
 
 GER_aid_hun_rom_democratic_civil_war = {

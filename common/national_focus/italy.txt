@@ -573,7 +573,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 30
 				state = 662
 			}
 			662 = {
@@ -615,14 +615,18 @@ focus_tree = {
 			}
 			450 = {
 				set_state_flag = benghazi_oil_developed
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 			}
-
+			add_tech_bonus = {
+				name = ITA_ref_bonus
+				bonus = 0.5
+				technology = synth_oil_experiments
+			}
 		}
 	}
 
@@ -1933,7 +1937,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_pact_of_steel
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}

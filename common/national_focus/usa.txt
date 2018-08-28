@@ -101,8 +101,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = wartime_industry_focus
+			add_tech_bonus = {
+				name = USA_concentrated
+				uses = 1
+				ahead_reduction = 1
+				technology = concentrated_industry5
 		}
 	}
+}
 
 	focus = {
 		id = USA_first_special_service_force

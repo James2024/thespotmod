@@ -22,6 +22,36 @@ ideas = {
 			}
 		}
 		
+		USA_building_slot_output_idea = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.20
+			}
+		}
+		
+		USA_building_slot_output_idea2 = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.40
+			}
+		}
+		
 		USA_special_forces = {
 		
 			picture = FRA_scw_intervention_nationalists_focus

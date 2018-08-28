@@ -648,13 +648,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			79 = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
-						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -749,13 +748,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			82 = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
-						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -814,13 +812,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			82 = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
 						building = arms_factory
 						size > 1
-						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -2218,77 +2215,77 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ROM_vanatori_de_munte
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = ROM_the_zb_53 }
-		x = -1
-		y = 1
-		relative_position_id = ROM_the_zb_53
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_tech = tech_mountaineers
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = ROM_vanatori_de_munte_unit_tt
-			hidden_effect = {
-				division_template = {
-					name = "Vanatori de munte"
-					priority = 2
-					division_names_group = ROM_MTN_01
-					regiments = {
-						mountaineers = { x = 0 y = 0 }
-						mountaineers = { x = 0 y = 1 }
-						mountaineers = { x = 0 y = 2 }
-
-	    	   		 	mountaineers = { x = 1 y = 0 }
-						mountaineers = { x = 1 y = 1 }
-						mountaineers = { x = 1 y = 2 }
-
-	    	   		 	mountaineers = { x = 2 y = 0 }
-						mountaineers = { x = 2 y = 1 }
-						mountaineers = { x = 2 y = 2 }
-					}
-					support = {
-						artillery = { x = 0 y = 0 }
-					}
-				}
-				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 46 }
-					create_unit = {
-						division = "name = \"Vanatori de munte\" division_template = \"Vanatori de munte\" start_experience_factor = 1.0"
-						owner = ROM
-					}
-				}
-			}
-			add_tech_bonus = {
-				name = ROM_vanatori_de_munte
-				bonus = 0.5
-				uses = 1
-				category = mountaineers_tech
-			}
-		}
-	}
+#	focus = {
+#		id = ROM_vanatori_de_munte
+#		icon = GFX_goal_generic_special_forces
+#		prerequisite = { focus = ROM_the_zb_53 }
+#		x = -1
+#		y = 1
+#		relative_position_id = ROM_the_zb_53
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#			has_tech = tech_mountaineers
+#		}
+#
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#			custom_effect_tooltip = ROM_vanatori_de_munte_unit_tt
+#			hidden_effect = {
+#				division_template = {
+#					name = "Vanatori de munte"
+#					priority = 2
+#					division_names_group = ROM_MTN_01
+#					regiments = {
+#						mountaineers = { x = 0 y = 0 }
+#						mountaineers = { x = 0 y = 1 }
+#						mountaineers = { x = 0 y = 2 }
+#
+#	    	   		 	mountaineers = { x = 1 y = 0 }
+#						mountaineers = { x = 1 y = 1 }
+#						mountaineers = { x = 1 y = 2 }
+#
+#	    	   		 	mountaineers = { x = 2 y = 0 }
+#						mountaineers = { x = 2 y = 1 }
+#						mountaineers = { x = 2 y = 2 }
+#					}
+#					support = {
+#						artillery = { x = 0 y = 0 }
+#					}
+#				}
+#				random_owned_controlled_state = {
+#					limit = { ROOT = { has_full_control_of_state = PREV } }
+#					prioritize = { 46 }
+#					create_unit = {
+#						division = "name = \"Vanatori de munte\" division_template = \"Vanatori de munte\" start_experience_factor = 1.0"
+#						owner = ROM
+#					}
+#				}
+#			}
+#			add_tech_bonus = {
+#				name = ROM_vanatori_de_munte
+#				bonus = 0.5
+#				uses = 1
+#				category = mountaineers_tech
+#			}
+#		}
+#	}
 
 	focus = {
 		id = ROM_artillery_modernization
@@ -2375,7 +2372,7 @@ focus_tree = {
 		id = ROM_mountain_artillery
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ROM_artillery_modernization }
-		prerequisite = { focus = ROM_vanatori_de_munte }
+		prerequisite = { focus = ROM_expand_the_marine_regiment }
 		x = -1
 		y = 2
 		relative_position_id = ROM_the_zb_53
@@ -3190,11 +3187,11 @@ focus_tree = {
 
 	focus = {
 		id = ROM_expand_the_marine_regiment
-		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = ROM_capital_ships }
-		x = 2
-		y = 2
-		relative_position_id = ROM_black_sea_dominance
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = ROM_the_zb_53 }
+		x = -1
+		y = 1
+		relative_position_id = ROM_the_zb_53
 
 		cost = 10
 

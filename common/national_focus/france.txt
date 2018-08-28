@@ -1424,6 +1424,16 @@ focus_tree = {
 					set_state_flag = FRA_navy_focus_2NB
 				}
 			}
+				
+			539 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					province = 5139
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1768,7 +1778,7 @@ focus_tree = {
 		
 		x = 17
 		y = 3
-		cost = 10
+		cost = 5
 		
 		available_if_capitulated = yes
 		
@@ -1786,10 +1796,22 @@ focus_tree = {
 					level = 4
 					instant_build = yes
 				}
+				
+			add_building_construction = {
+				type = naval_base
+				province = 11834
+					level = 7
+					instant_build = yes
+				}
+				
+			add_building_construction = {
+				type = infrastructure
+				level = 7
+				instant_build = yes			
 			}
 		}
-		
 	}
+}
 	
 	focus = {
 		id = FRA_fight_the_germans
