@@ -150,14 +150,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = germany.6.a		#join	
-		remove_opinion_modifier = { target = GER modifier = anti_comintern_pact_opinion }
-		add_opinion_modifier = { target = GER modifier = tripartite_pact_opinion }
-		remove_opinion_modifier = { target = SOV modifier = pact_against_us }
-		add_opinion_modifier = { target = SOV modifier = worse_pact_against_us }
-	}
-	
-	option = {
 		name = germany.6.b		#refuse
 		trigger = { NOT = { is_puppet_of = GER } }
 		add_opinion_modifier = { target = GER modifier = refused_tripartite_pact_opinion }

@@ -243,6 +243,7 @@ ideas = {
 				production_speed_dockyard_factor = 0.05
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = 0.05
+				research_time_factor = -0.025
 			}
 		}
 
@@ -327,7 +328,6 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
-				research_time_factor = 0.05
 				production_speed_industrial_complex_factor = -0.1
 			}
 		}

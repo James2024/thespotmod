@@ -737,27 +737,6 @@ country_event = {
 	picture = GFX_report_event_japan_europe_pact
 
 	is_triggered_only = yes
-	
-	option = {
-		name = wtt_japan.109.a
-		ai_chance = {
-			base = 10
-		}
-		event_target:JAP_initiator = {
-			give_guarantee = event_target:ITA_fascism
-			give_guarantee = event_target:GER_fascism
-		}
-		event_target:GER_fascism = {
-			give_guarantee = event_target:ITA_fascism
-			give_guarantee = event_target:JAP_initiator
-		}
-		event_target:ITA_fascism = {
-			give_guarantee = event_target:JAP_initiator
-			give_guarantee = event_target:GER_fascism
-		}
-		event_target:JAP_initiator = { country_event = { id = wtt_japan.111 hours = 6 } }
-		event_target:GER_fascism = { country_event = { id = wtt_japan.113 hours = 6 } }
-	}
 
 	option = {
 		name = wtt_japan.109.b

@@ -710,10 +710,15 @@ focus_tree = {
 		id = USA_the_giant_wakes
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = USA_prepare_intervention }
+		###Thanks to silentlegion
 		available = {
-			OR = {
-				threat > 0.4
-				has_war = yes
+			OR = { 
+				threat > 0.4 
+				has_war = yes 
+			AND = { 
+				threat > 0.3 
+				date = 1939.6.1 
+				} 
 			}
 		}
 		continue_if_invalid = yes
@@ -1498,7 +1503,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_bureau_of_aeronautics
-				bonus = 0.5
+				bonus = 0.75
 				uses = 1
 				category = naval_bomber
 			}

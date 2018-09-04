@@ -148,7 +148,7 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Zhang Haipeng"
 	GFX = "GFX_portrait_man_zhang_haipeng"
-	traits = { infantry_leader }
+	traits = { old_guard }
 	skill = 2
 	
 	attack_skill = 2
@@ -183,7 +183,7 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Yoshiko Kawashima"
 	gfx = "GFX_portrait_man_yoshiko_kawashima"
-	traits = { infantry_officer trickster infantry_leader hill_fighter }
+	traits = { infantry_officer trickster infantry_leader }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
