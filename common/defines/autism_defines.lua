@@ -43,7 +43,6 @@ NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.6
 NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.04
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.30
 NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 4
-NDefines.NNavy.ANTI_AIR_TARGETING = 2.0   ---How good ships are at shooting planes
 ---Air
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1							-- Days to deploy one air wing
 NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.02                        -- Base chance % for ace pilot to be created. Happens only when successfully kill airplane/ship or damage the buildings.
