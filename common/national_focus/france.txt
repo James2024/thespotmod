@@ -1799,7 +1799,7 @@ focus_tree = {
 				
 			add_building_construction = {
 				type = naval_base
-				province = 5139
+				province = 11834
 					level = 7
 					instant_build = yes
 				}

@@ -563,7 +563,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_italian_highways
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -600,7 +600,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_prospect_for_oil
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -625,11 +625,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_ref_bonus
 				bonus = 0.5
-				uses = 1
 				technology = synth_oil_experiments
-				technology = oil_processing
-				technology = improved_oil_processing
-				technology = advanced_oil_processing
 			}
 		}
 	}
@@ -644,7 +640,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_prospect_for_oil
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1087,7 +1083,6 @@ focus_tree = {
 				technology = improved_carrier
 				technology = advanced_carrier
 			}
-			navy_experience = 25
 		}
 	}
 
@@ -1098,7 +1093,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ITA_mare_nostrum
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1325,7 +1320,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		x = 11
 		y = 0
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1359,7 +1354,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_light_ship_effort
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1394,7 +1389,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = ITA_light_ship_effort
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1430,7 +1425,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = ITA_submarine_effort
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
