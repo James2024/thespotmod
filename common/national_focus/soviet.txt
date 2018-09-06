@@ -566,6 +566,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		remove_ideas = konstantin_rokossovsky
 			add_political_power = 120
 			add_ideas = SOV_collectivist_propaganda
 		}
