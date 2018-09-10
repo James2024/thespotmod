@@ -348,7 +348,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Erwin Rommel"
 	picture = "Portrait_Germany_Erwin_Rommel.dds"
-	traits = { trait_reckless trickster war_hero armor_officer brilliant_strategist media_personality panzer_leader desert_fox trait_engineer }
+	traits = { trait_reckless trickster war_hero armor_officer brilliant_strategist media_personality panzer_leader desert_fox trait_engineer hill_fighter }
 	skill = 6
 	id = 4
 	attack_skill = 5
@@ -357,10 +357,10 @@ create_corps_commander = {
 	logistics_skill = 6
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Erich von Manstein"
 	picture = "Portrait_Germany_Erich_von_Manstein.dds"
-	traits = { trickster armor_officer brilliant_strategist trait_engineer }
+	traits = { trickster armor_officer brilliant_strategist trait_engineer organizer }
 	skill = 4
 	id = 5
 	attack_skill = 4

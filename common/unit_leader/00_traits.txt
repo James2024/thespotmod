@@ -311,36 +311,6 @@ leader_traits = {
 
 	}
 
-	adaptable = { 
-		type = field_marshal
-		gain_xp = {
-			always = no # not gainable
-		}
-		cost = 1000
-		modifier = {
-			terrain_penalty_reduction = 0.25
-			acclimatization_cold_climate_gain_factor = 0.1
-			acclimatization_hot_climate_gain_factor = 0.1
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		trait_type = assignable_terrain_trait
-		gui_row = 3
-				
-		parent = desert_fox
-		parent = swamp_fox
-		parent = trait_mountaineer
-		parent = hill_fighter
-		parent = jungle_rat
-		parent = ranger
-		parent = urban_assault_specialist
-		parent = winter_specialist
-		
-		num_parents_needed = 2
-	}
 	
 	aggressive_assaulter = { 
 		type = field_marshal
