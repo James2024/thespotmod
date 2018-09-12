@@ -18,7 +18,6 @@ NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.0
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.0
 NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.04
 ---XP for leaders
-NDefines.NMilitary.FIELD_MARSHAL_ARMY_BONUS_RATIO = 0
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0
 NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0
@@ -33,7 +32,7 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0
 ---Building
-NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --anmount of max building slots in a state
+NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --amount of max building slots in a state
 ---Navy
 NDefines.NNavy.COMBAT_BASE_CRITICAL_CHANCE = 0.15
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = -0.7
@@ -45,7 +44,7 @@ NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.30
 NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 4
 ---Air
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1							-- Days to deploy one air wing
-NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.02                        -- Base chance % for ace pilot to be created. Happens only when successfully kill airplane/ship or damage the buildings.
+NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.01                        -- Base chance % for ace pilot to be created. Happens only when successfully kill airplane/ship or damage the buildings.
 NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.80
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.65
 ---AI
