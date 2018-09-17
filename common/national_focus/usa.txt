@@ -103,7 +103,6 @@ focus_tree = {
 			add_ideas = wartime_industry_focus
 		}
 	}
-}
 
 	focus = {
 		id = USA_first_special_service_force
