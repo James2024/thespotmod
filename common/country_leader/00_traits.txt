@@ -1,5 +1,14 @@
 leader_traits = {
 	
+	easy_surrender = {
+		random = no
+		surrender_limit = -0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	dictator = {
 		random = no
 		political_power_factor = 0.25

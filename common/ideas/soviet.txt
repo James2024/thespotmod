@@ -1,5 +1,24 @@
 ideas = {
 	country = {
+		SOV_war_bonds = {
+			
+			allowed = {
+				always = no # Added via event
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
 		militarized_schools = {
 
 			removal_cost = -1

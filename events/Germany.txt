@@ -208,7 +208,8 @@ country_event = {
 		add_state_claim = 95
 		add_state_claim = 96
 		add_state_claim = 97
-		add_state_claim = 80 
+		add_state_claim = 80
+		add_timed_idea = { idea = SOV_war_bonds days = 180 }
 		add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 }
 		SOV = {
 		    country_event = { days = 1 id = soviet.4 }
@@ -4451,9 +4452,8 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		set_province_name = { id = 3529 name = "Vadergart"}
-		set_province_name = { id = 3151 name = "KLSburg"}
-		set_province_name = { id = 6380 name = "Jamestown"}
+		set_province_name = { id = 3529 name = "Hindenburg"}
+		set_province_name = { id = 3151 name = "Ludendorff"}
 		set_global_flag = GER_cities_renamed
 	}
 
@@ -4462,8 +4462,7 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		add_stability = -1.00 #because fuck you
-		add_war_support = -1.00
+		add_stability = -0.05 #because fuck you
 	}
 
 }

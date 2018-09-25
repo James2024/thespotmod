@@ -38,20 +38,6 @@ country_event = {
 			}
 		}
 	}
-	option = { # Refuse
-		name = finland.1.b
-		ai_chance = { factor = 75 }
-		SOV = {
-			country_event = { days = 5 id = soviet.13 }
-			effect_tooltip = {
-				create_wargoal = {
-					type = take_state
-					target = FIN
-					generator = { 146 }
-				}
-			}
-		}
-	}
 }
 
 # Request Swedish Assistance?
