@@ -2652,11 +2652,8 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_military_reorganization }
 		available = {
-			OR = {
-				date > 1941.1.1
-				has_country_flag = SOV_war_since_purge
+				date > 1939.6.1
 			}
-		}
 		x = -1
 		y = 1
 		relative_position_id = SOV_nkvd_divisions
