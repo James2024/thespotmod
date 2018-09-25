@@ -4451,8 +4451,9 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		set_province_name = { id = 3529 name = "Hindenburg"}
-		set_province_name = { id = 3151 name = "Ludendorff"}
+		set_province_name = { id = 3529 name = "Vadergart"}
+		set_province_name = { id = 3151 name = "KLSburg"}
+		set_province_name = { id = 6380 name = "Jamestown"}
 		set_global_flag = GER_cities_renamed
 	}
 
@@ -4461,7 +4462,8 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		add_stability = -0.05 #because fuck you
+		add_stability = -1.00 #because fuck you
+		add_war_support = -1.00
 	}
 
 }
