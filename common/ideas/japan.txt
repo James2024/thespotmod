@@ -3,6 +3,25 @@ ideas = {
 	country = {
 	
 	
+		JAP_special_forces = {
+		
+			picture = FRA_scw_intervention_nationalists_focus
+		
+			allowed = {
+				always = no
+				}
+				
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				special_forces_cap = 0.05
+			}
+		}
+		
 		state_shintoism = {
 			allowed = {
 				always = no

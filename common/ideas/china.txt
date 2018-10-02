@@ -544,7 +544,7 @@ ideas = {
 			
 			modifier = {
 				max_command_power = 5
-				experience_gain_army = 0.05
+				experience_gain_army = 0.03
 			}
 		}
 		
