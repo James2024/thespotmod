@@ -21,18 +21,18 @@ NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0
 NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 10.0
-NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 2
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 36
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 36
+NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0
----Terrain Stuff
-NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
+---Terrain Stuff To be added with Russia buff
+---NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2
+---NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
 ---Building
-NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --amount of max building slots in a state
+NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --amount of potential max building slots in a state
 ---Navy
 NDefines.NNavy.COMBAT_BASE_CRITICAL_CHANCE = 0.15
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = -0.7

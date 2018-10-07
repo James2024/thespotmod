@@ -13,28 +13,17 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { # Accept demands
-		name = finland.1.a
-		ai_chance = { 
-		factor = 25
-		modifier = { # Don't accept if in a faction that can protect them
-				factor = 0
-				OR = {
-					any_other_country = {
-						is_major = yes
-						OR = {
-							is_in_faction_with = FIN
-							has_guaranteed = FIN
-						}
-					}
-					has_idea = anti_soviet_pact
-				}
-			}
-		}
+	option = { # Refuse
+		name = finland.1.b
+		ai_chance = { factor = 75 }
 		SOV = {
-			country_event = { days = 5 id = soviet.12 }
+			country_event = { days = 5 id = soviet.13 }
 			effect_tooltip = {
-				transfer_state = 146
+				create_wargoal = {
+					type = take_state
+					target = FIN
+					generator = { 146 }
+				}
 			}
 		}
 	}
@@ -160,47 +149,6 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = finland.3.c
-
-		ai_chance = {
-
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 100
-				has_war = no
-				has_government = democratic
-				strength_ratio = {
-					tag = SOV
-					ratio > 0.2
-				}
-				FIN = {
-					has_government = democratic
-					strength_ratio = {
-						tag = SOV 
-						ratio > 0.3
-					}
-				}
-			}			
-		}
-
-		declare_war_on = {
-			target = SOV
-			type = take_state
-			generator = { 195 208 } # Leningrand and Luga
-		}
-		FIN = {
-			country_event = { id = finland.6 days = 3 }
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = took_stand_for_us
-			}
-		}
-	}
 }
 
 country_event = {
@@ -283,82 +231,55 @@ country_event = {
 		tag = FIN
 		has_war_with = SOV
 		surrender_progress > 0.25
-		has_civil_war = no
-		is_in_faction = no
+		}
 	}
 
 	mean_time_to_happen = { days = 20 }
 
 	fire_only_once = yes
-
+	
+	
+	
+	
 	#Surrender and offer territory
 	option = {
 		name = finland.7.a
+		SOV = {
+			country_event = { id = finland.spot8 }
+		}
 		ai_chance = {
 			base = 8
 		}
+		white_peace = SOV
 		SOV = {
-			country_event = { id = finland.8 }
+		transfer_state = 146
+		transfer_state = 147
 		}
-		custom_effect_tooltip = finland.7.a_tt
-		effect_tooltip = {
-			SOV = { 
-				white_peace = {
-					tag = FIN 
-					message = FIN_agree_peace 
-				} 
-			}
-			transfer_state = 146
-			transfer_state = 147
-		}
+
 	}
 
-	#Never give up!
-	option = {
-		name = finland.7.b
-		ai_chance = {
-			base = 2
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-	}
 }
 
-#Soviet response to Finish surrender
+#Soviet response to Finnish surrender
+
 country_event = {
-	id = finland.8
-	title = finland.8.t
-	desc = finland.8.d
+	id = finland.spot8
+	title = finland.spot8.t
+	desc = finland.spot8.d
 	picture = GFX_report_event_finnish_soldiers_snow
 	
 	is_triggered_only = yes
 
 	#Accept surrender
 	option = {
-		name = finland.8.a
+		name = finland.spot8.a
 		ai_chance = {
 			base = 9
 		}
-		white_peace = FIN
-		transfer_state = 146
-		transfer_state = 147
-	}
 
-	#Take it all
-	option = {
-		name = finland.8.b
-		ai_chance = {
-			base = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}			
-		}
-		FIN = { country_event = { id = finland.9 } }
 	}
 }
+
 
 #Soviet says no!
 country_event = {
