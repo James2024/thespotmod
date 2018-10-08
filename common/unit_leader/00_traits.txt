@@ -1035,6 +1035,57 @@ leader_traits = {
 		gui_row = 11
 	}
 	
+		expert_improviser = { 
+		type = corps_commander
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 500
+		modifier = {
+			desert = {
+				movement = 0.1
+			}
+			hills = {
+				movement = 0.1
+			}
+			forest = {
+				movement = 0.1
+			}
+			mountain = {
+				movement = 0.1
+			}
+			plains = {
+				movement = 0.1
+			}
+			urban = {
+				movement = 0.1
+			}
+			jungle = {
+				movement = 0.1
+			}
+			marsh = {
+				movement = 0.1
+			}
+		}
+		
+		override_effect_tooltip = expert_improviser_movement_bonus_on_land
+			
+		ai_will_do = {
+			factor = 1
+		}
+		
+		enable_ability = makeshift_bridges
+		
+		trait_type = assignable_trait
+		parent = trickster
+		prerequisites = {
+			check_variable = { num_terrain_traits > 0 }
+		}
+		custom_prerequisite_tooltip = needs_at_least_one_terrain
+		
+		gui_row = 13
+	}
+	
 	guerilla_fighter = { 
 		type = corps_commander
 		gain_xp = {
@@ -1052,7 +1103,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		parent = trickster
 		
-		gui_row = 13
+		gui_row = 14
 	}
 	
 	
