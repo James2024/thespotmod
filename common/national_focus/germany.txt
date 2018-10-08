@@ -1340,7 +1340,7 @@ focus_tree = {
 		completion_reward = {
 			# Balance research bonus for 2 techs under land_doctrine
 
-			army_experience = 10
+			army_experience = 100
 
 
 			add_tech_bonus = {
@@ -1465,7 +1465,7 @@ focus_tree = {
 
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
-			army_experience = 20
+			army_experience = 25
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5
@@ -1561,7 +1561,7 @@ focus_tree = {
 			51 = { set_demilitarized_zone = no }
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
-			army_experience = 5
+			army_experience = 15
 			add_named_threat = { threat = 5 name = GER_rhineland }
 			if = {
 				limit = { FRA = { is_puppet = no } }

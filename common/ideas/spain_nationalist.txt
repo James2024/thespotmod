@@ -34,6 +34,24 @@ ideas = {
 				}
 		}
 		
+		SPR_special_forces = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				special_forces_cap = 0.075
+			}
+		}
+		
 		SPR_indoctrinate_the_people = {
 			
 			allowed = {

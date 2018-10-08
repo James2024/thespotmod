@@ -414,7 +414,7 @@ focus_tree = {
 		id = SPR_armour
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SPR_mechanization }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SPR_mechanization
 		cost = 10
@@ -439,12 +439,41 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = SPR_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = SPR_mechanization }
+		mutually_exclusive = { focus = SPR_armour }
+		x = 0
+		y = 1
+		relative_position_id = SPR_mechanization
+		
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = SPR_special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
 		
 	focus = {
 		id = SPR_electronics
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = SPR_armour }
-		x = 0
+		prerequisite = { focus = SPR_armour focus = SPR_special_forces}
+		x = -1
 		y = 1
 		relative_position_id = SPR_armour
 		cost = 10
@@ -464,10 +493,10 @@ focus_tree = {
 	focus = {
 		id = SPR_oil_for_our_tanks
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = SPR_armour }
-		x = 2
+		prerequisite = { focus = SPR_electronics }
+		x = 0
 		y = 1
-		relative_position_id = SPR_armour
+		relative_position_id = SPR_electronics
 		cost = 10
 		available = {
 			OR = {
@@ -520,7 +549,7 @@ focus_tree = {
 	focus = {
 		id = SPR_aviation_effort
 		icon = GFX_goal_generic_build_airforce
-		x = 15
+		x = 17
 		y = 0
 		cost = 10
 		available = {
@@ -813,7 +842,7 @@ focus_tree = {
 	focus = {
 		id = SPR_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 19
+		x = 21
 		y = 0
 		cost = 10
 		available = {
@@ -1187,7 +1216,7 @@ focus_tree = {
 				date > 1937.1.1
 			}
 		}
-		x = 11
+		x = 13
 		y = 0
 		cost = 10
 
