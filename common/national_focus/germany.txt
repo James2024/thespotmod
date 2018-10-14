@@ -1636,7 +1636,7 @@ focus_tree = {
 		cost = 1
 		
 		available = {
-			date = 1941.6.1
+			date > 1941.6.1
 		}
 		historical_ai = {
 			NOT = {

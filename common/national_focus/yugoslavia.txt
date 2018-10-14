@@ -543,7 +543,7 @@ focus_tree = {
 
 		available = {
 		
-		date = 1947.1.1
+		date < 1947.1.1
 			
 		}
 
@@ -913,7 +913,7 @@ focus_tree = {
 
 		available = {
 			has_war_with = ITA
-			date = 1947.1.1
+			date < 1947.1.1
 		}
 
 		bypass = {
