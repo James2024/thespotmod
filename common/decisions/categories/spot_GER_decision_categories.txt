@@ -1,0 +1,12 @@
+#################
+#### GERMANY ####
+#################
+
+GER_barbarossa_decision = {
+
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		original_tag = GER
+	}
+}

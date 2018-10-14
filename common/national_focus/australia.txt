@@ -742,10 +742,7 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
-			random_state = {
-				limit = {
-					has_state_flag = AST_expand_northern_presence_AB
-				}
+			520 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -762,14 +759,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-			random_owned_controlled_state = {
-				prioritize = { 521 520 }
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
+			520 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -905,15 +895,7 @@ focus_tree = {
 
 			if = {
 				limit = { has_tech = radio_detection }
-				random_owned_controlled_state = {
-					prioritize = { 521 }
-					limit = {
-						is_in_home_area = yes
-						free_building_slots = {
-							building = radar_station
-							size > 0
-						}
-					}
+				521 = {
 					add_building_construction = {
 						type = radar_station
 						level = 1
@@ -922,16 +904,7 @@ focus_tree = {
 					set_state_flag = AST_volunteer_air_observers_corps_radar1
 				}
 
-				random_owned_controlled_state = {
-					prioritize = { 285 }
-					limit = {
-						NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
-						is_in_home_area = yes
-						free_building_slots = {
-							building = radar_station
-							size > 0
-						}
-					}
+				285 = {
 					add_building_construction = {
 						type = radar_station
 						level = 1
@@ -940,17 +913,7 @@ focus_tree = {
 					set_state_flag = AST_volunteer_air_observers_corps_radar2
 				}
 
-				random_owned_controlled_state = {
-					prioritize = { 520 }
-					limit = {
-						NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
-						NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar2 }
-						is_in_home_area = yes
-						free_building_slots = {
-							building = radar_station
-							size > 0
-						}
-					}
+				520 = {
 					add_building_construction = {
 						type = radar_station
 						level = 1
@@ -963,11 +926,7 @@ focus_tree = {
 						radio_detection = 1
 					}
 					effect_tooltip = {
-						random_owned_controlled_state = {
-							prioritize = { 521 }
-							limit = {
-								is_in_home_area = yes
-							}
+						521 = {
 							add_building_construction = {
 								type = radar_station
 								level = 1
@@ -975,12 +934,7 @@ focus_tree = {
 							}
 						}
 
-						random_owned_controlled_state = {
-							prioritize = { 285 }
-							limit = {
-								NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
-								is_in_home_area = yes
-							}
+						285 = {
 							add_building_construction = {
 								type = radar_station
 								level = 1
@@ -988,15 +942,7 @@ focus_tree = {
 							}
 						}
 					}
-					random_owned_controlled_state = {
-						prioritize = { 521 }
-						limit = {
-							is_in_home_area = yes
-							free_building_slots = {
-								building = radar_station
-								size > 0
-							}
-						}
+					520 = {
 						add_building_construction = {
 							type = radar_station
 							level = 1
@@ -1006,7 +952,6 @@ focus_tree = {
 					}
 
 					random_owned_controlled_state = {
-						prioritize = { 285 }
 						limit = {
 							NOT = { has_state_flag = AST_volunteer_air_observers_corps_radar1 }
 							is_in_home_area = yes
@@ -1370,7 +1315,6 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 25
 			random_owned_controlled_state = {
-				prioritize = { 285 }
 				limit = {
 					is_coastal = yes
 					free_building_slots = {
@@ -1704,17 +1648,6 @@ focus_tree = {
 
 		completion_reward = {
 			521 = {
-				prioritize = { 285 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					free_building_slots = { # avoid wastelands
-						building = industrial_complex
-						size > 0
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1724,17 +1657,6 @@ focus_tree = {
 			}
 
 			285 = {
-				prioritize = { 674 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					free_building_slots = { # avoid wastelands
-						building = industrial_complex
-						size > 0
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1833,17 +1755,6 @@ focus_tree = {
 
 		completion_reward = {
 			522 = {
-				prioritize = { 522 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					free_building_slots = { # avoid wastelands
-						building = industrial_complex
-						size > 0
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1853,13 +1764,6 @@ focus_tree = {
 			}
 
 			519 = {
-				prioritize = { 674 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1912,7 +1816,6 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 519 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -1973,7 +1876,6 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 285 517 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -2035,7 +1937,6 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 285 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -2186,7 +2087,6 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 520 }
 				limit = {
 					free_building_slots = {
 						building = infrastructure

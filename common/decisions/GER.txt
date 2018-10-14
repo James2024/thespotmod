@@ -1253,4 +1253,3 @@ GER_barbarossa_decision = {
 			}
 		}
 }
-	
