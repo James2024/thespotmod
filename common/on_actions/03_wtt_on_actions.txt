@@ -212,22 +212,6 @@ on_actions = {
 				}
 				WTT_political_struggle_recalculate_support = yes
 			}
-
-			# Fall of Tokyo
-			if = {
-				limit = {
-					original_tag = JAP
-					has_government = communism
-					has_completed_focus = JAP_cast_the_die
-					282 = { is_controlled_by = ROOT }
-					FROM = {
-						original_tag = JAP
-						has_government = fascism
-					}
-				}
-				FROM = { save_event_target_as = jap_civ_loser }
-				MAN = { country_event = { id = wtt_japan.121 days = 1 } }
-			}
 		}
 	}
 

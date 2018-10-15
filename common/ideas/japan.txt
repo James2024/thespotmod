@@ -1248,65 +1248,6 @@ ideas = {
 	
 	
 	political_advisor = {	
-		sanzo_nosaka = {
-			
-			available = {
-				if = {
-					limit = {
-						has_DLC = "Waking the Tiger"
-					}
-					has_completed_focus = JAP_the_unthinkable_option
-				}
-			}
-			allowed = {
-				original_tag = "JAP"
-			}
-			
-
-			
-			traits = { communist_revolutionary }
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-			
-		kijuro_shidehara = {
-			
-			available = {
-				if = {
-					limit = {
-						has_DLC = "Waking the Tiger"
-					}
-					has_completed_focus = JAP_strengthen_civilian_government
-				}
-			}
-			
-			allowed = {
-				original_tag = "JAP"
-			}
-			
-
-			
-			traits = { democratic_reformer }
-
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		
 		kingoro_hashimoto = {
 			
 			

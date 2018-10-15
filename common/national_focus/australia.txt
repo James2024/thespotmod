@@ -3047,8 +3047,6 @@ focus_tree = {
 				value = 0.1
 				localization = AST_adopt_westminster
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = AST_arthur_calwell
 		}
 	}
 
