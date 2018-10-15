@@ -18,7 +18,6 @@ bookmarks = {
 			focuses = {
 				FRA_initiate_government_reform
 				FRA_support_status_quo
-				FRA_revise_versailles
 			}
 		}
 		"USA"={
@@ -31,7 +30,6 @@ bookmarks = {
 			}
 			focuses = {
 				USA_war_plan_black
-				USA_strike_at_the_empire
 				USA_pearl_harbor_gambit
 			}
 		}
@@ -52,22 +50,6 @@ bookmarks = {
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "Waking the Tiger" }
-			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
-			}
-			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_revive_the_kaiserreich
-			}
-		}
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
 				sour_loser
 				general_staff
@@ -88,8 +70,6 @@ bookmarks = {
 			}	
 			focuses = {
 				ITA_pact_of_steel
-				ITA_spanish_italian_faction
-				ITA_italy_first
 			}		
 		}
 		"JAP"={
@@ -116,7 +96,6 @@ bookmarks = {
 			focuses = {
 				SOV_great_purge
 				SOV_claims_on_baltic
-				SOV_war_with_uk
 			}	
 		}
 
@@ -134,9 +113,7 @@ bookmarks = {
 				
 			}
 			focuses = {
-				POL_the_baltic_alliance
 				POL_draw_closer_to_britain
-				POL_seek_accommodation_with_germany
 			}
 		}
 		"CAN"={
@@ -148,9 +125,6 @@ bookmarks = {
 				CAN_conscription_crisis
 			}
 			focuses = {
-				CAN_skewer_the_eagle
-				CAN_north_american_alliance
-				CAN_join_comintern
 			}
 		}
 		"AST"={
@@ -161,9 +135,6 @@ bookmarks = {
 				AST_great_depression_1
 			}
 			focuses = {
-				AST_never_another_gallipoli
-				AST_support_indonesian_uprising
-				AST_delegation_to_china
 			}
 		}
 		"NZL"={
@@ -175,7 +146,6 @@ bookmarks = {
 			}
 			focuses = {
 				NZL_bob_semple_tank
-				NZL_independent_new_zealand
 				NZL_maori_volunteers
 			}
 		}
@@ -189,8 +159,6 @@ bookmarks = {
 			}
 			focuses = {
 				SAF_secure_interests_in_africa
-				SAF_support_the_german_coup
-				SAF_anti_colonialist_crusade
 			}
 		}
 		"RAJ"={
@@ -202,7 +170,6 @@ bookmarks = {
 				RAJ_princely_states
 			}
 			focuses = {
-				RAJ_all_india_forward_bloc
 				RAJ_indian_gurkhas
 				RAJ_the_smiling_buddha
 			}
@@ -230,7 +197,6 @@ bookmarks = {
 				HUN_treaty_of_triannon
 			}
 			focuses = {
-				HUN_proclaim_the_restoration_of_austria_hungary
 				HUN_secret_rearmament
 				HUN_renounce_the_treaty_of_trianon
 			}
@@ -245,7 +211,6 @@ bookmarks = {
 				neutrality_idea
 			}
 			focuses = {
-				ROM_balkans_dominance
 				ROM_institute_royal_dictatorship
 				ROM_preserve_greater_romania
 			}
@@ -262,7 +227,6 @@ bookmarks = {
 			}
 			focuses = {
 				YUG_western_focus
-				YUG_abolish_the_monarchy
 				YUG_establish_the_banovina_of_croatia
 			}
 		}
@@ -291,7 +255,6 @@ bookmarks = {
 				PRC_power_struggles
 			}
 			focuses = {
-				PRC_infiltration
 				PRC_maoism
 				PRC_anti_japanese_expedition
 			}
@@ -307,8 +270,6 @@ bookmarks = {
 			}
 			focuses = {
 				MAN_obedience
-				MAN_independence_war
-				MAN_claim_the_mandate_of_heaven
 			}
 		}
 		

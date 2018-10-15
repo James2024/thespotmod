@@ -1,4 +1,4 @@
-add_namespace = thespot
+﻿add_namespace = thespot
 
 country_event = {
 	id = thespot.1

@@ -711,7 +711,7 @@ focus_tree = {
 				has_war = yes 
 			AND = { 
 				threat > 0.3 
-				date = 1939.6.1 
+				date > 1939.6.1 
 				} 
 			}
 		}
