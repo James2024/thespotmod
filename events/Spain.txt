@@ -367,7 +367,7 @@ country_event = {
 
 	# Falange
 	option = {
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 1 }
 		name = spain.9.b
 		set_politics = {
 			ruling_party = fascism

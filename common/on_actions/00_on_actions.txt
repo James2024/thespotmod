@@ -17,7 +17,6 @@ on_actions = {
 			100 = election.2
 			100 = election.3
 			100 = election.4
-			100 = election.5
 			100 = election.6
 			100 = election.11
 			100 = election.12
