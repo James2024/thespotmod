@@ -1,40 +1,41 @@
-﻿add_namespace = thespot
+add_namespace = thespot
 
-country_event = {
-	id = thespot.1
-	title = thespot.sov.1.t
-	desc =  thespot.sov.1.d
-	picture = GFX_report_event_iww_demonstration
-
-	fire_only_once = yes
-	
-	trigger = {
-		date > 1942.3.1
-		tag = SOV
-		NOT = { SOV = { controls_state = 219 }} #Moscow
-        NOT = { SOV = { controls_state = 217 }} #Stalingrad
-        NOT = { SOV = { controls_state = 195 }} #Leningrad		
-		NOT = { has_global_flag = total_surrender }
-		NOT = { SOV = { controls_state = 252 }} #Gorki
-        NOT = { SOV = { controls_state = 239 }} #Saratov
-        NOT = { SOV = { controls_state = 229 }} #Azerbaijan	
-	}
-	
-	immediate = {
-		set_global_flag = total_surrender
-	}
-	
-	option = {
-		ai_chance = {
-			factor = 20
-		}
-		name = thespotmod.soviet.1.a
-		
-		hidden_effect = {
-			add_war_support = -0.5
-		}
-	}
-}
+# Gave Stalin defeatist personality trait instead
+#country_event = {
+#	id = thespot.1
+#	title = thespot.sov.1.t
+#	desc =  thespot.sov.1.d
+#	picture = GFX_report_event_iww_demonstration
+#
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		date > 1942.3.1
+#		tag = SOV
+#		NOT = { SOV = { controls_state = 219 }} #Moscow
+#       NOT = { SOV = { controls_state = 217 }} #Stalingrad
+#       NOT = { SOV = { controls_state = 195 }} #Leningrad		
+#		NOT = { has_global_flag = total_surrender }
+#		NOT = { SOV = { controls_state = 252 }} #Gorki
+#       NOT = { SOV = { controls_state = 239 }} #Saratov
+#       NOT = { SOV = { controls_state = 229 }} #Azerbaijan	
+#	}
+#	
+#	immediate = {
+#		set_global_flag = total_surrender
+#	}
+#	
+#	option = {
+#		ai_chance = {
+#			factor = 20
+#		}
+#		name = thespotmod.soviet.1.a
+#		
+#		hidden_effect = {
+#			add_war_support = -0.5
+#		}
+#	}
+#}
 
 country_event = {
 
@@ -63,4 +64,28 @@ country_event = {
 		set_equipment_fraction = 1
 		}
 	}
+}
+
+country_event = {
+
+	id = thespot.3
+	title = thespot.ger.3.t
+	desc = thespot.ger.3.d
+	picture = GFX_report_event_soldiers_marching #change GFX
+
+	hidden = yes
+	
+	trigger = {
+		tag = GER
+		has_war_with = SOV
+		date = 1941.10.2
+		}
+		
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = thespot.ger.3.a
+		}
+		add_timed_idea = { idea = GER_operation_typhoon days = 60 }
+		
 }

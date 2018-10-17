@@ -1674,6 +1674,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_timed_idea = {
+			idea = GER_barbarossa
+			days = 50
+		}
 			create_wargoal = {
 				type = annex_everything
 				target = SOV
