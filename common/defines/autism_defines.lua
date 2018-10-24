@@ -31,8 +31,8 @@ NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.0
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.0
 ---Terrain Stuff To be added with Russia buff
----NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2
----NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
+NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
 ---Building
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --amount of potential max building slots in a state
 ---Navy
