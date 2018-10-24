@@ -10,7 +10,9 @@ ideas = {
 			removal_cost = -1
 			allowed_civil_war = { 
 				always = yes
+			}
 		}
+		
 		SPA_recovering_from_civil_war = {
 			picture = FRA_matignon_agreements
 			allowed = {

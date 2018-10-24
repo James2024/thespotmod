@@ -2,7 +2,7 @@ leader_traits = {
 	
 	easy_surrender = {
 		random = no
-		surrender_limit = -0.075
+		surrender_limit = -0.1
 
 		ai_will_do = {
 			factor = 1
