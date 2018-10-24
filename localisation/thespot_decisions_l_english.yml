@@ -4,4 +4,10 @@
  USA_building_slot_output:0 "Building Slot Output"
  USA_building_slot_output2:0 "Further Increased Building Slot Output"
  GER_annex_iraq:0 "Annex Iraq"
+ GER_barbarossa_category:0 "Barbarossa"
+ GER_offensive_1:0 "Offensive 1"
+ GER_offensive_2:0 "Offensive 2"
+ GER_offensive_3:0 "Offensive 3"
+ GER_Operation_Typhoon_decision:0 "Operation Typhoon"
+ SOV_soviet_offensive:0 "Soviet First Offensive"
 

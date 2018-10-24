@@ -72,20 +72,319 @@ country_event = {
 	title = thespot.ger.3.t
 	desc = thespot.ger.3.d
 	picture = GFX_report_event_soldiers_marching #change GFX
-
-	hidden = yes
+	
+	fire_only_once = yes
 	
 	trigger = {
 		tag = GER
 		has_war_with = SOV
-		date = 1941.10.2
+		date > 1941.10.2
 		}
 		
-	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = thespot.ger.3.a
+		add_timed_idea = { idea = GER_operation_preperation days = 60 }
 		}
-		add_timed_idea = { idea = GER_operation_typhoon days = 60 }
 		
 }
+
+country_event = {
+	
+	id = thespot.4
+	title = thespot.SOV.4.t
+	desc = thespot.SOV.4.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1941.9.1
+		tag = SOV
+		has_war_with = GER
+		}
+	
+	option = {
+		name = thespot.SOV.4.a
+		653 = {
+		add_extra_state_shared_building_slots = 10
+			add_building_construction = {
+				type = arms_factory
+				level = 10
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+country_event = {
+	
+	id = thespot.5
+	title = thespot.SOV.5.t
+	desc = thespot.SOV.5.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1941.10.1
+		tag = SOV
+		has_war_with = GER
+		}
+	
+	option = {
+		name = thespot.SOV.5.a
+		572 = {
+		add_extra_state_shared_building_slots = 20
+			add_building_construction = {
+				type = arms_factory
+				level = 20
+				instant_build = yes
+			}
+		}
+	}
+}	
+
+country_event = {
+	
+	id = thespot.6
+	title = thespot.SOV.6.t
+	desc = thespot.SOV.6.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1942.1.1
+		tag = SOV
+		has_war_with = GER
+		}
+	
+	option = {
+		name = thespot.SOV.6.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+				amount = 50000
+				producer = SOV
+		}
+	}
+}
+
+country_event = {
+	
+	id = thespot.7
+	title = thespot.SOV.7.t
+	desc = thespot.SOV.7.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1942.2.1
+		tag = SOV
+		has_war_with = GER
+		}
+	
+	option = {
+		name = thespot.SOV.7.a
+		add_timed_idea = { idea = SOV_counterattack_1 days = 50 } #enables decision that lasts 30 days
+	}
+}
+
+country_event = {
+	
+	id = thespot.8
+	title = thespot.SOV.8.t
+	desc = thespot.SOV.8.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1942.3.1
+		tag = SOV
+		has_war_with = GER
+		}
+	
+	option = {
+		name = thespot.SOV.8.a
+			573 = {
+			add_extra_state_shared_building_slots = 30
+				add_building_construction = {
+					type = arms_factory
+					level = 30
+					instant_build = yes
+			}
+		}
+	}
+}
+	
+country_event = {
+	
+	id = thespot.9
+	title = thespot.SOV.9.t
+	desc = thespot.SOV.9.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1942.6.1
+		tag = SOV
+		has_war_with = GER
+		}
+	
+	option = {
+		name = thespot.SOV.9.a
+			load_oob = "THESPOT_SOV_2"
+			set_equipment_fraction = 1
+		}
+	}
+	
+country_event = {
+
+	id = thespot.10
+	title = thespot.SOV.10.t
+	desc = thespot.SOV.10.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1942.7.1
+		tag = SOV
+		has_war_with = GER
+		}
+	
+	option = {
+		name = thespot.SOV.10.a
+			load_oob = "THESPOT_SOV_2"
+			set_equipment_fraction = 1
+		}
+	}
+	
+country_event = {
+	
+	id = thespot.11 #Moscow
+	title = thespot.SOV.11.t
+	desc = thespot.SOV.11.d
+	picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			NOT = { SOV = { controls_state = 219 }} #Moscow
+			AND = {
+				NOT = { SOV = { controls_state = 205 }}
+				NOT = { SOV = { controls_state = 223 }}
+				}
+			AND = {
+				NOT = { SOV = { controls_state = 242 }}
+				NOT = { SOV = { controls_state = 246 }}
+				}
+			AND = {
+				NOT = { SOV = { controls_state = 205 }}
+				NOT = { SOV = { controls_state = 242 }}
+				}
+			}
+	}
+	
+	option = {
+		name = thespot.SOV.11.a
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+					amount = 50000
+					producer = SOV
+			}
+		}	
+	}
+	
+country_event = {
+	
+	id = thespot.12
+	title = thespot.SOV.12.t
+	desc = thespot.SOV.12.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+				NOT = { SOV = { controls_state = 195 }} #Leningrad
+			AND = {
+				NOT = { SOV = { controls_state = 208 }}
+				NOT = { SOV = { controls_state = 244 }}
+				}
+			}
+		}
+		
+	option = {
+		name = thespot.SOV.12.a
+			load_oob = "THESPOT_SOV_1"
+			set_equipment_fraction = 1
+		}
+	}
+	
+country_event = {
+
+	id = thespot.13
+	title = thespot.SOV.13.t
+	desc = thespot.SOV.13.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			NOT = { SOV = { controls_state = 217 }} #Stalingrad
+			AND = {
+				NOT = { SOV = { controls_state = 265 }}
+				NOT = { SOV = { controls_state = 245 }}
+				}
+			AND = {
+				NOT = { SOV = { controls_state = 238 }}
+				NOT = { SOV = { controls_state = 237 }}
+				}
+			AND = {
+				NOT = { SOV = { controls_state = 245 }}
+				NOT = { SOV = { controls_state = 238 }}
+				}
+			}
+		}
+	
+	option = {
+		name = thespot.SOV.13.a
+			load_oob = "THESPOT_SOV_2"
+			set_equipment_fraction = 1
+			}
+		}
+
+country_event = {
+	
+	id = thespot.14
+	title = thespot.SOV.14.t
+	desc = thespot.SOV.14.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		NOT = { SOV = { controls_state = 219 }} #Moscow
+		NOT = { SOV = { controls_state = 217 }} #Stalingrad
+		NOT = { SOV = { controls_state = 195 }} #Leningrad	
+		}
+	
+	option = {
+		name = thespot.SOV.14.a
+			load_oob = "THESPOT_SOV_2"
+			set_equipment_fraction = 1
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+					amount = 30000
+					producer = SOV
+			}
+		}
+	}

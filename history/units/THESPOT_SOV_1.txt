@@ -21,60 +21,60 @@ units = {
 		name = "I Conscripts"
 		location = 11375  # Moscow
 		division_template = "Soviet Conscripts"
-		start_experience_factor = -0.5
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "II Conscripts"
 		location = 11375  # Moscow
 		division_template = "Soviet Conscripts"
-		start_experience_factor = -0.5
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "III Conscripts"
 		location = 11375  # Moscow
 		division_template = "Soviet Conscripts"
-		start_experience_factor = -0.5
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "IV Conscripts"
 		location = 11375  # Moscow
 		division_template = "Soviet Conscripts"
-		start_experience_factor = -0.5
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "V Conscripts"
 		location = 11375  # Moscow
 		division_template = "Soviet Conscripts"
-		start_experience_factor = -0.5
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "VI Conscripts"
 		location = 11375  # Moscow
 		division_template = "Soviet Conscripts"
-		start_experience_factor = -0.5
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "VII Conscripts"
 		location = 11375  # Moscow
 		division_template = "Soviet Conscripts"
-		start_experience_factor = -0.5
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "VIII Conscripts"
 		location = 11375  # Moscow
 		division_template = "Soviet Conscripts"
-		start_experience_factor = -0.5
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "IX Conscripts"
 		location = 11375  # Moscow
 		division_template = "Soviet Conscripts"
-		start_experience_factor = -0.5
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "X Conscripts"
 		location = 11375  # Moscow
 		division_template = "Soviet Conscripts"
-		start_experience_factor = -0.5
+		start_experience_factor = 0.2
 	}
 }

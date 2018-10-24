@@ -1,0 +1,68 @@
+on_actions = {
+
+	on_state_control_changed = {
+	
+		effect = {
+			
+			if = {
+				limit = {
+					OR = {
+						NOT = { SOV = { controls_state = 219 }} #Moscow
+						AND = {
+							NOT = { SOV = { controls_state = 205 }}
+							NOT = { SOV = { controls_state = 223 }}
+							}
+						AND = {
+							NOT = { SOV = { controls_state = 242 }}
+							NOT = { SOV = { controls_state = 246 }}
+							}
+						AND = {
+							NOT = { SOV = { controls_state = 205 }}
+							NOT = { SOV = { controls_state = 242 }}
+							}
+						}
+					}
+			}
+			SOV = { country_event = { id = thespot.11 }}
+		}
+		
+		effect = {
+		
+			if = {
+				limit = {
+					OR = {
+						NOT = { SOV = { controls_state = 195 }} #Leningrad
+						AND = {
+							NOT = { SOV = { controls_state = 208 }}
+							NOT = { SOV = { controls_state = 244 }}
+							}
+						}
+					}
+				SOV = { country_event = { id = thespot.12 }}
+				}
+			}
+	
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						NOT = { SOV = { controls_state = 217 }} #Stalingrad
+						AND = {
+							NOT = { SOV = { controls_state = 265 }}
+							NOT = { SOV = { controls_state = 245 }}
+							}
+						AND = {
+							NOT = { SOV = { controls_state = 238 }}
+							NOT = { SOV = { controls_state = 237 }}
+							}
+						AND = {
+							NOT = { SOV = { controls_state = 245 }}
+							NOT = { SOV = { controls_state = 238 }}
+							}
+						}
+					}
+				SOV = { country_event = { id = thespot.13 }}
+				}
+			}
+	}
+}

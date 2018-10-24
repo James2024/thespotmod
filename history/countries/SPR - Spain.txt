@@ -24,7 +24,9 @@ set_technology = {
 	early_battleship = 1
 	transport = 1
 }
-
+add_ideas = {
+SPR_neautral_nation
+}
 set_politics = {
 
 	parties = {
@@ -48,7 +50,7 @@ set_politics = {
 }
 
 set_convoys = 150
-set_stability = 0.5
+set_stability = 0.43
 
 1939.1.1 = {
 

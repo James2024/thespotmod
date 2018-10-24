@@ -161,6 +161,7 @@ ideas = {
 			
 			
 			available = {
+				NOT = { has_idea = SPR_neautral_nation }
 				has_war_support > 0.5
 				OR = {
 					has_government = fascism

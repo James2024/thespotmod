@@ -11,23 +11,25 @@ GER_barbarossa_category = {
 			original_tag = GER
 			}
 		
-		avaliable = {
+		available = {
 			has_war_with = SOV
-			#date = 1941.12.1
+			NOT = { has_idea = GER_operation_typhoon }
+			date = 1941.12.1
 			}
 			
 		visible = {
 			has_war_with = SOV
 			}
 
-		modifier = {
-			attack_bonus_against = 0.1 tag = sov 
-			}
+		complete_effect = {
+			add_ideas = GER_operation
+		}
 		
 		days_remove = 30
 		
 		remove_effect = {
 			set_country_flag = offensive_1_complete
+			remove_ideas = GER_operation
 			}
 	}
 		
@@ -41,26 +43,25 @@ GER_barbarossa_category = {
 			original_tag = GER
 			}
 		
-		avaliable = {
-			has_country_flag = offensive_1_complete
+		available = {
+			has_war_with = SOV
+			NOT = { has_idea = GER_operation_typhoon }
 			}
 			
 		visible = {
 			has_war_with = SOV
+			has_country_flag = offensive_1_complete
 			}
 		
 		complete_effect = {
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+			add_ideas = GER_operation
 			}
-		}
 		
 		days_remove = 30
 		
 		remove_effect = {
 			set_country_flag = offensive_2_complete
+			remove_ideas = GER_operation
 			}
 	}
 		
@@ -75,29 +76,57 @@ GER_barbarossa_category = {
 			original_tag = GER
 			}
 		
-		avaliable = {
-			has_country_flag = offensive_2_complete
+		available = {
+			has_war_with = SOV
+			NOT = { has_idea = GER_operation_typhoon }
 			}
 			
 		visible = {
 			has_war_with = SOV
+			has_country_flag = offensive_2_complete
 			}
 		
 		complete_effect = {
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
+			add_ideas = GER_operation
 		}
 		
 		days_remove = 30
 		
 		remove_effect = {
 			set_country_flag = offensive_3_complete
-			}
+			remove_ideas = GER_operation
+		}
+	}
+	
+	GER_Operation_Typhoon_decision  {
+		
+		icon = ger_mefo_bills
+		cost = 0
+		fire_only_once = yes
+		
+		days_remove = 60
+		
+		allowed = { 
+			tag = GER 
+		}
+		available = {
+			has_idea = GER_operation_preperation
+			NOT = { has_idea = GER_operation }
+		}
+		visible = {
+			date = 1941.10.2
+		}
+		
+		complete_effect = {
+			add_ideas = GER_operation_typhoon
+		}
+		
+		remove_effect = {
+			remove_ideas = GER_Operation_Typhoon
+		}
 	}
 }
+	
 GER_mefo_bills_category = {
 
 	GER_mefo_bills_mission = {

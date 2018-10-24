@@ -1,5 +1,30 @@
 ideas = {
 	country = {
+		SOV_counterattack_1 = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+				}
+			
+			picture = generic_morale_bonus
+			
+			}
+		
+		SOV_counterattack_2 = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+				}
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				army_attack_factor = 0.15
+				}
+			}
+		
 		SOV_war_bonds = {
 			
 			allowed = {

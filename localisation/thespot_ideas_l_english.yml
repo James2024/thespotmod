@@ -9,4 +9,10 @@
  USA_building_slot_output_idea:0 "Building Slot Output"
  USA_building_slot_output_idea2:0 "Building Slot Output"
  SOV_war_bonds:0 "War Bonds"
+ GER_operation:0 "Barbarossa Operation"
+ GER_operation_typhoon:0 "Operation Typhoon"
+ GER_operation_preperation:0 "Preparing Operation Typhoon"
+ SOV_counterattack_1:0 "Soviet Counterattack"
+ SOV_counterattack_2:0 "Soviet Counterattack"
+ SPR_neautral_nation:0 "Neutral Nation"
 
