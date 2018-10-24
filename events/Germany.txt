@@ -210,7 +210,6 @@ country_event = {
 		add_state_claim = 97
 		add_state_claim = 80
 		add_state_claim = 146
-		add_timed_idea = { idea = SOV_war_bonds days = 180 }
 		add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 }
 		SOV = {
 		    country_event = { days = 1 id = soviet.4 }
@@ -218,6 +217,10 @@ country_event = {
 			country_event = { days = 1 id = soviet.8 }
 			country_event = { days = 1 id = soviet.10 }
 			add_political_power = -90
+			create_wargoal = {
+				type = annex_everything
+				target = FIN
+			}
 			}
 		GER = {
 			country_event = { days = 1 id = germany.12 }

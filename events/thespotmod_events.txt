@@ -81,7 +81,8 @@ country_event = {
 		date > 1941.10.2
 		}
 		
-	
+	mean_time_to_happen = { days = 1 }
+		
 	option = {
 		name = thespot.ger.3.a
 		add_timed_idea = { idea = GER_operation_preperation days = 60 }
@@ -103,6 +104,8 @@ country_event = {
 		tag = SOV
 		has_war_with = GER
 		}
+		
+	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = thespot.SOV.4.a
@@ -132,6 +135,8 @@ country_event = {
 		tag = SOV
 		has_war_with = GER
 		}
+		
+	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = thespot.SOV.5.a
@@ -160,6 +165,8 @@ country_event = {
 		tag = SOV
 		has_war_with = GER
 		}
+		
+	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = thespot.SOV.6.a
@@ -185,6 +192,8 @@ country_event = {
 		tag = SOV
 		has_war_with = GER
 		}
+		
+	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = thespot.SOV.7.a
@@ -206,6 +215,8 @@ country_event = {
 		tag = SOV
 		has_war_with = GER
 		}
+		
+	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = thespot.SOV.8.a
@@ -235,6 +246,8 @@ country_event = {
 		has_war_with = GER
 		}
 	
+	mean_time_to_happen = { days = 1 }
+	
 	option = {
 		name = thespot.SOV.9.a
 			load_oob = "THESPOT_SOV_2"
@@ -256,6 +269,8 @@ country_event = {
 		tag = SOV
 		has_war_with = GER
 		}
+		
+	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = thespot.SOV.10.a
@@ -274,6 +289,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		tag = SOV
 		OR = {
 			NOT = { SOV = { controls_state = 219 }} #Moscow
 			AND = {
@@ -290,6 +306,8 @@ country_event = {
 				}
 			}
 	}
+	
+	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = thespot.SOV.11.a
@@ -311,6 +329,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		tag = SOV
 		OR = {
 				NOT = { SOV = { controls_state = 195 }} #Leningrad
 			AND = {
@@ -319,6 +338,8 @@ country_event = {
 				}
 			}
 		}
+	
+	mean_time_to_happen = { days = 1 }
 		
 	option = {
 		name = thespot.SOV.12.a
@@ -337,6 +358,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		tag = SOV
 		OR = {
 			NOT = { SOV = { controls_state = 217 }} #Stalingrad
 			AND = {
@@ -353,6 +375,8 @@ country_event = {
 				}
 			}
 		}
+		
+	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = thespot.SOV.13.a
@@ -376,6 +400,8 @@ country_event = {
 		NOT = { SOV = { controls_state = 217 }} #Stalingrad
 		NOT = { SOV = { controls_state = 195 }} #Leningrad	
 		}
+		
+	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = thespot.SOV.14.a
