@@ -24,9 +24,6 @@ set_technology = {
 	early_battleship = 1
 	transport = 1
 }
-add_ideas = {
-SPR_neautral_nation
-}
 set_politics = {
 
 	parties = {

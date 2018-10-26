@@ -332,10 +332,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		name = spain.8.a
 		set_capital = 41
-	}
-	option = {
-		ai_chance = { factor = 0 }
-		name = spain.8.b
+		add_stability = -0.45
 	}
 }
 

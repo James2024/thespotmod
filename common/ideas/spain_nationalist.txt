@@ -1,17 +1,5 @@
 ideas = {
 	country = {
-	
-		SPR_neautral_nation = {
-			picture = generic_production_bonus
-			allowed = { 
-				tag = SPR
-				always = yes
-			}
-			removal_cost = -1
-			allowed_civil_war = { 
-				always = yes
-			}
-		}
 		
 		SPA_recovering_from_civil_war = {
 			picture = FRA_matignon_agreements
@@ -25,7 +13,6 @@ ideas = {
 			modifier = {
 				ai_get_ally_desire_factor = -200
 				join_faction_tension = 0.5
-				stability = -0.45
 			}
 		}
 		SPR_integrate_the_militia = {
