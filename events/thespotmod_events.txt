@@ -435,11 +435,27 @@ country_event = {
 	
 	mean_time_to_happen = { days = 1 }
 	
-	option = {
-		name = thespot.NOR.15.a
-		ai_chance = {
-			factor = 100
+	option = { #Agree / Both Democratic
+		name = generic.2.a
+		trigger = {
+			AND = {
+				FROM = {
+					has_government = democratic
+				}
+				has_government = democratic
+			}
 		}
+		ai_chance = {
+			base = 100
+		}
+		add_to_faction = FROM
+		FROM = { country_event = { id = generic.3 hours = 6 } }
+		hidden_effect = {
+			set_country_flag = alliance_inviter@ROOT
+			FROM = { set_country_flag = alliance_applicant@ROOT }
+			news_event = { id = news.289 hours = 12 }
+		}
+	}
 		
 		hidden_effect = {
 			save_event_target_as = alliance_inviter
