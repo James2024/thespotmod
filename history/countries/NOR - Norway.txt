@@ -8,6 +8,8 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
+	militarism_focus
+	
 }
 
 set_stability = 0.9

@@ -31,7 +31,6 @@ units = {
 		location = 6115
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 	division = { # "12. Divisjon"
@@ -42,7 +41,6 @@ units = {
 		location = 6115
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 	division = { # "7. Divisjon"
@@ -53,7 +51,6 @@ units = {
 		location = 6115
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 	division = { # "8. Divisjon"
@@ -64,7 +61,6 @@ units = {
 		location = 6115
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 	division = { # "9. Divisjon"
@@ -75,7 +71,6 @@ units = {
 		location = 6115
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 	division = { # "10. Divisjon"
@@ -86,7 +81,6 @@ units = {
 		location = 6115
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 	division = {
@@ -94,7 +88,6 @@ units = {
 		location = 6115
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 
@@ -106,7 +99,6 @@ units = {
 		location = 9157
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 	division = {
@@ -114,7 +106,6 @@ units = {
 		location = 9157
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 
@@ -126,7 +117,6 @@ units = {
 		location = 9296
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 
@@ -138,7 +128,6 @@ units = {
 		location = 122
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 
@@ -150,15 +139,12 @@ units = {
 		location = 3022
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
-
 	}
 	division = {
 		name = "3. Dragonregiment"
 		location = 3022
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 
@@ -170,7 +156,6 @@ units = {
 		location = 192
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
 	division = {
@@ -178,9 +163,49 @@ units = {
 		location = 9116
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
 	}
+
+	division = {
+		name = "Finnmark Brigaden"
+		location = 9116
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+
+	}
+	
+	division = {
+		name = "Finnmark Brigaden"
+		location = 9116
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+
+	}
+	
+	division = {
+		name = "Finnmark Brigaden"
+		location = 9116
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+
+	}
+	
+	division = {
+		name = "Finnmark Brigaden"
+		location = 9116
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+
+	}
+	
+	division = {
+		name = "Finnmark Brigaden"
+		location = 9116
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+
+	}
+	
 
 	##### NAVAL UNITS #####
 	navy = {					

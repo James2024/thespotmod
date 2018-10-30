@@ -225,6 +225,7 @@ country_event = {
 		}
 		set_global_flag = fall_of_france
 		GER = { country_event = france.14 }
+		add_timed_idea = { idea = FRA_chaos_in_the_army days = 90 }
 		custom_effect_tooltip = france.10.b_tt
 	}
 	#option = { # Ask for British Union

@@ -1,6 +1,28 @@
 ideas = {
 
 	country = {
+	
+		FRA_chaos_in_the_army = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				army_org = -0.20
+				army_attack_factor = -.0.20
+			}
+			
+		}
 
 		FRA_victors_of_wwi = {
 			
