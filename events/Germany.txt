@@ -212,6 +212,7 @@ country_event = {
 		add_state_claim = 146
 		add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 }
 		SOV = {
+			add_timed_idea = { idea = SOV_war_bonds days = 360 }
 		    country_event = { days = 1 id = soviet.4 }
 			country_event = { days = 1 id = soviet.6 }
 			country_event = { days = 1 id = soviet.8 }

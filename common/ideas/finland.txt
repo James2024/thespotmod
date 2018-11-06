@@ -47,7 +47,7 @@ ideas = {
 				attrition = -0.15
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.2
-				conscription = 0.06
+				conscription = 0.07
 			}
 		}
 		
@@ -68,7 +68,7 @@ ideas = {
 			picture = sisu
 		
 			modifier = {
-				conscription = 0.10
+				conscription = 0.05
 			}
 		
 		}

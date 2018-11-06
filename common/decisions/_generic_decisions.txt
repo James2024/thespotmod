@@ -60,7 +60,7 @@ political_actions = {
 		icon = generic_industry
 
 		available = {
-			
+			NOT = { has_country_flag = worker_conditions_running }
 		}
 
 		visible = {
@@ -81,7 +81,15 @@ political_actions = {
 		cost = 85
 
 		complete_effect = {
-
+			hidden_effect = {
+			set_country_flag = worker_conditions_running
+			}
+		}
+		
+		remove_effect = {
+			hidden_effect = {
+			clr_country_flag = worker_conditions_running
+			}
 		}
 
 		ai_will_do = {
@@ -98,6 +106,7 @@ political_actions = {
 		icon = generic_political_discourse
 
 		available = {
+			NOT = { has_country_flag = promises_of_peace_running }
 			has_war = no
 			has_war_support > 0.2
 		}
@@ -125,7 +134,15 @@ political_actions = {
 		cost = 50
 
 		complete_effect = {
-
+			hidden_effect = {
+				set_country_flag = promises_of_peace_running
+			}
+		}
+		
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = promises_of_peace_running
+			}
 		}
 
 		ai_will_do = {
@@ -911,6 +928,8 @@ war_measures = {
         }
 
         available = {
+			NOT = { has_country_flag = war_bonds_active }
+			NOT = { has_idea = SOV_war_bonds }
             has_war = yes
             OR = {
                 AND = {
@@ -958,10 +977,15 @@ war_measures = {
 		}
 
 		remove_effect = {
-
+			hidden_effect = {
+			clr_country_flag = war_bonds_active
+			}
 		}
 
 		complete_effect = {
+			hidden_effect = { 
+				set_country_flag = war_bonds_active
+				}
 			if = {
 				limit = {
 					NOT = {

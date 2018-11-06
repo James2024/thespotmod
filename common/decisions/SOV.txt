@@ -5,6 +5,30 @@
 ### #  # ###   ##  ###   #  #  #   #      #  # #### ####  ##   ##  #  #  #  ###  ##  #  #
 
 #Category only allowed for SOV
+war_measures = {
+	
+	SOV_puppet_iran = {
+		
+		icon = generic_army_support
+		
+		visible = {
+			has_global_flag = sov_yes_pact
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		available = {
+			has_global_flag = sov_yes_pact
+		}
+		
+		complete_effect = {
+			puppet = PER
+		}
+	}
+}
+
 SOV_industry_relocation = {
 
 	SOV_relocate_industry_from_moscow = {
