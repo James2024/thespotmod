@@ -44,12 +44,16 @@ NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.6
 NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.04
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.30
 NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 4
+NDefines.NNavy.CARRIER_STACK_PENALTY = 4
+NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 99.999
+NDefines.NNavy.ANTI_AIR_TARGETING = 1.8
+
 ---Air
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1							-- Days to deploy one air wing
 NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.01                        -- Base chance % for ace pilot to be created. Happens only when successfully kill airplane/ship or damage the buildings.
 NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.80
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.65
-NDefines.NAir.AIR_WING_MAX_SIZE = 3200
+NDefines.NAir.AIR_WING_MAX_SIZE = 1600
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.85
 ---AI
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100

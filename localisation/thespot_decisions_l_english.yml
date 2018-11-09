@@ -10,4 +10,8 @@
  GER_offensive_3:0 "Offensive 3"
  GER_Operation_Typhoon_decision:0 "Operation Typhoon"
  SOV_soviet_offensive:0 "Soviet First Offensive"
+ worker_conditions_running:0 " Already improving workers conditions"
+ war_bonds_active:0 " Already issuing war bonds"
+ promises_of_peace_running:0 " Already falsy promising peace"
+ SOV_puppet_iran:0 "Puppet Iran"
 
