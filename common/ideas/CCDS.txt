@@ -1,0 +1,28 @@
+ideas = {
+    country = {
+        trade_unionism = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+            picture = generic_pp_unity_bonus
+
+            modifier = {
+                political_power_cost = 2
+                conscription_factor = -1
+
+                research_time_factor = 1000
+                enemy_justify_war_goal_time = 50
+
+                join_faction_tension = 2
+                lend_lease_tension = 2
+
+                send_volunteers_tension = 2
+                guarantee_tension = 2
+            	ai_badass_factor = 0
+                ai_get_ally_desire_factor = -500
+            }
+        }
+    }
+}

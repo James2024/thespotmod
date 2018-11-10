@@ -34,8 +34,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_org_Factor = 0.05
-				command_power_gain = 0.15
+				army_org_Factor = 0.1
+				planning_speed = 0.25
+				max_planning = 0.1
 			}
 		}
 
@@ -156,7 +157,7 @@ ideas = {
 			picture = generic_fortify_the_borders
 
 			modifier = {
-				production_speed_coastal_bunker_factor = 0.05
+				production_speed_coastal_bunker_factor = 0.2
 			}
 		}
 
@@ -176,7 +177,7 @@ ideas = {
 			picture = generic_wall_line
 
 			modifier = {
-				production_speed_bunker_factor = 0.05
+				production_speed_bunker_factor = 0.2
 			}
 		}
 
@@ -217,7 +218,7 @@ ideas = {
 			picture = generic_build_infrastructure
 
 			modifier = {
-				production_speed_infrastructure_factor = 0.2
+				production_speed_infrastructure_factor = 0.1
 			}
 		}
 
@@ -829,72 +830,11 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
 			}
 
 		}
-		
-		GER_operation = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_acquire_tanks
-
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-
-		}
-		
-		GER_operation_preperation = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_acquire_tanks
-			
-			modifier = {
-				planning_speed = 0.15
-			}
-		}
-		
-		GER_operation_typhoon = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_acquire_tanks
-
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
-			}
-
-		}
-		
 		GER_dismantle_maginot = {
 			allowed = {
 				always = no
@@ -909,10 +849,10 @@ ideas = {
 			picture = generic_wall_line
 
 			modifier = {
-				production_speed_coastal_bunker_factor = 0.1
-				production_speed_bunker_factor = 0.1
-				production_speed_infrastructure_factor = -0.1
-				production_speed_air_base_factor = -0.1
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				production_speed_infrastructure_factor = -0.2
+				production_speed_air_base_factor = -0.2
 			}
 
 		}
@@ -964,7 +904,7 @@ ideas = {
 
 			equipment_bonus = {
 				submarine = {
-					build_cost_ic = -0.2 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -1599,46 +1539,6 @@ ideas = {
 				factor = 3
 			}
 		}
-
-		ernst_thalmann = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { communist_revolutionary }
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-			
-		kurt_schumacher = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { democratic_reformer }
-
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
 		
 		joseph_goebbels = {
 
@@ -2112,7 +2012,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_mobile_warfare = 0.10
@@ -2129,7 +2029,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_battlefield_support = 0.10

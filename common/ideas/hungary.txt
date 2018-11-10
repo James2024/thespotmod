@@ -645,6 +645,32 @@ ideas = {
 		}
 	}
 
+	naval_manufacturer = {
+	
+		designer = yes
+	
+		HUN_ganz_danubius = {
+			
+			picture = generic_naval_manufacturer_1
+
+			available = {
+			}
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+
 	industrial_concern = {
 	
 		HUN_mavag = {
@@ -655,7 +681,7 @@ ideas = {
 				original_tag = HUN
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {
@@ -678,7 +704,7 @@ ideas = {
 				original_tag = HUN
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {

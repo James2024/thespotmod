@@ -85,7 +85,6 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = +0.10
 
 			}
 
@@ -109,7 +108,7 @@ ideas = {
 			
 			modifier = {
 				army_attack_factor = -0.5
-				army_defence_factor = -0.3
+				army_defence_factor = -0.5
 				mobilization_speed = -0.3
 			}
 
@@ -133,7 +132,7 @@ ideas = {
 			
 			modifier = {
 				army_attack_factor = -0.33
-				army_defence_factor = -0.2
+				army_defence_factor = -0.33
 				mobilization_speed = -0.2
 			}
 
@@ -157,7 +156,7 @@ ideas = {
 			
 			modifier = {
 				army_attack_factor = -0.16
-				army_defence_factor = -0.10
+				army_defence_factor = -0.16
 				mobilization_speed = -0.1
 			}
 
@@ -544,7 +543,7 @@ ideas = {
 			
 			modifier = {
 				max_command_power = 5
-				experience_gain_army = 0.03
+				experience_gain_army = 0.05
 			}
 		}
 		

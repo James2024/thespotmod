@@ -1,28 +1,6 @@
 ideas = {
 
 	country = {
-	
-		FRA_chaos_in_the_army = {
-			
-			allowed = {
-				original_tag = FRA
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			picture = generic_victors_of_ww1
-			
-			modifier = {
-				army_org = -0.20
-				army_attack_factor = -.0.20
-			}
-			
-		}
 
 		FRA_victors_of_wwi = {
 			
@@ -373,7 +351,8 @@ ideas = {
 	}
 
 	# POLITICAL
-	political_advisor = {		
+	political_advisor = {
+			
 		leon_blum = {
 			
 			
@@ -395,7 +374,7 @@ ideas = {
 				factor = 0
 			}
 		}
-
+		
 		FRA_gaston_henry_haye = {
 			
 			allowed = {
@@ -742,7 +721,7 @@ ideas = {
 			
 
 			
-			traits = { army_cavalry_2 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -770,11 +749,12 @@ ideas = {
 			
 			allowed = {
 				original_tag = FRA
+				date > 1940.1.1
 			}
 			
 
 			
-			traits = { army_commando_2 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1

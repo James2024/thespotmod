@@ -566,6 +566,7 @@ ideas = {
 			}
 		}
 
+
 		SAF_nicolaas_havenga = {
 
 			picture = generic_political_advisor_europe_2

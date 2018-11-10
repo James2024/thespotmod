@@ -3,25 +3,6 @@ ideas = {
 	country = {
 	
 	
-		JAP_special_forces = {
-		
-			picture = FRA_scw_intervention_nationalists_focus
-		
-			allowed = {
-				always = no
-				}
-				
-			allowed_civil_war = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			modifier = {
-				special_forces_cap = 0.05
-			}
-		}
-		
 		state_shintoism = {
 			allowed = {
 				always = no
@@ -63,6 +44,8 @@ ideas = {
 			
 			research_bonus = {
 				land_doctrine = 0.05
+				air_doctrine = 0.05
+				naval_doctrine = 0.05
 			}
 		}
 		imperial_austerity_idea = {
@@ -99,7 +82,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.025
+				conscription = 0.03
 			}
 		}
 
@@ -262,7 +245,6 @@ ideas = {
 				production_speed_dockyard_factor = 0.05
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = 0.05
-				research_time_factor = -0.025
 			}
 		}
 
@@ -347,7 +329,7 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
-				production_speed_industrial_complex_factor = -0.1
+				#production_speed_industrial_complex_factor = -0.1
 			}
 		}
 
@@ -418,7 +400,6 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
-				research_time_factor = 0.05
 			}
 		}
 
@@ -695,8 +676,8 @@ ideas = {
 			picture = jap_supremacy_of_technology
 			
 			research_bonus = {
-				infantry_weapons = 0.05
-				armor = 0.05
+				infantry_weapons = 0.1
+				armor = 0.1
 			}
 		}
 
@@ -734,7 +715,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 			
 			modifier = {
-				special_forces_cap = 0.02
+				special_forces_cap = 0.25
 			}
 		}
 
@@ -1300,7 +1281,7 @@ ideas = {
 				original_tag = JAP
 			}
 			
-			traits = { compassionate_gentleman }
+			traits = { quartermaster_general }
 		}
 
 		takuo_godo = {
@@ -1331,7 +1312,7 @@ ideas = {
 			
 
 			
-			traits = { army_chief_offensive_1 }
+			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1851,6 +1832,9 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.10
 			}
+			research_bonus = {
+				mechanized_equipment = 0.10
+			}
 			
 			traits = { motorized_equipment_manufacturer }
 		}
@@ -1871,7 +1855,7 @@ ideas = {
 				armor = 0.10
 			}
 			
-			traits = { tank_manufacturer }
+			traits = { fast_tank_manufacturer }
 		}	
 	}
 	
@@ -1883,7 +1867,7 @@ ideas = {
 				original_tag = JAP
 			}
 			
-			cost = 250
+			cost = 150
 						
 			research_bonus = {
 				cat_grand_battle_plan = 0.10
@@ -1901,7 +1885,7 @@ ideas = {
 			research_bonus = {
 				land_doctrine = 0.07
 			}
-			
+			cost = 150
 			traits = { military_theorist }
 		}
 		
@@ -1911,7 +1895,7 @@ ideas = {
 				original_tag = JAP
 			}
 			
-			cost = 250
+			cost = 150
 						
 			research_bonus = {
 				cat_base_strike = 0.10
@@ -1939,7 +1923,7 @@ ideas = {
 				original_tag = JAP
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_operational_integrity = 0.10

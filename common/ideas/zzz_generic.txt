@@ -14,7 +14,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_dockyard = 0.2
+				industrial_capacity_dockyard = 0.1
 			}
 		}
 
@@ -268,7 +268,7 @@ ideas = {
 			picture = FRA_scw_intervention_nationalists_focus
 			
 			modifier = {
-				special_forces_cap = 0.02
+				special_forces_cap = 0.25
 			}
 		}
 		
@@ -328,7 +328,7 @@ ideas = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
-				conscription = 0.05
+				conscription = 0.015
 				enemy_partisan_effect = -0.1
 			}
 		}
@@ -352,7 +352,7 @@ ideas = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
-				conscription = 0.02
+				conscription = 0.005
 			}
 		}
 	
@@ -885,7 +885,7 @@ ideas = {
 		generic_communist_revolutionary = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = ROM tag = CHI tag = MAN tag = NZL } }
+				NOT = { OR = { tag = BRA tag = MEX tag = SIA tag = BUL tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = ROM tag = CHI tag = MAN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
 				}
@@ -912,7 +912,7 @@ ideas = {
 		generic_democratic_reformer = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN } }
+				NOT = { OR = {  tag = SIA tag = BUL tag = PER tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
 				}
@@ -952,7 +952,7 @@ ideas = {
 		generic_fascist_demagogue = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = NZL tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = PRC tag = CHI tag = MAN } }
+				NOT = { OR = { tag = BRA tag = MEX tag = PER tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = PRC tag = CHI tag = MAN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
 				}
@@ -989,7 +989,7 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE } }
+				NOT = { OR = { tag = BRA tag = MEX tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE } }
 				NOT = {
 					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
 				}
@@ -1010,7 +1010,7 @@ ideas = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {
@@ -1048,7 +1048,7 @@ ideas = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {
@@ -1086,7 +1086,7 @@ ideas = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {
@@ -1119,7 +1119,7 @@ ideas = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {
@@ -1152,7 +1152,7 @@ ideas = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {
@@ -1181,7 +1181,7 @@ ideas = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {
@@ -1211,7 +1211,7 @@ ideas = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {
@@ -1239,7 +1239,7 @@ ideas = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {
@@ -1271,7 +1271,7 @@ ideas = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {
@@ -1298,7 +1298,7 @@ ideas = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {
@@ -1325,7 +1325,7 @@ ideas = {
 				}
 			}
 			
-			cost = 100
+			cost = 150
 			removal_cost = 10
 			
 			research_bonus = {

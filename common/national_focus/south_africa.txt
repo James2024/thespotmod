@@ -77,7 +77,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				threat > 0.2
+				threat > 0.1
 				NOT = { has_government = democratic }
 			}
 		}

@@ -532,7 +532,7 @@ focus_tree = {
 		}
 
 		available = {
-			threat > 0.2
+			threat > 0.1
 		}
 
 		bypass = {

@@ -38,7 +38,7 @@ ideas = {
 			picture = great_depression
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.10
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
@@ -83,6 +83,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
+				conscription = 0.02
 			}
 		}
 
@@ -502,6 +503,7 @@ ideas = {
 			traits = { backroom_backstabber }
 		}
 
+
 		AST_herbert_v_evatt = {
 
 			picture = generic_political_advisor_europe_2
@@ -544,7 +546,36 @@ ideas = {
 				has_dlc = "Together for Victory"
 			}
 			
-			traits = { compassionate_gentleman }
+			traits = { captain_of_industry }
+		}
+
+
+		AST_arthur_calwell = {
+			
+			allowed = {
+				original_tag = AST
+			}
+			available = {
+				if = {
+					limit = { has_dlc = "Together for Victory" }
+					OR = {
+					}
+				}
+			}
+			
+			picture = generic_democratic_reformer_western_european_2d
+			
+			traits = { democratic_reformer }
+		
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
 		}
 
 	}
@@ -639,7 +670,7 @@ high_command = {
 			original_tag = AST
 		}
 		
-		traits = { army_artillery_2 }
+		traits = { army_commando_1 }
 		
 		ai_will_do = {
 			factor = 1

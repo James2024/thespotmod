@@ -255,7 +255,7 @@ propaganda_efforts = {
 		days_remove = 90
 		days_re_enable = 180
 
-		cost = 150
+		cost = 100
 
 		modifier = {
 			war_support_weekly = 0.01
@@ -656,12 +656,12 @@ special_projects = {
 	
 		fire_only_once = no
 	
-		days_remove = 365
+		days_remove = 180
 	
-		cost = 250
+		cost = 100
 	
 		modifier = {
-			civilian_factory_use = 50
+			civilian_factory_use = 5
 		}
 	
 		remove_effect = {
@@ -869,6 +869,7 @@ war_measures = {
         }
 
         available = {
+			NOT = { has_country_flag = women_in_workforce }
             has_war = yes
             has_idea = tot_economic_mobilisation
             OR = {
@@ -903,7 +904,7 @@ war_measures = {
             has_war = no
         }
         modifier = {
-            conscription = 0.03
+            conscription = 0.02
             stability_factor = -0.05
         }
         ai_will_do = {
@@ -916,7 +917,16 @@ war_measures = {
 				}
 				country_event = { id = canada_vanilla.1 hours = 6 } # Ronnie the Bren Gun Girl
 			}
+			hidden_effect = {
+				set_country_flag = women_in_workforce
+			}
         }
+		
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = women_in_workforce
+			}
+		}
    }
 
     war_bonds = {
@@ -1146,20 +1156,20 @@ economy_decisions = {
 		}
 
         complete_effect = {
-        	add_war_support = -0.025
-			add_stability = -0.025
+        	add_war_support = -0.010
+			add_stability = -0.010
 			random_owned_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
 					is_owned_by = ROOT
             		free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 					NOT = { has_state_flag = war_building_slot_flag }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				set_state_flag = war_building_slot_flag
 			}
 		}
@@ -1167,7 +1177,7 @@ economy_decisions = {
 			factor = 1
 			modifier = {
 				factor = 10
-				any_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
+				any_owned_state = { free_building_slots = { building = industrial_complex size < 2 include_locked = no } }
 			}
 		}
     }
