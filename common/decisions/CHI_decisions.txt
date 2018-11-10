@@ -20,6 +20,7 @@ CHI_anti_imperialism = {
 			KOR = {
 				exists = no
 			}
+			has_completed_focus = CHI_commit_to_korean_independence
 		}
 
 		visible = {
@@ -28,6 +29,7 @@ CHI_anti_imperialism = {
 			KOR = {
 				exists = no
 			}
+			has_completed_focus = CHI_commit_to_korean_independence
 		}
 		complete_effect = {
 			add_political_power = 50
@@ -48,7 +50,7 @@ CHI_army_reform = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			has_army_experience > 49
+			has_army_experience > 99
 			has_completed_focus = CHI_army_reform
 		}
 
@@ -5145,6 +5147,7 @@ CHI_communist_infiltration = {
 				add = 75
 				any_other_country = {
 					is_potentially_communist_china = yes
+					has_completed_focus = PRC_infiltration
 					NOT = { has_country_flag = CHI_delay_sweep_for_communists }
 				}
 			}
@@ -6319,7 +6322,6 @@ political_actions = {
 			}
 			is_in_faction = no
 			NOT = {
-				has_completed_focus = CHI_opposition
 			}
 		}
 		visible = {
@@ -6522,6 +6524,42 @@ CHI_xian_incident = {
 			CHI = {
 				country_event = wtt_xian_incident.1
 			}
+		}
+	}
+}
+
+operations = {
+	
+	CHI_overlordship_over_indochina = {
+		icon = generic_operation
+
+		allowed = {
+			is_literally_china = yes
+		}
+
+		available = {
+			controls_state = 671
+			controls_state = 670
+			controls_state = 286
+			controls_state = 741
+		} 
+
+		days_mission_timeout = 360
+
+		fire_only_once = yes
+
+		activation = {
+			has_completed_focus = CHI_overlordship_over_indochina
+		}
+		
+		complete_effect = {
+			add_political_power = 50
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
+
+		timeout_effect = {
+			add_war_support = -0.1
 		}
 	}
 }
