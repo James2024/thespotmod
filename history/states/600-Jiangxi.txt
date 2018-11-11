@@ -12,7 +12,7 @@ state={
 
 		}
 		victory_points = {
-			3992 3 
+			3992 5
 		}
 		1938.10.25 = {
 			JAP = {

@@ -8,7 +8,7 @@ state={
 		aluminium=7 # was: 12
 	}
 	
-	state_category = city
+	state_category = large_city
 
 	history={
 		owner = SOV
@@ -18,7 +18,7 @@ state={
 		buildings = {
 			infrastructure = 7
 			arms_factory = 4
-			industrial_complex = 6
+			industrial_complex = 7
 			air_base = 8
 		}
 		add_core_of = SOV

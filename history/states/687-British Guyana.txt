@@ -6,13 +6,13 @@ state={
 	state_category = pastoral
 	
 	resources={
-		aluminium=60 # was: 112
+		aluminium=75 # was: 112
 	}
 
 	history={
 		owner = ENG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 			4982 = {
 				naval_base = 1
 			}

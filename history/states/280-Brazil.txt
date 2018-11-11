@@ -3,12 +3,12 @@ state={
 	id=280
 	name="STATE_280"
 	
-	state_category = pastoral
+	state_category = rural
 
 	history={
 		owner = BRA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = BRA

@@ -4,8 +4,7 @@ state={
 	name="STATE_659"
 	manpower = 891505
 
-	state_category = pastoral
-
+	state_category = rural
 	history={
 		owner = ENG
 		victory_points = {

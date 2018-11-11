@@ -17,15 +17,15 @@ state= {
 		}
 
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			10237 = {
-				naval_base = 3
+				naval_base = 5
 			}
 			1316 = {
-				naval_base = 1
+				naval_base = 3
 			}
 			10325 = {
-				naval_base = 1
+				naval_base = 3
 			}
 		}
 	}
