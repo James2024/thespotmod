@@ -1027,7 +1027,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 100
 			add_tech_bonus = {
 				name = bomber_command_focus
 				bonus = 0.5
