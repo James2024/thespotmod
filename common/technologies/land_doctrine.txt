@@ -171,10 +171,12 @@ technologies = {
 	}
 	
 	mass_motorization = {
-		category_all_infantry = {
+		motorized = {
 			max_organisation = 10
-		}	
-		
+		}
+		mechanized = {
+			max_organisation = 10
+		}
 		
 		path = {
 			leads_to_tech = mechanised_offensive 
@@ -393,9 +395,13 @@ technologies = {
 	
 	kampfgruppe = {
 
-		category_all_infantry = {
-			default_morale = 0.2
+		motorized = {
 			max_organisation = 10
+			default_morale = 0.2
+		}
+		mechanized = {
+			max_organisation = 10
+			default_morale = 0.2
 		}
 		# faster planning
 		planning_speed = 0.2
@@ -441,7 +447,9 @@ technologies = {
 			volkssturm
 		}
 		
+		
 		category_all_infantry = {
+			default_morale = 0.2
 			max_organisation = 10
 		}
 		category_tanks = {
@@ -553,7 +561,7 @@ technologies = {
 		}
 
 		
-		conscription = 0.02
+		conscription = 0.01
 		
 		path = {
 			leads_to_tech = nd_conscription 
@@ -586,7 +594,7 @@ technologies = {
 	
 	nd_conscription = {
 
-		conscription = 0.03
+		conscription = 0.015
 
 		path = {
 			leads_to_tech = werwolf_guerillas 
@@ -659,6 +667,9 @@ technologies = {
 		
 		category_front_line = {
 			 soft_attack = 0.2
+		}
+		category_line_artillery = {
+			soft_attack = 0.1
 		}
 		
 		enable_tactic = tactic_barrage
@@ -1114,7 +1125,7 @@ technologies = {
 		category_all_infantry = { 
 			soft_attack = 0.05 
 		}
-		category_artillery = { 
+		category_line_artillery = { 
 			soft_attack = 0.05
 		}
 		path = {
@@ -1189,7 +1200,7 @@ technologies = {
 			max_organisation = 10
 			default_morale = 0.05
 		}
-		category_tanks = {
+		category_line_artillery = {
 			max_organisation = 2
 		}
 
@@ -1234,7 +1245,7 @@ technologies = {
 			soft_attack = 0.05 
 			hard_attack = 0.05
 		}
-		category_artillery = { 
+		category_line_artillery = { 
 			soft_attack = 0.05
 			hard_attack = 0.05
 		}
@@ -1310,7 +1321,7 @@ technologies = {
 		}
 		
 		#planning max bonus increase
-		max_planning = 0.1
+		max_planning = 0.3
 
 		doctrine = yes	
 		research_cost = 3
@@ -2041,6 +2052,9 @@ technologies = {
 		category_tanks = {
 			max_organisation = 2
 		}
+		category_all_armor = {
+			default_morale = 0.1
+		}
 
 		enable_tactic = tactic_blitz
 		
@@ -2077,7 +2091,12 @@ technologies = {
 
 		max_planning = 0.10
 		land_reinforce_rate = 0.05
-
+		category_all_infantry = {
+			max_organisation = 5
+		}
+		category_all_infantry = {
+			default_morale = 0.05
+		}
 		enable_tactic = tactic_elastic_defense
 		
 		path = {
@@ -2150,11 +2169,11 @@ technologies = {
 	breakthrough_priority = {
 
 		category_tanks = {
-			max_organisation = 1
+			max_organisation = 2
 			breakthrough = 0.10
 		}
 		category_all_infantry = {
-			max_organisation = 5
+			max_organisation = 7
 			breakthrough = 0.10
 		}
 		
@@ -2196,7 +2215,7 @@ technologies = {
 		category_all_armor = {
 			default_morale = 0.1
 		}
-		
+
 		mechanized = {
 			max_organisation = 10
 			default_morale = 0.1
@@ -2204,7 +2223,7 @@ technologies = {
 		motorized = {
 			max_organisation = 10
 			default_morale = 0.1
-		}		
+		}	
 		
 		path = {
 			leads_to_tech = continuous_offensive
@@ -2239,7 +2258,9 @@ technologies = {
 
 		org_loss_when_moving = -0.25
 		land_reinforce_rate = 0.05
-		
+		category_army = {
+			default_morale = 0.10
+		}
 		enable_tactic = tactic_backhand_blow
 
 		doctrine = yes	
@@ -2399,7 +2420,7 @@ technologies = {
 	
 	human_wave_offensive = {
 
-		conscription = 0.05
+		conscription = 0.03
 				
 		infantry = {
 			combat_width = -0.4
