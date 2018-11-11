@@ -272,4 +272,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4135;1048;impassable;-1;-1;-1;-1;-1;;gibraltar
 4135;10094;impassable;-1;-1;-1;-1;-1;;gibraltar
 4135;7153;impassable;-1;-1;-1;-1;-1;;gibraltar
+1636;12320;impassable;-1;-1;-1;-1;-1;;SovietIran mountains
+1636;6997;impassable;-1;-1;-1;-1;-1;;SovietIran mountains
+4755;6997;impassable;-1;-1;-1;-1;-1;;SovietIran mountains
+4755;4660;impassable;-1;-1;-1;-1;-1;;SovietIran mountains
+4825;4660;impassable;-1;-1;-1;-1;-1;;SovietIran mountains
+4825;9715;impassable;-1;-1;-1;-1;-1;;SovietIran mountains
+10454;9715;impassable;-1;-1;-1;-1;-1;;SovietIran mountains
+10454;11704;impassable;-1;-1;-1;-1;-1;;SovietIran mountains
+10454;12434;impassable;-1;-1;-1;-1;-1;;SovietIran mountains
+10454;4473;impassable;-1;-1;-1;-1;-1;;SovietIran mountains
+4901;4473;impassable;-1;-1;-1;-1;-1;;SovietIran mountains
 -1;-1;;-1;-1;-1;-1;-1;-1;
