@@ -27,6 +27,10 @@ leader_traits = {
 		
 		attack_skill_factor = 1
 		planning_skill_factor = 1
+
+		corps_commander_modifier = {
+			max_commander_army_size = 6
+		}
 	}
 	
 	
