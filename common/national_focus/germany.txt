@@ -2702,27 +2702,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_operation_Typhoon_focus
-		prerequisite = { focus = GER_ussr_war_goal }
-		icon = GFX_goal_generic_forceful_treaty
-		x = 0
-		y = 1
-		relative_position_id = GER_ussr_war_goal
-		cost = 0
-		
-		available = { 
-			has_war_with = SOV
-			date = 1941.10.2
-			date < 1942.1.1
-		}
-		
-		completion_reward = {
-			add_ideas = GER_operation_preperation
-			country_event = { id = thespot.3 }
-		}
-	}
-	
-	focus = {
 		id = GER_defend_the_oil
 		prerequisite = { focus = GER_synthetic_rubber }
 		icon = GFX_goal_generic_construct_military
