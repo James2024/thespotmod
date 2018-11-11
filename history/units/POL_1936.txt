@@ -12,6 +12,7 @@
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
@@ -44,6 +45,8 @@ division_template = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }     
@@ -525,44 +528,6 @@ units = {
 
 	}
 
-	
-	######## NAVAL OOB ########
-	navy = {
-		name = "Polska Flota Niszczycieli"
-		base = 362 
-		location = 362 # Danzig
-		ship = { name = "ORP Burza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }	
-		ship = { name = "ORP Wicher" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }		
-	}	
-	navy = {
-		name = "Dywizjon Okretów Podwodnych"
-		base = 362 
-		location = 362 # Danzig
-		ship = { name = "ORP Rys" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
-		ship = { name = "ORP Wilk" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
-		ship = { name = "ORP Zbik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }			
-	}
-}
-
-##### Wojska Lotnicze i Obrony Powietrzne #####
-air_wings = {
-	10 = { 
-		fighter_equipment_0 =  {
-			owner = "POL" 
-			amount = 108
-		}
-		
-	}
-	86 = { 
-		fighter_equipment_0 =  {
-			owner = "POL" 
-			amount = 54
-		}
-		CAS_equipment_1 =  {
-			owner = "POL" 
-			amount = 22
-		}
-	}
 }
 
 #########################

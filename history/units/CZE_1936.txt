@@ -13,6 +13,11 @@
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
 }
 
 division_template = {
@@ -30,6 +35,11 @@ division_template = {
 		mountaineers = { x = 2 y = 1 }
 		mountaineers = { x = 2 y = 2 }
 	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
 }
 
 division_template = {
@@ -42,7 +52,9 @@ division_template = {
 		cavalry = { x = 0 y = 2 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
 	}
 }
 
@@ -56,7 +68,9 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
 	}
 }
 
@@ -309,46 +323,6 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
-	}
-}
-
-### Air Wings
-air_wings = {
-	# Letectvo I.Armády -- Prague
-	# Letectvo Hlavniho Velitelstivi -- Prague
-	9 = { 
-		fighter_equipment_0 = {		# Avia B.534
-			owner = "CZE" 
-			amount = 36
-		}
-		tac_bomber_equipment_0 =  {	# Bloch MB.200
-			owner = "CZE" 
-			amount = 72
-		}
-		CAS_equipment_1 =  {		# Aero A-101
-			owner = "CZE" 
-			amount = 24
-		}
-	}
-
-	# Letectvo III.Armády -- Bratislava
-	70 = {
-		fighter_equipment_0 = {		# Avia B.534
-			owner = "CZE" 
-			amount = 36
-		}
-	}
-
-	# Letectvo IV.Armády -- Olomouc
-	75 = {
-		fighter_equipment_0 = {		# Avia B.534
-			owner = "CZE" 
-			amount = 72
-		}
-		CAS_equipment_1 =  {		# Aero A-101
-			owner = "CZE" 
-			amount = 24
-		}
 	}
 }
 

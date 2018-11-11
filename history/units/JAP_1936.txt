@@ -19,6 +19,7 @@
 	support = {
 		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -26,16 +27,18 @@ division_template = {
 	division_names_group = JAP_IMB_01
 										# 1 engineering battalion
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
 		light_armor = { x= 2 y = 0 }
 		light_armor = { x= 2 y = 1 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -86,7 +89,9 @@ division_template = {
 		marine = { x = 1 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
 	}	
 	priority = 2
 }
@@ -1014,38 +1019,38 @@ air_wings = {
 	# 1 Hikodan -- Tokyo
 	282 = { 
 		# 1 Hiko Rentai -- Kawasaki Ki-10
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "JAP" 
-			amount = 72
+			amount = 100
 		}
 		# 16 Hiko Rentai -- Kawasaki Ki-10
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "JAP" 
-			amount = 72
+			amount = 100
 		}
 		# 6 Hiko Rentai -- Mitsubishi Ki-2
 		CAS_equipment_1 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 100
 		}
 		# 9 Hiko Rentai -- Mitsubishi Ki-1
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 100
 		}
 	}
 
 	# 2 Hikodan -- Dalian
 	716 = {
 		# 3 Hiko Rentai -- Kawasaki Ki-10
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "JAP" 
-			amount = 72
+			amount = 100
 		}
 		# 5 Hiko Rentai -- Kawasaki Ki-3
 		CAS_equipment_1 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 100
 		}
 	}
 
@@ -1054,7 +1059,7 @@ air_wings = {
 		# 10 Hiko Rentai -- Kawasaki Ki-3
 		CAS_equipment_1 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 100
 		}
 
 	}
@@ -1065,12 +1070,12 @@ air_wings = {
 		# Kizarazu Kokutai -- Aichi D1A2
 		cv_CAS_equipment_1 = {
 			owner = "JAP" 
-			amount = 60
+			amount = 100
 		}
 		# Kanoya Kokutai -- Aichi D1A2
 		cv_CAS_equipment_1 = {
 			owner = "JAP" 
-			amount = 60
+			amount = 100
 		}
 	}
 
@@ -1079,7 +1084,7 @@ air_wings = {
 		# 12 Kokutai -- Nakajima A4N1
 		cv_fighter_equipment_0 = {
 			owner = "JAP" 
-			amount = 72
+			amount = 100
 		}
 		# 13 Kokutai -- Mitsubishi B2M2
 		cv_nav_bomber_equipment_1 = {
@@ -1144,7 +1149,7 @@ instant_effect =
 
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_0
+			type = fighter_equipment_1
 			creator = "JAP" 
 		}
 		requested_factories = 1
@@ -1154,7 +1159,7 @@ instant_effect =
 
 	add_equipment_production = {
 		equipment = {
-			type = cv_nav_bomber_equipment_1
+			type = tac_bomber_equipment_1
 			creator = "JAP" 
 		}
 		requested_factories = 1
