@@ -1,0 +1,22 @@
+﻿ai_historical_focus_list_MEN = {
+	ai_national_focuses = {
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+        infrastructure_effort_2
+		construction_effort_3
+        production_effort
+		production_effort_2
+		production_effort_3
+		extra_tech_slot
+		political_effort
+		army_effort
+		equipment_effort
+		doctrine_effort
+		equipment_effort_2
+		doctrine_effort_2
+		equipment_effort_3
+	
+	}
+}
