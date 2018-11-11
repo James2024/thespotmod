@@ -70,8 +70,8 @@ political_actions = {
 		fire_only_once = no
 
 		modifier = {
-			stability_weekly = 0.025
-			consumer_goods_factor = 0.05
+			stability_weekly = 0.005
+			consumer_goods_factor = 0.025
 			industrial_capacity_factory = -0.1
 		}
 
