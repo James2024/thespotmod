@@ -3,13 +3,13 @@
 oob = "ITA_1936"
 
 set_research_slots = 4
-set_stability = 0.6
-set_war_support = 0.7
+set_stability = 0.65
+set_war_support = 0.71
 add_ideas = {
 	victor_emmanuel
 	vittoria_mutilata
 	limited_exports
-	limited_conscription
+	volunteer_only
 	partial_economic_mobilisation
 }
 

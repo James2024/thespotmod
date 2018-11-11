@@ -2,20 +2,21 @@
 
 oob = "USA_1936"
 
-
 set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
 # Starting tech
 set_technology = {
 	motorised_infantry = 1
+	marines  = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	gwtank = 1
+	basic_light_tank = 1
 	early_fighter = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
@@ -167,7 +168,7 @@ give_guarantee = URG
 
 
 
-set_convoys = 400
+set_convoys = 800
 
 
 set_politics = {
@@ -193,13 +194,14 @@ set_politics = {
 	elections_allowed = yes
 }
 
+
+
 add_ideas = {
 	undisturbed_isolation
 	great_depression
 	disarmed_nation
 	free_trade
 	home_of_the_free
-	USA_special_forces
 }
 
 

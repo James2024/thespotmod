@@ -2,7 +2,7 @@
 
 oob = "JAP_1936"
 
-set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.35 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
 set_research_slots = 4
@@ -12,7 +12,6 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-	JAP_special_forces
 
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
@@ -43,8 +42,10 @@ set_technology = {
 	cv_CAS1 = 1
 	cv_naval_bomber1 = 1
 	early_fighter = 1
+	fighter1 = 1
 	naval_bomber1 = 1
 	early_bomber = 1
+	tactical_bomber1 = 1
 	CAS1 = 1
 	early_submarine = 1
 	basic_submarine = 1
@@ -67,8 +68,9 @@ set_technology = {
 create_import = {
 		resource = oil
 		factories = 2
-		exporter = USA
+		exporter = VEN
 }
+set_convoys = 800
 
 1939.1.1 = {
 
@@ -176,8 +178,6 @@ create_import = {
 		concentrated_industry3 = 1
 	}
 }
-
-set_convoys = 400
 
 if = {
 	limit = {

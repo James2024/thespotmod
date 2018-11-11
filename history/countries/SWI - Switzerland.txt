@@ -1,28 +1,22 @@
-﻿capital = 110
+﻿capital = 3
 
-oob = "NOR_1936"
+oob = "SWI_1936"
 
 set_research_slots = 3
 
-add_ideas = {
-	limited_conscription
-}
-
-set_stability = 0.9
-set_war_support = 0.1
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	tech_mountaineers = 1
 	tech_support = 1		
 	tech_engineers = 1
-	early_fighter = 1
-	early_bomber = 1
-	early_destroyer = 1
-	early_submarine = 1
-	early_heavy_cruiser = 1
 	tech_recon = 1
+	early_fighter = 1
+	CAS1 = 1
 }
-
+add_ideas = {
+	trade_unionism
+}
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -33,13 +27,13 @@ set_technology = {
 	complete_national_focus = motorization_effort
 	complete_national_focus = aviation_effort
 	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "NOR_1939"
+	oob = "SWI_1939"
 	set_technology = {
+		fighter1 = 1
 		gw_artillery = 1
 		interwar_artillery = 1
 		interwar_antiair = 1
@@ -52,7 +46,7 @@ set_technology = {
 		trench_warfare = 1
 		fleet_in_being = 1
 		battlefleet_concentration = 1
-		submarine_operations = 1
+		convoy_sailing = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -75,9 +69,6 @@ set_technology = {
 	}
 }
 
-set_convoys = 100		# biggest merchant marine in the world
-set_stability = 0.7
-
 set_politics = {
 
 	parties = {
@@ -95,17 +86,17 @@ set_politics = {
 	}
 	
 	ruling_party = democratic
-	last_election = "1933.10.16"
-	election_frequency = 36
+	last_election = "1935.10.27"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
-1939.1.1 = {
+1939.1.1 = {#next election october 39
 	set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 84
+				popularity = 95
 			}
 
 			fascism = {
@@ -113,47 +104,39 @@ set_politics = {
 			}
 			
 			communism = {
-				popularity = 2
-			}
-
-			neutrality = {
-				popularity = 12
+				popularity = 3
 			}
 		}
 		
 		ruling_party = democratic
-		last_election = "1936.10.19"
-		election_frequency = 36
+		last_election = "1935.10.27"
+		election_frequency = 48
 		elections_allowed = yes
 	}
 }
 
+add_ideas = {
+	neutrality_idea	
+	limited_conscription
+}
+
+set_stability = 0.85
+
 create_country_leader = {
-	name = "Johan Nygaardsvold"
-	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
-	picture = "Portrait_Norway_Johan_Nygaardsvold.dds"
+	name = "Federal Council"
+	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = conservatism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Vidkun Quisling"
-	desc = "POLITICS_VIDKUN_QUISLING_DESC"
-	picture = "Portrait_Norway_Vidkun_Quisling.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Johan Ludwig Mowinckel"
-	desc = "POLITICS_JOHAN_LUDWIG_MOWINCKEL_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	name = "Ernest Béuin"
+	desc = "POLITICS_ERNST_BEGUIN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -162,9 +145,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Adam Egede-Nissen"
-	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	name = "Dr. Max Leo Keller"
+	desc = "POLITICS_MAX_LEO_KELLER_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fritz Platten"
+	desc = "POLITICS_FRITZ_PLATTEN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -173,19 +167,12 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-	name = "Carl Gustav Fleischer"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {  trickster winter_specialist }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 4
-}
-
-create_navy_leader = {
-	name = "Elias Corneliussen"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { spotter }
+	name = "Henri Guisan"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  winter_specialist }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }

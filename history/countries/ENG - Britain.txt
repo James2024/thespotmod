@@ -4,7 +4,7 @@ oob = "ENG_1936"
 
 set_research_slots = 4
 
-set_stability = 0.6
+set_stability = 0.65
 set_war_support = 0.1
 
 # Starting tech
@@ -49,10 +49,16 @@ add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	george_v
-	UK_special_forces
 }
+	give_guarantee = HOL
+	give_guarantee = BEL
+	give_guarantee = POL
+	give_guarantee = LUX
+	give_guarantee = DEN
+	give_guarantee = NOR
+	give_guarantee = GRE
 
-set_convoys = 800
+set_convoys = 1000
 
 # DIPLOMACY
 if = {
@@ -62,11 +68,12 @@ if = {
 	set_autonomy = {
 		target = MAL
 		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.01
 	}
 	set_autonomy = {
 		target = RAJ
 		autonomous_state = autonomy_colony
-		freedom_level = 0.35
+		freedom_level = 0.45
 	}
 	set_autonomy = {
 		target = CAN
@@ -81,19 +88,18 @@ if = {
 	set_autonomy = {
 		target = AST
 		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
+		freedom_level = 0.4
 	}
 	set_autonomy = {
 		target = NZL
 		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
+		freedom_level = 0.4
 	}
 	else = {
 		puppet = MAL
 		puppet = RAJ
 	}
 }
-
 
 if = {
 	limit = { has_dlc = "Together for Victory" }
