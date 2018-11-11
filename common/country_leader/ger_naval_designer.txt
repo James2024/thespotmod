@@ -1,0 +1,17 @@
+leader_traits = {
+
+	blom_design = {
+		random = no
+		equipment_bonus = {
+			screen_ship = {
+				surface_visibility = -0.15 naval_speed = 0.15 attack = -0.05
+			}
+			capital_ship = {
+				surface_visibility = -0.20 naval_speed = 0.15 attack = -0.05 fire_range = -0.20
+			}
+			submarine = {
+				surface_detection = 0.15 surface_visibility = -0.15 sub_visibility = -0.2 naval_speed = 0.25 
+			}
+		}
+	}
+}
