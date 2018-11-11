@@ -16,14 +16,66 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_morale_factor = 0.25
-				attrition = -0.1
+				army_speed_factor = 0.05
+				army_morale_factor = 0.20
+				attrition = -0.15
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.2
-				conscription = 0.04
+				conscription = 0.03
 			}
 		}
+		
+		FIN_sisu2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			picture = sisu
+			
+			modifier = {
+				army_speed_factor = 0.05
+				army_morale_factor = 0.20
+				attrition = -0.15
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				conscription = 0.07
+			}
+		}
+		
+		fin_pop = {
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism 
+				}
+			}
+		
+			removal_cost = -1
+		
+			picture = sisu
+		
+			modifier = {
+				conscription = 0.05
+			}
+		
+		}
+	
 	}
+	
+	
 
 	political_advisor = {
 
@@ -237,7 +289,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			traits = { army_regrouping_3 }
+			traits = { army_regrouping_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -269,7 +321,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			traits = { army_commando_2 }
+			traits = { army_infantry_1 }
 			
 			ai_will_do = {
 				factor = 1
