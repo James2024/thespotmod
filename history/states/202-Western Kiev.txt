@@ -8,21 +8,20 @@ state={
 		aluminium=7 # was: 12
 	}
 	
-	state_category = city
+	state_category = large_city
 
 	history={
 		owner = SOV
 		victory_points = {
-			525 25
+			525 40
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 3
-			industrial_complex = 2
+			arms_factory = 4
+			industrial_complex = 7
 			air_base = 8
 		}
 		add_core_of = SOV
-		
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 4

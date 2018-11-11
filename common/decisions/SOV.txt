@@ -6,7 +6,6 @@
 
 #Category only allowed for SOV
 war_measures = {
-	
 	SOV_puppet_iran = {
 		
 		icon = generic_army_support
@@ -472,34 +471,6 @@ SOV_industry_relocation = {
 #Category only allowed for SOV
 SOV_great_patriotic_war = {
 
-	SOV_soviet_offensive = {
-	
-		icon = generic_army_support
-		
-		available = {
-			tag = SOV
-			has_idea = SOV_counterattack_1
-		}
-		
-		cost = 0
-		
-		fire_only_once = yes
-		
-		visible = {
-		has_war_with = GER
-		}
-		
-		days_remove = 30
-		
-		complete_effect = {
-			swap_ideas = {
-				remove_idea = SOV_counterattack_1
-				add_idea = SOV_counterattack_2
-			}
-		}
-	}
-		
-	
 	SOV_order_227 = {
 
 		icon = generic_army_support
@@ -537,7 +508,6 @@ SOV_great_patriotic_war = {
 			}
 		}
 	}
-	
 	SOV_scorched_earth = {
 
 		icon = generic_scorched_earth
@@ -1250,7 +1220,6 @@ operations = {
 		cost = 25
 		fire_only_once = yes
 		visible = {
-			JAP = { has_completed_focus = JAP_strengthen_civilian_government }
 			MAN = { exists = yes }
 		}
 
@@ -1309,7 +1278,6 @@ political_actions = {
 		cost = 0
 		fire_only_once = yes
 		visible = {
-			JAP = { has_completed_focus = JAP_strengthen_civilian_government }
 			PRC = { exists = yes }
 		}
 

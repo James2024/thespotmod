@@ -77,7 +77,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				threat > 0.2
+				threat > 0.1
 				NOT = { has_government = democratic }
 			}
 		}
@@ -324,7 +324,6 @@ focus_tree = {
 
 		available = {
 			is_subject_of = ENG
-			ENG = { has_war = no }
 		}
 
 		bypass = {
@@ -340,7 +339,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_political_power = 120
+			add_political_power = 120
 		}
 	}
 
@@ -1776,7 +1775,6 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				technology = fighter3
 			}
 		}
 	}
@@ -1997,7 +1995,7 @@ focus_tree = {
 		x = 20
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2068,7 +2066,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.8
@@ -2109,7 +2107,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.2
@@ -2153,7 +2151,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2239,7 +2237,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2280,7 +2278,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2326,7 +2324,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2374,7 +2372,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

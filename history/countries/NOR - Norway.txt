@@ -2,14 +2,10 @@
 
 oob = "NOR_1936"
 
-set_war_support = 0.15
-
 set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
-	militarism_focus
-	
 }
 
 set_stability = 0.9
@@ -79,7 +75,7 @@ set_technology = {
 	}
 }
 
-set_convoys = 80		# biggest merchant marine in the world
+set_convoys = 100		# biggest merchant marine in the world
 set_stability = 0.7
 
 set_politics = {

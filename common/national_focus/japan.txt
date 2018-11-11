@@ -187,6 +187,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = 0.1
 			if = {
 				limit = {
 					CHI = { #if CHI owns one of these states, they get the event
@@ -1037,6 +1038,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = Japan_War_Doct
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -1117,7 +1124,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = JAP_coal_liquification
-				bonus = 0.5
+				bonus = 0.75
 				uses = 1
 				category = synth_resources
 			}
@@ -1212,6 +1219,7 @@ focus_tree = {
 		id = JAP_national_defense_state
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = JAP_nationalize_war_industry }
+		prerequisite = { focus = JAP_national_research_policy }
 		x = 11
 		y = 4
 
@@ -1396,7 +1404,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1442,7 +1450,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1498,7 +1506,7 @@ focus_tree = {
 			MAN = { has_focus_tree = generic_focus }
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1550,7 +1558,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1639,7 +1647,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_expand_manchurian_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1684,7 +1692,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_expand_manchurian_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1730,7 +1738,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_expand_manchurian_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1772,7 +1780,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1916,10 +1924,7 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 2
-				has_completed_focus = JAP_strengthen_civilian_government
-			}
+
 		}
 
 		available = {
@@ -2095,6 +2100,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = hajime_sugiyama
+			
 		}
 	}
 
@@ -2268,8 +2274,7 @@ focus_tree = {
 	focus = {
 		id = JAP_the_zero
 		icon = GFX_focus_jap_zero
-		prerequisite = { focus = JAP_first_air_fleet }
-		prerequisite = { focus = JAP_agility_focus }
+		prerequisite = { focus = JAP_first_air_fleet  focus = JAP_agility_focus }
 		x = 1
 		y = 1
 		relative_position_id = JAP_agility_focus
@@ -2688,6 +2693,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = JAP_first_air_fleet
+			add_tech_bonus = {
+				name = USA_carrier_primacy
+				bonus = 0.75
+				uses = 1
+				category = cv_tech
+			}
 		}
 	}
 
@@ -2822,7 +2833,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_new_naval_estimates
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2845,6 +2856,42 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_new_naval_estimates_DY1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_new_naval_estimates_DY2
+			}
 			add_tech_bonus = {
 				name = JAP_cruiser_modernization
 				bonus = 0.75
@@ -2863,7 +2910,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_cruiser_modernization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -2886,6 +2933,42 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_new_naval_estimates_DY1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = JAP_new_naval_estimates_DY2
+			}
 			add_ideas = the_long_lance
 		}
 	}
@@ -2898,7 +2981,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_long_lance_torpedoes
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2

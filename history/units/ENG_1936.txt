@@ -6,16 +6,18 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
 	}
 	support = {
        	engineer = { x = 0 y = 0 }
-       	artillery = { x = 0 y = 1 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -24,12 +26,14 @@ division_template = {
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-        cavalry = { x = 0 y = 3 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
+	    artillery = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -38,8 +42,22 @@ division_template = {
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+        motorized = { x = 2 y = 3 }
+		motorized = { x = 2 y = 4 }
 	}
+
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+
 }
 division_template = {
 	name = "Colonial Garrison"
@@ -49,9 +67,18 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
 	}
 	priority = 0
 }
@@ -66,7 +93,7 @@ units = {
 		}
 		location = 9458
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	division= {	# "2nd Infantry Division"
 		division_name = {
@@ -75,7 +102,7 @@ units = {
 		}
 		location = 9458
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	#Scottish Command
 	division= {	# "51st 'Highland' Infantry Division"
@@ -85,8 +112,7 @@ units = {
 		}
 		location = 3273
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
 
 	}
 	division= {	# "52nd 'Lowland' Infantry Division"
@@ -96,8 +122,7 @@ units = {
 		}
 		location = 9392
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
 
 	}
 	#Northern Command
@@ -106,7 +131,6 @@ units = {
 		location = 11297
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	division= {	# "5th Infantry Division"
@@ -116,7 +140,7 @@ units = {
 		}
 		location = 351
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	division= {	# "50th 'Northumbrian' Motorized Division"
 		division_name = {
@@ -125,8 +149,7 @@ units = {
 		}
 		location = 9397
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
 
 	}
 	division= {	# "49th 'West Riding' Infantry Division"
@@ -136,8 +159,7 @@ units = {
 		}
 		location = 11218
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
 
 	}
 	#Eastern Command
@@ -148,7 +170,7 @@ units = {
 		}
 		location = 11253
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	division= {	# "44th 'Home Counties' Infantry Division"
 		division_name = {
@@ -157,8 +179,7 @@ units = {
 		}
 		location = 11221
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "54th 'East Anglia' Infantry Division"
@@ -168,8 +189,7 @@ units = {
 		}
 		location = 3287
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	#Western Command	
@@ -177,8 +197,7 @@ units = {
 		name = "6th Cavalry Brigade"
 		location = 407
 		division_template = "Cavalry Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "42nd 'East Lancashire' Infantry Division"
@@ -188,8 +207,7 @@ units = {
 		}
 		location = 6318
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.4
 
 	}
 	division= {	# "53rd 'Welsh' Infantry Division"
@@ -199,8 +217,7 @@ units = {
 		}
 		location = 311
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.4
 
 	}
 	division= {	# "55th 'West Lancashire' Infantry Division"
@@ -210,8 +227,7 @@ units = {
 		}
 		location = 6384
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.4
 
 	}
 	#Southern Command
@@ -219,7 +235,7 @@ units = {
 		name = "Royal Tank Regiment"
 		location = 9239
 		division_template = "Tank Brigade"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	division= {	# "3rd Infantry Division"
 		division_name = {
@@ -228,7 +244,7 @@ units = {
 		}
 		location = 13070
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.4
 	}
 	division= {	# "43rd 'Wessex' Infantry Division"
 		division_name = {
@@ -237,8 +253,7 @@ units = {
 		}
 		location = 3369
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.4
 
 	}
 	division= {	# "48th 'South Midland' Infantry Division"
@@ -248,8 +263,7 @@ units = {
 		}
 		location = 6351
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.4
 
 	}
 	
@@ -260,9 +274,8 @@ units = {
 		location = 12806
 		division_template = "Colonial Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
 	}
 	#Palestine & Transjordan
 	division= {	
@@ -270,7 +283,7 @@ units = {
 		location = 4206
 		division_template = "Colonial Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_experience_factor = 0.1
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.3
 
 	}
@@ -280,7 +293,7 @@ units = {
 		location = 12821
 		division_template = "Colonial Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_experience_factor = 0.1
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.3
 
 	}
@@ -289,23 +302,23 @@ units = {
 		name = "Cairo Force"
 		location = 7011
 		division_template = "Colonial Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
 
 	}
 	division= {	
 		name = "Canal Brigade"
 		location = 1155
 		division_template = "Colonial Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
 
 	}
 	division= {	
 		name = "The Cavalry Brigade (Egypt)"
 		location = 4076
 		division_template = "Cavalry Brigade"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.3
 
 	}
@@ -314,8 +327,8 @@ units = {
 		name = "Gibraltar Defense Force"
 		location = 4135
 		division_template = "Colonial Garrison"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
 
 	}
 	
@@ -324,8 +337,8 @@ units = {
 		name = "Malta Command"
 		location = 12003
 		division_template = "Colonial Garrison"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
 
 	}
 	
@@ -334,24 +347,21 @@ units = {
 		name = "East Africa Force"
 		location = 1939
 		division_template = "Colonial Garrison"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	  
 		name = "Southern Africa Force"
 		location = 12911
 		division_template = "Colonial Garrison"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	
 		name = "Northern Rhodesia Groups"
 		location = 1939
 		division_template = "Colonial Garrison"			# Colonial militia (lowest equipment and experience)
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_equipment_factor = 0.3
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
 
 	}
 
@@ -360,16 +370,14 @@ units = {
 		name = "1 West African Force"
 		location = 2050
 		division_template = "Colonial Garrison"			# Colonial militia (lowest equipment and experience)
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_equipment_factor = 0.15
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
 
 	}
 	division= {	  
 		name = "2 West African Force"
 		location = 10862 
 		division_template = "Colonial Garrison"			# Colonial militia (lowest equipment and experience)
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_equipment_factor = 0.15
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ENG" } }
 
 	}
 	
@@ -380,7 +388,6 @@ units = {
 		location = 10062
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.2
 
 	}
 	###Malaya
@@ -389,7 +396,6 @@ units = {
 		location = 12299
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -397,7 +403,6 @@ units = {
 		location = 12215
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
 
 	}
 	###Ceylon
@@ -407,7 +412,6 @@ units = {
 		division_template = "Colonial Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
 
 	}
 	
@@ -421,7 +425,7 @@ units = {
 		location = 11064 # Scapa Flow
 		ship = { name = "HMS Furious" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } } 
 			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "ENG" amount = 9 }
+				cv_fighter_equipment_0 =  { owner = "ENG" amount = 45 }
 				cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 12 }
 			}
 		}
@@ -487,7 +491,7 @@ units = {
 		location = 9458 # Portsmouth
 		ship = { name = "HMS Courageous" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } } 
 			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "ENG" amount = 9 }
+				cv_fighter_equipment_0 =  { owner = "ENG" amount = 45 }
 				cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 24 }
 			}
 		}
@@ -671,7 +675,7 @@ units = {
 		location = 4076 # Alexandria
 		ship = { name = "HMS Glorious" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } } 
 			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "ENG" amount = 6 } #historical 9
+				cv_fighter_equipment_0 =  { owner = "ENG" amount = 45 } #historical 9
 				cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 24 } #historical 36
 			}
 		}
@@ -847,28 +851,28 @@ air_wings = {
 		### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 216
+			amount = 300
 		}
 	}
 	130 = { 
 		### No. 11 Fighter Command, Essex area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 144
+			amount = 200
 		}
 	}	
 	127 = { 
 		### No. 12 Fighter Command, Nottingham area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 96
+			amount = 100
 		}
 	}	
 	131 = { 
 		### No. 13 Fighter Command, Newcastle -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 72
+			amount = 100
 		}
 		
 	}
@@ -878,35 +882,35 @@ air_wings = {
 		### No. 1 Bomber Command, East Anglia area -- Fairey Gordons, Battles
 		CAS_equipment_1 = {
 			owner = "ENG" 
-			amount = 64
+			amount = 100
 		}
 	}
 	125 = { 
 		### No. 2 Bomber Command, East Anglia area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
-			amount = 48
+			amount = 100
 		}
 	}
 	126 = { 
 		### No. 3 Bomber Command, Suffolk area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
-			amount = 64
+			amount = 100
 		}
 	}
 	130 = { 
 		### No. 4 Bomber Command, York area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
-			amount = 80
+			amount = 100
 		}
 	}
 	128 = { 
 		### No. 5 Bomber Command, Lincoln area -- Fairey Gordons, Battles
 		CAS_equipment_1 = {
 			owner = "ENG" 
-			amount = 64
+			amount = 100
 		}
 	}
 
@@ -915,7 +919,7 @@ air_wings = {
 		### No. 16 Coastal Command -- Vickers Vildebeests
 		nav_bomber_equipment_1 = {
 			owner = "ENG" 
-			amount = 24
+			amount = 100
 		}
 	}
 
@@ -924,33 +928,29 @@ air_wings = {
 		### AHQ Egypt
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 72
+			amount = 100
 		}
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
-			amount = 48
+			amount = 100
 		}
 		CAS_equipment_1 = {
 			owner = "ENG" 
-			amount = 64
+			amount = 100
 		}
 	}
 	454 = { 
 		### RAF Palestine & Iraq
 		CAS_equipment_1 = {
 			owner = "ENG" 
-			amount = 32
+			amount = 100
 		}
 	}
 	659 = { 
 		### RAF Aden
 		fighter_equipment_0 = {
 			owner = "ENG" 
-			amount = 24
-		}
-		CAS_equipment_1 = {
-			owner = "ENG" 
-			amount = 16
+			amount = 100
 		}
 	}
 
@@ -959,11 +959,11 @@ air_wings = {
 		### RAF Far East
 		nav_bomber_equipment_1 = {
 			owner = "ENG" 
-			amount = 24
+			amount = 200
 		}
 		CAS_equipment_1 = {
 			owner = "ENG" 
-			amount = 64
+			amount = 100
 		}
 	}
 }
@@ -1013,14 +1013,32 @@ instant_effect = {
 		progress = 0.15
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
-			type = tac_bomber_equipment_0
+			type = CAS_equipment_1
 			creator = "ENG" 
 		}
 		requested_factories = 1
-		progress = 0.1
+		progress = 0.2
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "ENG" 
+		}
+		requested_factories = 2
+		progress = 0.4
 		efficiency = 50
 	}
 

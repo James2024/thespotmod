@@ -1,0 +1,25 @@
+leader_traits = {
+
+	new_port_ship = {
+		random = no
+		equipment_bonus = {
+			carrier = {
+				anti_air_attack = 0.5 carrier_size = 0.30 armor_value = -0.15 naval_range = 0.25 naval_speed = 0.1
+			}
+			capital_ship = {
+				anti_air_attack = 0.1 attack = -0.05 naval_range = 0.33
+			}
+			screen_ship = {
+				anti_air_attack = 0.20 attack = -0.1 naval_range = 0.5 
+			}
+		}
+	}
+	electric_boat_design = {
+		random = no
+		equipment_bonus = {
+			submarine = {
+				anti_air_attack = 0.10 torpedo_attack = 0.10 naval_range = 0.25 naval_speed = -0.05 surface_visibility = -0.10
+			}
+		}
+	}
+}

@@ -754,7 +754,6 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				technology = fighter3
 				category = cat_heavy_fighter
 			}
 		}

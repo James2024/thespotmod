@@ -13,7 +13,6 @@ state={
 			infrastructure = 0
 		}
 
-		
 
 	}
 

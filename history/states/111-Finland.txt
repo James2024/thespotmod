@@ -4,7 +4,7 @@ state={
 	name="STATE_111" # Uusimaa
 	manpower = 1670190
 	
-	state_category = large_city
+	state_category = city
 	
 	history={
 		owner = FIN

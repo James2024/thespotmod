@@ -21,56 +21,7 @@ ideas = {
 				join_faction_tension = 0.20
 			}
 		}
-		
-		USA_building_slot_output_idea = {
-			
-			picture = generic_production_bonus
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				global_building_slots_factor = 0.20
-			}
-		}
-		
-		USA_building_slot_output_idea2 = {
-			
-			picture = generic_production_bonus
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				global_building_slots_factor = 0.40
-			}
-		}
-		
-		USA_special_forces = {
-		
-			picture = FRA_scw_intervention_nationalists_focus
-		
-			allowed = {
-				always = no
-				}
-				
-			allowed_civil_war = {
-				always = no
-			}
-			
-			removal_cost = -1
 
-			modifier = {
-				special_forces_cap = 0.05
-			}
-		}
-		
 		USA_homeland_defense = {
 			allowed = {
 				always = no
@@ -584,7 +535,7 @@ ideas = {
 				fascism_drift = 0.05
 			}			
 		}
-		USA_manifest_destiny = {
+		USA_world_police = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -594,7 +545,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_volunteer_expedition_bonus
 			modifier = {			
-				stability_factor = 0.05
+				justify_war_goal_time = -0.25
 			}			
 		}
 	
@@ -604,27 +555,7 @@ ideas = {
 	
 	
 	political_advisor = {
-		earl_browder = {
-			
-			
-			allowed = {
-				original_tag = "USA"
-			}
-			
-
-			
-			traits = { communist_revolutionary }
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
+		
 			
 		harold_ickes = {
 			
@@ -657,7 +588,7 @@ ideas = {
 			
 
 			
-			traits = { fascist_demagogue }
+			traits = { captain_of_industry }
 	
 			do_effect = {
 				NOT = {

@@ -166,7 +166,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.1
 			}
 		}
 
@@ -294,7 +294,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.05
 				political_power_gain = -0.25
 			}
 		}
@@ -312,7 +312,7 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = 0.05
+				stability_factor = 0.1
 			}
 		}
 
@@ -351,8 +351,8 @@ ideas = {
 			modifier = {				
 				enemy_partisan_effect = -0.2
 				foreign_subversive_activites = -0.2
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 		}
 
@@ -696,17 +696,6 @@ ideas = {
 	}
 
 	political_advisor = {
-
-		ROM_iuliu_maniu = {
-
-			picture = generic_democratic_europe
-
-			allowed = {
-				original_tag = ROM
-			}
-			
-			traits = { democratic_reformer }
-		}
 
 		ROM_gheorghe_argeseanu = {
 
@@ -1402,12 +1391,6 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = ROM_invest_in_the_iar
-				}
 			}
 
 			cost = 50
@@ -1416,26 +1399,11 @@ ideas = {
 				original_tag = ROM
 				has_dlc = "Death or Dishonor"
 			}
-			
+			traits = { light_aircraft_manufacturer }
 			research_bonus = {
-				air_equipment = 0.05
+				air_equipment = 0.1
 			}			
 			
-			equipment_bonus = {
-				# produced the IAR-80 fighter/ground attack aircraft around 350 of them during 36-44
-				fighter_equipment = {
-					air_attack = 0.1
-				}
-				cv_fighter_equipment = {
-					air_attack = 0.1
-				}
-				CAS_equipment = {
-					air_ground_attack = 0.1
-				}
-				cv_CAS_equipment = {
-					air_ground_attack = 0.1
-				}
-			}
 			
 			ai_will_do = {
 				factor = 1

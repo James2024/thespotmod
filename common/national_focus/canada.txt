@@ -70,7 +70,7 @@ focus_tree = {
 		x = 0
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 24
@@ -108,7 +108,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -150,7 +150,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 75
@@ -184,7 +184,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -391,7 +391,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -461,7 +461,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -490,25 +490,25 @@ focus_tree = {
 			470 = {
 				add_resource = {
 					type = oil
-					amount = 2
+					amount = 10
 				}
 			}
 			471 = {
 				add_resource = {
 					type = oil
-					amount = 4
+					amount = 10
 				}
 			}
 			472 = {
 				add_resource = {
 					type = oil
-					amount = 4
+					amount = 10
 				}
 			}
 			683 = {
 				add_resource = {
 					type = oil
-					amount = 4
+					amount = 10
 				}
 			}
 		}
@@ -532,7 +532,7 @@ focus_tree = {
 		}
 
 		available = {
-			threat > 0.2
+			threat > 0.1
 		}
 
 		bypass = {
@@ -881,7 +881,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 2
+					amount = 15
 				}
 			}
 			random_owned_controlled_state = {
@@ -891,7 +891,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 2
+					amount = 15
 				}
 			}
 			random_owned_controlled_state = {
@@ -901,7 +901,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = chromium
-					amount = 3
+					amount = 30
 				}
 			}
 		}
@@ -1415,7 +1415,6 @@ focus_tree = {
 		id = CAN_national_steel_car
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CAN_alberta_coal_towns }
-		mutually_exclusive = { focus = CAN_send_in_the_zombies }
 		x = 1
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1516,7 +1515,6 @@ focus_tree = {
 		id = CAN_send_in_the_zombies
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = CAN_commit_to_the_war }
-		mutually_exclusive = { focus = CAN_national_steel_car }
 		x = 3
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1832,8 +1830,9 @@ focus_tree = {
 	focus = {
 		id = CAN_war_fueled_economy
 		icon = GFX_goal_generic_trade
-		prerequisite = { focus = CAN_national_steel_car }
-		prerequisite = { focus = CAN_if_day }
+		prerequisite = { focus = CAN_national_steel_car}
+		prerequisite = { focus = CAN_if_day}
+		 
 		x = 1
 		y = 7
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -2485,7 +2484,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 35
@@ -2608,7 +2607,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 35
@@ -2649,7 +2648,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2688,7 +2687,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2734,7 +2733,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2812,13 +2811,13 @@ focus_tree = {
 			466 = {
 				add_resource = {
 					type = aluminium
-					amount = 4
+					amount = 14
 				}
 			}
 			468 = {
 				add_resource = {
 					type = aluminium
-					amount = 4
+					amount = 14
 				}
 			}
 		}
@@ -2858,7 +2857,7 @@ focus_tree = {
 			470 = {
 				add_resource = {
 					type = oil
-					amount = 36
+					amount = 50
 				}
 			}
 		}
@@ -2977,7 +2976,6 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				technology = fighter3
 			}
 		}
 	}
@@ -3393,7 +3391,7 @@ focus_tree = {
 		x = 28
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -3457,7 +3455,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3498,7 +3496,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3539,7 +3537,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3581,7 +3579,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3627,7 +3625,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3668,7 +3666,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3703,7 +3701,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3738,7 +3736,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

@@ -433,6 +433,64 @@ ideas = {
 			}
 		}
 
+
+		RAJ_karam_singh_mann = {
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			available = {
+				if = {
+					limit = { has_dlc = "Together for Victory" }	
+				}
+			}
+
+			picture = generic_political_advisor_india_2
+			
+			traits = { communist_revolutionary }			
+			
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+
+		}
+
+		RAJ_subhas_chanda_bose = {
+			
+			allowed = {
+				original_tag = RAJ				
+			}
+
+			available = {
+				if = {
+					limit = { has_dlc = "Together for Victory" }
+				}
+			}
+
+			picture = generic_political_advisor_india_1
+			
+			traits = { fascist_demagogue }
+				
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+
+
 		RAJ_john_edward_golightly = {
 
 			picture = generic_political_advisor_europe_5
@@ -464,9 +522,6 @@ ideas = {
 			}
 			
 			traits = { compassionate_gentleman }
-			modifier = {
-			autonomy_gain = 0.2
-			}
 		}
 
 		RAJ_john_mathai = {

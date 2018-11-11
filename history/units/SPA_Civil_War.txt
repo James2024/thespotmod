@@ -6,6 +6,13 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
 	}
 }
 
@@ -38,6 +45,36 @@ units = {
 	division = {
 		name = "6a Brigada Legionario"
 		location = 885  # Burgos
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "1a Brigada Legionario"
+		location = 11806  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "2a Brigada Legionario"
+		location = 3859  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "3a Brigada Legionario"
+		location = 3820 # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "4a Brigada Legionario"
+		location = 9800  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "5a Brigada Legionario"
+		location = 813  # Zaragoza
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "6a Brigada Legionario"
+		location = 948  # Burgos
 		division_template = "Brigada Legionario"
 	}
 	division = {

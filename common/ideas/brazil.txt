@@ -20,7 +20,7 @@ ideas = {
 				original_tag = BRA
 			}
 			
-			traits = { compassionate_gentleman }
+			traits = { captain_of_industry }
 		}
 
 		BRA_afranio_de_mello_franco = {
@@ -108,7 +108,7 @@ ideas = {
 				original_tag = BRA
 			}
 			
-			traits = { army_infantry_2 }
+			traits = { army_armored_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -123,7 +123,7 @@ ideas = {
 				original_tag = BRA
 			}
 			
-			traits = { air_air_superiority_2 }
+			traits = { army_regrouping_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -156,7 +156,8 @@ ideas = {
 				original_tag = BRA
 			}
 			
-	traits = { army_chief_organizational_2 }			
+			traits = { army_chief_offensive_2 }
+			
 			ai_will_do = {
 				factor = 1
 			}
@@ -196,6 +197,29 @@ ideas = {
 			}
 		}
 
+	}
+
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		braTank = {
+
+			picture = generic_tank_manufacturer_1
+			allowed = {
+				original_tag = BRA
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 
 	navy_chief = {

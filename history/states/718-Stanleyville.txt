@@ -2,7 +2,7 @@ state={
 	id=718
 	name="STATE_718"
 	
-	state_category = pastoral
+	state_category = town
 
 	resources={
 		rubber=5 # was: 6.000
@@ -14,7 +14,6 @@ state={
 			infrastructure = 2
 
 		}
-		
 	}
 
 	provinces={
