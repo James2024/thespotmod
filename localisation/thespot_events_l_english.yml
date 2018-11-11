@@ -41,3 +41,12 @@
  thespot.SOV.14.t: "The loss of Key cities"
  thespot.SOV.14.d: "As the German push advances and we get more desperate we are now scraping the barrel the troops we have just had to conscript are of very low quality but they will fill the lines"
  thespot.SOV.14.a: "Throw them to the front lines"
+ italy.17.t:0 "Italy Declares war on the Allies"  italy.17.d:0 "It is time for the great nation of italy to claim the roman lake and enjoy pizza time"  italy.17.a:0 "PIZZA TIME! PASTA TIME!"
+ italy.17.t:0 "Italy Declares war on the Allies"
+ italy.17.d:0 "It is time for the great nation of italy to claim the roman lake and enjoy pizza time"
+ italy.17.a:0 "PIZZA TIME! PASTA TIME!"news.334.t:0 "Italy Declares war on Allies"
+ news.334.desc:0 "Mussolini declares on France and UK. Stating it is Pizza Time!"
+ news.334.b:0 "Our ally is stupid have to save him now"
+ news.334.c:0 "At least we can win now."
+ news.334.d:0 "NO PIZZA TIME"
+ news.334.e:0 "They have proven their resolve for PIZZA TI
