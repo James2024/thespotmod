@@ -11,13 +11,19 @@ political_actions = {
 		}
 
 		complete_effect = {
-			INS = {
+			#INS = {
+			#		set_autonomy = {
+			#			target = INS
+			#			autonomy_state = autonomy_free
+			#		}
+			#	}
+			#ENG = { puppet = INS }
+			ENG = {
 					set_autonomy = {
 						target = INS
-						autonomy_state = autonomy_free
+						autonomy_state = autonomy_integrated_puppet
 					}
 				}
-			ENG = { puppet = INS }
 		}
 	}
 

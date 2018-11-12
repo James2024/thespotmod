@@ -248,12 +248,19 @@ political_actions = {
 
         available = {
             GER = { NOT = { has_government = ROOT } }
+			NOT = { has_country_flag = ger_research }
         }
 
         modifier = {
             research_time_factor = -0.01
             stability_factor = -0.015
         }
+		complete_effect = {
+			set_country_flag = ger_research
+		}
+		remove_effect = {
+			clr_country_flag = ger_research
+		}
 
         remove_trigger = {
             OR = {
@@ -296,12 +303,20 @@ political_actions = {
 
         available = {
             ITA = { NOT = { has_government = ROOT } }
+			NOT = { has_country_flag = ita_research }
         }
 
         modifier = {
             research_time_factor = -0.01
             stability_factor = -0.015
         }
+
+		complete_effect = {
+			set_country_flag = ita_research
+		}
+		remove_effect = {
+			clr_country_flag = ita_research
+		}
 
         remove_trigger = {
             ITA = { has_government = ROOT }
@@ -458,7 +473,7 @@ political_actions = {
 		}
 
 		days_remove = -1
-		cost = 50
+		cost = 25
 
 		complete_effect = {
 			hidden_effect = {
@@ -508,7 +523,7 @@ political_actions = {
 		}
 
 		days_remove = -1
-		cost = 50
+		cost = 25
 
 		complete_effect = {
 			hidden_effect = {
@@ -558,7 +573,7 @@ political_actions = {
 		}
 
 		days_remove = -1
-		cost = 60
+		cost = 25
 
 		complete_effect = {
 			hidden_effect = {

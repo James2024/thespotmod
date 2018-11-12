@@ -453,13 +453,13 @@ SOV_industry_relocation = {
 				195 = {
 					add_resource = {
 						type = aluminium
-						amount = -12
+						amount = -25
 					}				
 				}
 				569 = {
 					add_resource = {
 						type = aluminium
-						amount = 12
+						amount = 25
 					}
 				}
 			}
@@ -1278,7 +1278,7 @@ political_actions = {
 		cost = 0
 		fire_only_once = yes
 		visible = {
-			PRC = { exists = yes }
+			MAN = { is_puppet_of = SOV }
 		}
 
 		complete_effect = {
