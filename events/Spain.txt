@@ -18,7 +18,11 @@ country_event = {
 		tag = SPR
 		has_defensive_war = no
 		NOT = { has_government = fascism }
-		date > 1936.3.12 # Trigger at some point after 1936 elections
+		date > 1936.4.1 # Trigger at some point after 1936 elections
+	}
+
+	mean_time_to_happen = {
+		days = 1	# Historical outbreak time after elections
 	}
 	
 	option = { # Support Nationalists
@@ -52,7 +56,6 @@ country_event = {
 			set_global_flag = spanish_civil_war
 			
 			load_oob = "SPA_Civil_War"
-			set_equipment_fraction = 0.5
 			set_stability = 0.9
 			set_war_support = 0.8
 			
@@ -281,7 +284,10 @@ country_event = {
 		ai_chance = { factor = 1 }
 		name = spain.8.a
 		set_capital = 41
-		add_stability = -0.45
+	}
+	option = {
+		ai_chance = { factor = 0 }
+		name = spain.8.b
 	}
 }
 
@@ -301,19 +307,9 @@ country_event = {
 		date < 1937.1.1
 	}
 
-	# Popular Front
-	#option = {
-	#	ai_chance = { factor = 1 }
-	#	name = spain.9.a
-	#	add_popularity = {
-	#		ideology = communism
-	#		popularity = 0.1
-	#	}
-	#}
-
 	# Falange
 	option = {
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 0 }
 		name = spain.9.b
 		set_politics = {
 			ruling_party = fascism
@@ -336,7 +332,11 @@ country_event = {
 		NOT = { has_global_flag = scw_over }
 		has_country_flag = SPR_communist_civil_war
 		has_defensive_war = no
-		date > 1936.3.10 # Trigger at some point after 1936 elections
+		date > 1936.6.16 # Trigger at some point after 1936 elections
+	}
+
+	mean_time_to_happen = {
+		days = 1	# Historical outbreak time after elections
 	}
 	
 	option = { # Support Nationalists
@@ -351,16 +351,6 @@ country_event = {
 				capital = 41
 				states = { 41 165 167 168 172 173 175 }
 			}
-			create_field_marshal = {
-				name = "Francisco Franco"
-				portrait_path = "gfx/leaders/SPR/Portrait_Spain_Francisco_Franco.dds"
-				traits = { war_hero infantry_leader skilled_staffer trickster }
-				skill = 4
-				attack_skill = 4
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 3
-			}
 			random_other_country = {
 				limit = {
 					original_tag = SPR
@@ -368,7 +358,7 @@ country_event = {
 				}
 				load_oob = "SPR_Civil_War"
 				set_equipment_fraction = 0.7
-				set_stability = 0.8
+				set_stability = 0.9
 				set_war_support = 0.8
 				add_popularity = {
 					ideology = democratic
@@ -379,7 +369,6 @@ country_event = {
 			set_global_flag = spanish_civil_war
 			
 			load_oob = "SPA_Civil_War"
-			set_equipment_fraction = 0.7
 			set_stability = 0.9
 			set_war_support = 0.8
 			add_popularity = {
@@ -390,50 +379,47 @@ country_event = {
 		}
 		custom_effect_tooltip = nationalists_chosen
 	}
-	option = { # Support Republicans
-		name = spain.10.b
-		hidden_effect = {
-			start_civil_war = {
-				ideology = fascism
-				size = 0.5
-				capital = 176
-				states = { 166 699 178 290 169 170 176 174 171 177 297 }
+}
+
+
+
+country_event = {
+	id = spain.11
+	title = spain.11.t
+	desc = spain.11.d
+	picture = GFX_report_event_fascists_posing
+	trigger = {
+		OR = {
+			AND = {
+				tag = SPR
+				has_government = fascism
+				has_civil_war = yes
 			}
-			random_other_country = {
-				limit = {
-					original_tag = SPR
-					has_government = fascism
-				}
-				set_equipment_fraction = 0.7
-				set_stability = 0.9
-				set_war_support = 0.8
-				load_oob = "SPA_Civil_War"
+			AND = {
+				tag = D01
+				has_civil_war = yes
+				has_government = fascism
 			}
-			news_event = { hours = 6 id = news.63 }
-			set_global_flag = spanish_civil_war
-			
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-			load_oob = "SPR_Civil_War"
-			set_equipment_fraction = 0.7
-			set_stability = 0.9
-			set_war_support = 0.8
-			add_popularity = {
-				ideology = fascism
-				popularity = -1
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = 1
-			}	
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.35
-			}
-			
 		}
-		custom_effect_tooltip = republicans_chosen
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 1 }
+
+	option = {
+
+		name = spain.11.a
+		create_field_marshal = {
+                name = "Francisco Franco"
+                desc = "POLITICS_FRANCOGEN_DESC"
+                portrait_path = "gfx/leaders/SPA/Portrait_Spain_Francisco_Franco.dds"
+                traits = { }
+                skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+        }
 	}
 }

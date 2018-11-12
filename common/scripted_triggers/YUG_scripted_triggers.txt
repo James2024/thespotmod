@@ -14,12 +14,7 @@ is_available_fighter_YUG = {
 				NOT = { has_tech = fighter2}
 			}
 		}
-		AND = {
-			has_tech = fighter3
-			YUG = { 
-				NOT = { has_tech = fighter3}
-			}
-		}
+		
 	}
 	NOT = {
 		has_war_with = YUG
@@ -40,12 +35,7 @@ is_available_heavy_fighter_YUG = {
 				NOT = { has_tech = heavy_fighter2}
 			}
 		}
-		AND = {
-			has_tech = heavy_fighter3
-			YUG = { 
-				NOT = { has_tech = heavy_fighter3}
-			}
-		}
+		
 	}
 	NOT = {
 		has_war_with = YUG
@@ -66,12 +56,6 @@ is_available_cas_YUG = {
 				NOT = { has_tech = CAS2}
 			}
 		}
-		AND = {
-			has_tech = CAS3
-			YUG = { 
-				NOT = { has_tech = CAS3}
-			}
-		}
 	}
 	NOT = {
 		has_war_with = YUG
@@ -90,12 +74,6 @@ is_available_tac_YUG = {
 			has_tech = tactical_bomber2
 			YUG = { 
 				NOT = { has_tech = tactical_bomber2}
-			}
-		}
-		AND = {
-			has_tech = tactical_bomber3
-			YUG = { 
-				NOT = { has_tech = tactical_bomber3}
 			}
 		}
 	}

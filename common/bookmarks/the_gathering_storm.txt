@@ -43,13 +43,26 @@ bookmarks = {
 			}
 			focuses = {
 				tizard_mission_focus
-				ENG_war_with_germany
-				ENG_war_with_italy
 			}
 		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
+			available = { has_dlc = "Waking the Tiger" }
+			ideas = {
+				sour_loser
+				general_staff
+				GER_mefo_bills_1
+			}
+			focuses = {
+				GER_anschluss
+				GER_danzig_or_war
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
 				sour_loser
 				general_staff
@@ -95,7 +108,6 @@ bookmarks = {
 			}
 			focuses = {
 				SOV_great_purge
-				SOV_claims_on_baltic
 			}	
 		}
 
@@ -145,8 +157,6 @@ bookmarks = {
 				
 			}
 			focuses = {
-				NZL_bob_semple_tank
-				NZL_maori_volunteers
 			}
 		}
 		"SAF"={
@@ -158,7 +168,6 @@ bookmarks = {
 				SAF_history_of_segregation
 			}
 			focuses = {
-				SAF_secure_interests_in_africa
 			}
 		}
 		"RAJ"={
@@ -172,20 +181,6 @@ bookmarks = {
 			focuses = {
 				RAJ_indian_gurkhas
 				RAJ_the_smiling_buddha
-			}
-		}
-		"CZE"={
-			minor = yes
-			history = "CZE_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				CZE_skoda_works
-				CZE_divided_nation
-			}
-			focuses = {
-				CZE_sudeten_1
-				CZE_industrial_legacy
-				CZE_military_research_institute
 			}
 		}
 
@@ -226,8 +221,6 @@ bookmarks = {
 				YUG_idea_serbian_general_staff
 			}
 			focuses = {
-				YUG_western_focus
-				YUG_establish_the_banovina_of_croatia
 			}
 		}
 		"CHI"={
@@ -240,9 +233,6 @@ bookmarks = {
 				CHI_nine_power_treaty
 			}
 			focuses = {
-				CHI_united_front
-				CHI_army_reform
-				CHI_invite_the_flying_tigers
 			}
 		}
 		"PRC"={
@@ -255,8 +245,6 @@ bookmarks = {
 				PRC_power_struggles
 			}
 			focuses = {
-				PRC_maoism
-				PRC_anti_japanese_expedition
 			}
 		}
 		"MAN"={
@@ -269,81 +257,8 @@ bookmarks = {
 				MAN_low_legitimacy_5
 			}
 			focuses = {
-				MAN_obedience
 			}
 		}
-		
-		"GXC"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"YUN"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"SHX"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"XSM"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"SIK"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}
-		
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
