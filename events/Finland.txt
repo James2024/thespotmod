@@ -149,6 +149,47 @@ country_event = {
 		}
 	}
 
+	option = {
+		name = finland.3.c
+
+		ai_chance = {
+
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 100
+				has_war = no
+				has_government = democratic
+				strength_ratio = {
+					tag = SOV
+					ratio > 0.2
+				}
+				FIN = {
+					has_government = democratic
+					strength_ratio = {
+						tag = SOV 
+						ratio > 0.3
+					}
+				}
+			}			
+		}
+
+		declare_war_on = {
+			target = SOV
+			type = take_state
+			generator = { 195 208 } # Leningrand and Luga
+		}
+		FIN = {
+			country_event = { id = finland.6 days = 3 }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = took_stand_for_us
+			}
+		}
+	}
 }
 
 country_event = {
@@ -230,57 +271,60 @@ country_event = {
 	trigger = {
 		tag = FIN
 		has_war_with = SOV
-		surrender_progress > 0.25
+		surrender_progress > 0.12
+		has_civil_war = no
+		is_in_faction = no
 	}
-	
 
-	mean_time_to_happen = { days = 15 }
+	mean_time_to_happen = { days = 0 }
 
 	fire_only_once = yes
-	
-	
-	
-	
+
 	#Surrender and offer territory
 	option = {
 		name = finland.7.a
-		SOV = {
-			country_event = { id = finland.spot8 }
-		}
 		ai_chance = {
 			base = 8
 		}
-		white_peace = SOV
 		SOV = {
-		transfer_state = 146
-		transfer_state = 147
+			country_event = { id = finland.8 }
 		}
-
+		custom_effect_tooltip = finland.7.a_tt
+		effect_tooltip = {
+			SOV = { 
+				white_peace = {
+					tag = FIN 
+					message = FIN_agree_peace 
+				} 
+			}
+			transfer_state = 146
+			transfer_state = 147
+		}
 	}
-
 }
 
-#Soviet response to Finnish surrender
-
+#Soviet response to Finish surrender
 country_event = {
-	id = finland.spot8
-	title = finland.spot8.t
-	desc = finland.spot8.d
+	id = finland.8
+	title = finland.8.t
+	desc = finland.8.d
 	picture = GFX_report_event_finnish_soldiers_snow
 	
 	is_triggered_only = yes
 
 	#Accept surrender
 	option = {
-		name = finland.spot8.a
+		name = finland.8.a
 		ai_chance = {
 			base = 9
 		}
-		SOV = { add_offsite_building = { type = industrial_complex level = 5 } }
-
+		white_peace = FIN
+		transfer_state = 146
+		transfer_state = 147
 	}
-}
 
+	 	
+}
 
 #Soviet says no!
 country_event = {

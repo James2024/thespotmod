@@ -731,14 +731,11 @@ country_event = {
 		ai_chance = {
 			factor = 30
 		}
-		name = soviet.25.a
-		custom_effect_tooltip = remove_political_advisor
-		show_ideas_tooltip = mikhail_kalinin
-		set_country_flag = purged_kalinin
-		hidden_effect = {
-			remove_ideas = mikhail_kalinin
-		}
+		name = soviet.25.c
+		add_political_power = -75
+		set_country_flag = purged_party_members
 	}
+	
 	option = {
 		ai_chance = {
 			factor = 30
@@ -755,21 +752,13 @@ country_event = {
 		ai_chance = {
 			factor = 30
 		}
-		name = soviet.25.c
-		add_political_power = -75
-		set_country_flag = purged_party_members
-	}
-	option = {
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
+		name = soviet.25.a
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = mikhail_kalinin
+		set_country_flag = purged_kalinin
+		hidden_effect = {
+			remove_ideas = mikhail_kalinin
 		}
-		name = soviet.25.e
-		set_country_flag = no_political_purge
-		custom_effect_tooltip = soviet.27_tt2
 	}
 }
 
@@ -846,19 +835,6 @@ country_event = {
 			remove_ideas = vladimir_kasatonov
 		}	
 	}
-	# REVISIT Balance, since the latter removes more unit leaders
-	option = {
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		name = soviet.26.c
-		set_country_flag = purge_1_no_purge 
-		custom_effect_tooltip = soviet.27_tt2
-	}
 }
 
 # Great Purge - Trial of the 21
@@ -929,18 +905,6 @@ country_event = {
 			remove_ideas = aleksandr_vasilevsky
 		}
 	}
-	option = {
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		name = soviet.27.c
-		set_country_flag = purge_2_no_purge
-		custom_effect_tooltip = soviet.27_tt2
-	}
 }
 
 
@@ -1006,6 +970,7 @@ country_event = {
 		remove_ideas = sergei_rudenko
 		remove_ideas = nikita_khrushchev
 		remove_ideas = konstantin_rodzaevsky
+
 		add_timed_idea = {
 			idea = officers_purged_7
 			days = 584
@@ -1049,20 +1014,6 @@ country_event = {
 
 	is_triggered_only = yes
 		
-	option = {
-		name = soviet.29.a
-		SOV = { add_to_faction = FRA }
-		FRA = {
-			add_ai_strategy = {
-				type = alliance
-				id = "SOV"
-				value = 200
-			}
-		}
-		hidden_effect = {
-			news_event = { hours = 6 id = news.180 }
-		}
-	}
 	option = {
 		name = soviet.29.b
 		ai_chance = { factor = 0 }
@@ -1158,11 +1109,6 @@ country_event = {
 	option = {
 		name = soviet.31.a
 		FIN = { country_event = { days = 2 id = finland.1 } }
-	}
-	option = {
-		name = soviet.31.b
-		ai_chance = { factor = 0 }
-		#
 	}
 }
 

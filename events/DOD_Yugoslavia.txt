@@ -164,6 +164,8 @@ country_event = {
 	}
 }
 
+
+
 #Yugoslavia wants to buy planes - event for GER,FRA,ENG,ITA
 country_event = {
 	id = DOD_yugoslavia.20
@@ -329,19 +331,11 @@ country_event = {
 				limit = { 
 					GER = { 
 						has_tech = fighter2 
-						NOT = { has_tech = fighter3 }
 					} 
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 50 producer = GER } 
 			}
-			if = {
-				limit = { 
-					GER = { 
-						has_tech = fighter3 
-					} 
-				}
-				add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 50 producer = GER } 
-			}
+			
 		} 
 		if = {
 			limit = {
@@ -367,23 +361,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = ITA } 
 			}
-			if = {
-				limit = { 
-					ITA = { 
-						has_tech = fighter2 
-						NOT = { has_tech = fighter3 }
-					} 
-				}
-				add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 50 producer = ITA } 
-			}
-			if = {
-				limit = { 
-					ITA = { 
-						has_tech = fighter3 
-					} 
-				}
-				add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 50 producer = ITA } 
-			}
+			
 		}
 
 		if = {
@@ -410,23 +388,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = FRA } 
 			}
-			if = {
-				limit = { 
-					FRA = { 
-						has_tech = fighter2 
-						NOT = { has_tech = fighter3 }
-					} 
-				}
-				add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 50 producer = FRA } 
-			}
-			if = {
-				limit = { 
-					FRA = { 
-						has_tech = fighter3 
-					} 
-				}
-				add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 50 producer = FRA } 
-			}
+			
 		}
 
 		if = {
@@ -453,23 +415,7 @@ country_event = {
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 producer = ENG } 
 			}
-			if = {
-				limit = { 
-					ENG = { 
-						has_tech = fighter2 
-						NOT = { has_tech = fighter3 }
-					} 
-				}
-				add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 50 producer = ENG } 
-			}
-			if = {
-				limit = { 
-					ENG = { 
-						has_tech = fighter3 
-					} 
-				}
-				add_equipment_to_stockpile = { type = fighter_equipment_3 amount = 50 producer = ENG } 
-			}
+			
 		}
 		add_opinion_modifier = { target = FROM modifier = YUG_sold_planes}	
 	}	
@@ -519,19 +465,11 @@ country_event = {
 				limit = { 
 					GER = { 
 						has_tech = tactical_bomber2 
-						NOT = { has_tech = tactical_bomber3 }
 					} 
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_2 amount = 25 producer = GER } 
 			}
-			if = {
-				limit = { 
-					GER = { 
-						has_tech = tactical_bomber3 
-					} 
-				}
-				add_equipment_to_stockpile = { type = tac_bomber_equipment_3 amount = 25 producer = GER } 
-			}
+			
 		}
 		if = {
 			limit = {
@@ -561,19 +499,11 @@ country_event = {
 				limit = { 
 					ITA = { 
 						has_tech = tactical_bomber2 
-						NOT = { has_tech = tactical_bomber3 }
 					} 
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_2 amount = 25 producer = ITA } 
 			}
-			if = {
-				limit = { 
-					ITA = { 
-						has_tech = tactical_bomber3 
-					} 
-				}
-				add_equipment_to_stockpile = { type = tac_bomber_equipment_3 amount = 25 producer = ITA } 
-			}
+			
 		}
 
 		if = {
@@ -604,19 +534,11 @@ country_event = {
 				limit = { 
 					FRA = { 
 						has_tech = tactical_bomber2 
-						NOT = { has_tech = tactical_bomber3 }
 					} 
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_2 amount = 25 producer = FRA } 
 			}
-			if = {
-				limit = { 
-					FRA = { 
-						has_tech = tactical_bomber3 
-					} 
-				}
-				add_equipment_to_stockpile = { type = tac_bomber_equipment_3 amount = 25 producer = FRA } 
-			}
+			
 		}
 
 		if = {
@@ -647,19 +569,11 @@ country_event = {
 				limit = { 
 					ENG = { 
 						has_tech = tactical_bomber2 
-						NOT = { has_tech = tactical_bomber3 }
 					} 
 				}
 				add_equipment_to_stockpile = { type = tac_bomber_equipment_2 amount = 25 producer = ENG } 
 			}
-			if = {
-				limit = { 
-					ENG = { 
-						has_tech = tactical_bomber3 
-					} 
-				}
-				add_equipment_to_stockpile = { type = tac_bomber_equipment_3 amount = 25 producer = ENG } 
-			}
+			
 		}
 		add_opinion_modifier = { target = FROM modifier = YUG_sold_planes}	
 	}	
@@ -1099,10 +1013,6 @@ country_event = {
 				has_tech = fighter2
 				add = -10
 			}
-			modifier = {
-				has_tech = fighter3
-				factor = 0
-			}
 		}
 		country_event = DOD_yugoslavia.151 
 		
@@ -1139,10 +1049,6 @@ country_event = {
 			modifier = {
 				has_tech = heavy_fighter2
 				add = -10
-			}
-			modifier = {
-				has_tech = heavy_fighter3
-				factor = 0
 			}
 		}
 	}
@@ -1204,12 +1110,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				GER = {
-					has_tech = fighter3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -1220,10 +1120,6 @@ country_event = {
 				AND = {
 					GER = { has_tech = fighter2}
 					YUG = { NOT = { has_tech = fighter2 } }
-				}
-				AND = {
-					GER = { has_tech = fighter3}
-					YUG = { NOT = { has_tech = fighter3 } }
 				}
 			}
 			NOT = { has_war_with = GER }
@@ -1256,12 +1152,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ITA = {
-					has_tech = fighter3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -1273,10 +1163,7 @@ country_event = {
 					ITA = { has_tech = fighter2}
 					YUG = { NOT = { has_tech = fighter2 } }
 				}
-				AND = {
-					ITA = { has_tech = fighter3}
-					YUG = { NOT = { has_tech = fighter3 } }
-				}
+				
 			}
 			NOT = { has_war_with = ITA }
 			NOT = { has_country_flag = ITA_fighter_refused }
@@ -1308,12 +1195,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				FRA = {
-					has_tech = fighter3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -1325,10 +1207,7 @@ country_event = {
 					FRA = { has_tech = fighter2}
 					YUG = { NOT = { has_tech = fighter2 } }
 				}
-				AND = {
-					FRA = { has_tech = fighter3}
-					YUG = { NOT = { has_tech = fighter3 } }
-				}
+				
 			}
 			NOT = { has_war_with = FRA }
 			NOT = { has_country_flag = FRA_fighter_refused }
@@ -1360,12 +1239,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ENG = {
-					has_tech = fighter3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -1377,10 +1251,7 @@ country_event = {
 					ENG = { has_tech = fighter2}
 					YUG = { NOT = { has_tech = fighter2 } }
 				}
-				AND = {
-					ENG = { has_tech = fighter3}
-					YUG = { NOT = { has_tech = fighter3 } }
-				}
+				
 			}
 			NOT = { has_war_with = ENG }
 			NOT = { has_country_flag = ENG_fighter_refused }
@@ -1411,12 +1282,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				USA = {
-					has_tech = fighter3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -1428,10 +1294,7 @@ country_event = {
 					USA = { has_tech = fighter2}
 					YUG = { NOT = { has_tech = fighter2 } }
 				}
-				AND = {
-					USA = { has_tech = fighter3}
-					YUG = { NOT = { has_tech = fighter3 } }
-				}
+				
 			}
 			NOT = { has_war_with = USA }
 			NOT = { has_country_flag = USA_fighter_refused }
@@ -1526,12 +1389,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				GER = {
-					has_tech = heavy_fighter3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -1543,10 +1401,7 @@ country_event = {
 					GER = { has_tech = heavy_fighter2}
 					YUG = { NOT = { has_tech = heavy_fighter2 } }
 				}
-				AND = {
-					GER = { has_tech = heavy_fighter3}
-					YUG = { NOT = { has_tech = heavy_fighter3 } }
-				}
+				
 			}
 			NOT = { has_war_with = GER }
 			NOT = { has_country_flag = GER_heavy_fighter_refused }
@@ -1578,12 +1433,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ITA = {
-					has_tech = heavy_fighter3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -1595,10 +1445,7 @@ country_event = {
 					ITA = { has_tech = heavy_fighter2}
 					YUG = { NOT = { has_tech = heavy_fighter2 } }
 				}
-				AND = {
-					ITA = { has_tech = heavy_fighter3}
-					YUG = { NOT = { has_tech = heavy_fighter3 } }
-				}
+				
 			}
 			NOT = { has_war_with = ITA }
 			NOT = { has_country_flag = ITA_heavy_fighter_refused }
@@ -1630,12 +1477,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				FRA = {
-					has_tech = heavy_fighter3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -1647,10 +1489,7 @@ country_event = {
 					FRA = { has_tech = heavy_fighter2}
 					YUG = { NOT = { has_tech = heavy_fighter2 } }
 				}
-				AND = {
-					FRA = { has_tech = heavy_fighter3}
-					YUG = { NOT = { has_tech = heavy_fighter3 } }
-				}
+				
 			}
 			NOT = { has_war_with = FRA }
 			NOT = { has_country_flag = FRA_heavy_fighter_refused }
@@ -1682,12 +1521,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ENG = {
-					has_tech = heavy_fighter3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -1699,10 +1533,7 @@ country_event = {
 					ENG = { has_tech = heavy_fighter2}
 					YUG = { NOT = { has_tech = heavy_fighter2 } }
 				}
-				AND = {
-					ENG = { has_tech = heavy_fighter3}
-					YUG = { NOT = { has_tech = heavy_fighter3 } }
-				}
+				
 			}
 			NOT = { has_war_with = ENG }
 			NOT = { has_country_flag = ENG_heavy_fighter_refused }
@@ -1733,12 +1564,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				USA = {
-					has_tech = heavy_fighter3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -1750,10 +1576,7 @@ country_event = {
 					USA = { has_tech = heavy_fighter2}
 					YUG = { NOT = { has_tech = heavy_fighter2 } }
 				}
-				AND = {
-					USA = { has_tech = heavy_fighter3}
-					YUG = { NOT = { has_tech = heavy_fighter3 } }
-				}
+				
 			}
 			NOT = { has_war_with = USA }
 			NOT = { has_country_flag = USA_heavy_fighter_refused }
@@ -1829,7 +1652,6 @@ country_event = {
 		if = {
 			limit = {
 				has_tech = fighter2
-				NOT = { has_tech = fighter3 }
 			}
 			create_production_license = {
 				target = YUG 
@@ -1839,18 +1661,7 @@ country_event = {
 				cost_factor = 0
 			}
 		}
-		if = {
-			limit = {
-				has_tech = fighter3
-			}
-			create_production_license = {
-				target = YUG 
-				equipment = {
-					type = fighter_equipment_3
-				}
-				cost_factor = 0
-			}
-		}
+		
 	}
 
 	option = {# no
@@ -1920,32 +1731,6 @@ country_event = {
 				cost_factor = 0
 			}
 		}
-		if = {
-			limit = {
-				has_tech = heavy_fighter2
-				NOT = { has_tech = heavy_fighter3 }
-			}
-			create_production_license = {
-				target = YUG 
-				equipment = {
-					type = heavy_fighter_equipment_2	
-				}
-				cost_factor = 0
-			}
-		}
-		if = {
-			limit = {
-				has_tech = heavy_fighter3
-			}
-			create_production_license = {
-				target = YUG 
-				equipment = {
-					type = heavy_fighter_equipment_3
-				}
-				cost_factor = 0
-			}
-		}
-		
 	}
 
 	option = {# no
@@ -2038,10 +1823,6 @@ country_event = {
 				has_tech = CAS2
 				add = -10
 			}
-			modifier = {
-				has_tech = CAS3
-				factor = 0
-			}
 		}
 		country_event = DOD_yugoslavia.161 	
 	}
@@ -2077,10 +1858,7 @@ country_event = {
 				has_tech = tactical_bomber2
 				add = -10
 			}
-			modifier = {
-				has_tech = tactical_bomber3
-				factor = 0
-			}
+			
 		}
 		country_event = DOD_yugoslavia.162
 	}
@@ -2142,12 +1920,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				GER = {
-					has_tech = CAS3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -2158,10 +1930,6 @@ country_event = {
 				AND = {
 					GER = { has_tech = CAS2}
 					YUG = { NOT = { has_tech = CAS2 } }
-				}
-				AND = {
-					GER = { has_tech = CAS3}
-					YUG = { NOT = { has_tech = CAS3 } }
 				}
 			}
 			NOT = { has_war_with = GER }
@@ -2194,12 +1962,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ITA = {
-					has_tech = CAS3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -2210,10 +1972,6 @@ country_event = {
 				AND = {
 					ITA = { has_tech = CAS2}
 					YUG = { NOT = { has_tech = CAS2 } }
-				}
-				AND = {
-					ITA = { has_tech = CAS3}
-					YUG = { NOT = { has_tech = CAS3 } }
 				}
 			}
 			NOT = { has_war_with = ITA }
@@ -2246,12 +2004,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				FRA = {
-					has_tech = CAS3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -2262,10 +2014,6 @@ country_event = {
 				AND = {
 					FRA = { has_tech = CAS2}
 					YUG = { NOT = { has_tech = CAS2 } }
-				}
-				AND = {
-					FRA = { has_tech = CAS3}
-					YUG = { NOT = { has_tech = CAS3 } }
 				}
 			}
 			NOT = { has_war_with = FRA }
@@ -2297,12 +2045,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ENG = {
-					has_tech = CAS3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -2313,10 +2055,6 @@ country_event = {
 				AND = {
 					ENG = { has_tech = CAS2}
 					YUG = { NOT = { has_tech = CAS2 } }
-				}
-				AND = {
-					ENG = { has_tech = CAS3}
-					YUG = { NOT = { has_tech = CAS3 } }
 				}
 			}
 			NOT = { has_war_with = ENG }
@@ -2348,12 +2086,6 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				USA = {
-					has_tech = CAS3
-				}
-				add = 10
-			}
 		}
 		trigger = {
 			OR = {
@@ -2364,10 +2096,6 @@ country_event = {
 				AND = {
 					USA = { has_tech = CAS2}
 					YUG = { NOT = { has_tech = CAS2 } }
-				}
-				AND = {
-					USA = { has_tech = CAS3}
-					YUG = { NOT = { has_tech = CAS3 } }
 				}
 			}
 			NOT = { has_war_with = USA }
@@ -2462,12 +2190,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				GER = {
-					has_tech = tactical_bomber3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -2479,10 +2202,7 @@ country_event = {
 					GER = { has_tech = tactical_bomber2}
 					YUG = { NOT = { has_tech = tactical_bomber2 } }
 				}
-				AND = {
-					GER = { has_tech = tactical_bomber3}
-					YUG = { NOT = { has_tech = tactical_bomber3 } }
-				}
+				
 			}
 			NOT = { has_war_with = GER }
 			NOT = { has_country_flag = GER_tactical_bomber_refused }
@@ -2514,12 +2234,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ITA = {
-					has_tech = tactical_bomber3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -2531,10 +2246,7 @@ country_event = {
 					ITA = { has_tech = tactical_bomber2}
 					YUG = { NOT = { has_tech = tactical_bomber2 } }
 				}
-				AND = {
-					ITA = { has_tech = tactical_bomber3}
-					YUG = { NOT = { has_tech = tactical_bomber3 } }
-				}
+				
 			}
 			NOT = { has_war_with = ITA }
 			NOT = { has_country_flag = ITA_tactical_bomber_refused }
@@ -2566,12 +2278,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				FRA = {
-					has_tech = tactical_bomber3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -2583,10 +2290,7 @@ country_event = {
 					FRA = { has_tech = tactical_bomber2}
 					YUG = { NOT = { has_tech = tactical_bomber2 } }
 				}
-				AND = {
-					FRA = { has_tech = tactical_bomber3}
-					YUG = { NOT = { has_tech = tactical_bomber3 } }
-				}
+				
 			}
 			NOT = { has_war_with = FRA }
 			NOT = { has_country_flag = FRA_tactical_bomber_refused }
@@ -2617,12 +2321,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				ENG = {
-					has_tech = tactical_bomber3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -2634,10 +2333,7 @@ country_event = {
 					ENG = { has_tech = tactical_bomber2}
 					YUG = { NOT = { has_tech = tactical_bomber2 } }
 				}
-				AND = {
-					ENG = { has_tech = tactical_bomber3}
-					YUG = { NOT = { has_tech = tactical_bomber3 } }
-				}
+			
 			}
 			NOT = { has_war_with = ENG }
 			NOT = { has_country_flag = ENG_tactical_bomber_refused }
@@ -2668,12 +2364,7 @@ country_event = {
 				}
 				add = 10
 			}
-			modifier = {
-				USA = {
-					has_tech = tactical_bomber3
-				}
-				add = 10
-			}
+			
 		}
 		trigger = {
 			OR = {
@@ -2685,10 +2376,7 @@ country_event = {
 					USA = { has_tech = tactical_bomber2}
 					YUG = { NOT = { has_tech = tactical_bomber2 } }
 				}
-				AND = {
-					USA = { has_tech = tactical_bomber3}
-					YUG = { NOT = { has_tech = tactical_bomber3 } }
-				}
+			
 			}
 			NOT = { has_war_with = USA }
 			NOT = { has_country_flag = USA_tactical_bomber_refused }
@@ -2763,24 +2451,11 @@ country_event = {
 		if = {
 			limit = {
 				has_tech = CAS2
-				NOT = { has_tech = CAS3 }
 			}
 			create_production_license = {
 				target = YUG 
 				equipment = {
 					type = CAS_equipment_2	
-				}
-				cost_factor = 0
-			}
-		}
-		if = {
-			limit = {
-				has_tech = CAS3
-			}
-			create_production_license = {
-				target = YUG 
-				equipment = {
-					type = CAS_equipment_3
 				}
 				cost_factor = 0
 			}
@@ -2857,7 +2532,6 @@ country_event = {
 		if = {
 			limit = {
 				has_tech = tactical_bomber2
-				NOT = { has_tech = tactical_bomber3 }
 			}
 			create_production_license = {
 				target = YUG 
@@ -2867,18 +2541,7 @@ country_event = {
 				cost_factor = 0
 			}
 		}
-		if = {
-			limit = {
-				has_tech = tactical_bomber3
-			}
-			create_production_license = {
-				target = YUG 
-				equipment = {
-					type = tac_bomber_equipment_3
-				}
-				cost_factor = 0
-			}
-		}
+		
 	}
 
 	option = {# no
