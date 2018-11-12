@@ -557,3 +557,37 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = italy.17
+	title = italy.17.t
+	desc = italy.17.d
+	picture = GFX_italy_Pizza_Time
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ITA
+		FRA = {
+			has_capitulated = yes
+		}
+	}
+
+	option = {
+		name = italy.17.a
+		hidden_effect = {
+			news_event = { hours = 6 id = news.334 }
+		}
+		ITA = {
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+		}
+	}
+	mean_time_to_happen = { days = 30 }
+}
+
