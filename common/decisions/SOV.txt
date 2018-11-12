@@ -20,6 +20,7 @@ war_measures = {
 		
 		available = {
 			has_global_flag = sov_yes_pact
+			tag = SOV
 		}
 		
 		complete_effect = {

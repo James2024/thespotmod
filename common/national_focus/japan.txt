@@ -401,10 +401,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				has_non_aggression_pact_with = SOV
 				has_war_with = SOV
-			}
 		}
 
 		cancel_if_invalid = yes
