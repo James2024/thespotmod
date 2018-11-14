@@ -5,30 +5,6 @@
 ### #  # ###   ##  ###   #  #  #   #      #  # #### ####  ##   ##  #  #  #  ###  ##  #  #
 
 #Category only allowed for SOV
-war_measures = {
-	SOV_puppet_iran = {
-		
-		icon = generic_army_support
-		
-		visible = {
-			has_global_flag = sov_yes_pact
-			tag = SOV
-		}
-		
-		fire_only_once = yes
-		
-		cost = 0
-		
-		available = {
-			has_global_flag = sov_yes_pact
-			tag = SOV
-		}
-		
-		complete_effect = {
-			puppet = PER
-		}
-	}
-}
 
 SOV_industry_relocation = {
 
@@ -1202,6 +1178,29 @@ SOV_great_patriotic_war = {
 }
 
 operations = {
+
+	SOV_puppet_iran = {
+		
+		icon = generic_army_support
+		
+		visible = {
+			has_global_flag = sov_yes_pact
+			tag = SOV
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		available = {
+			has_global_flag = sov_yes_pact
+			tag = SOV
+		}
+		
+		complete_effect = {
+			puppet = PER
+		}
+	}
 
 	SOV_seize_manchuria = {
 
