@@ -95,24 +95,24 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 75
+			popularity = 25
 		}
 
 		neutrality = {
-			popularity  = 14
+			popularity  = 75
 		}
 
 		communism = {
-			popularity = 8
+			popularity = 0
 		}
 
 		fascism = {
-			popularity = 3
+			popularity = 0
 		}
 		
 	}
 	
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes
@@ -147,7 +147,7 @@ set_politics = {
 	}
 }
 
-set_convoys = 25
+set_convoys = 100
 set_stability = 0.9
 
 
@@ -189,7 +189,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Axel Pehrsson-Bramstorp"
 	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -226,17 +226,4 @@ create_navy_leader = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 	traits = { blockade_runner }
 	skill = 4
-}
-
-### Ship Variants ###
-
-create_equipment_variant = {
-	name = "Draken Class"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
 }
