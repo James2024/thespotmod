@@ -17,6 +17,7 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	interwar_antitank = 1
 	gwtank = 1
 	basic_light_tank = 1
 	#improved_light_tank = 1  # PLACEHOLDER
@@ -801,10 +802,10 @@ create_equipment_variant = {
 	type = light_cruiser_1
 	parent_version = 0
 	upgrades = {
-		ship_reliability_upgrade = 3
-		ship_engine_upgrade = 3
-		ship_gun_upgrade = 2
-		ship_anti_air_upgrade = 3
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_gun_upgrade = 1
+		ship_anti_air_upgrade = 5
 	}
 	obsolete = yes
 }
@@ -813,10 +814,10 @@ create_equipment_variant = {
 	type = light_cruiser_1
 	parent_version = 1
 	upgrades = {
-		ship_reliability_upgrade = 3
-		ship_engine_upgrade = 3
-		ship_gun_upgrade = 3
-		ship_anti_air_upgrade = 3
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_gun_upgrade = 2
+		ship_anti_air_upgrade = 5
 	}
 }
 # Heavy Cruisers #
@@ -837,10 +838,10 @@ create_equipment_variant = {
 	type = battle_cruiser_1
 	parent_version = 0
 	upgrades = {
-		ship_reliability_upgrade = 3
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 3
-		ship_gun_upgrade = 2
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 1
 	}
 }
 # Battleships #
@@ -850,9 +851,9 @@ create_equipment_variant = {
 	parent_version = 0
 	upgrades = {
 		ship_reliability_upgrade = 3
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 3
-		ship_gun_upgrade = 3
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 1
 	}
 }
 create_equipment_variant = {
@@ -861,8 +862,6 @@ create_equipment_variant = {
 	parent_version = 0
 	upgrades = {
 		ship_reliability_upgrade = 1
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 1
 	}
 }
 

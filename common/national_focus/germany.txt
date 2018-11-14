@@ -632,8 +632,8 @@ focus_tree = {
 			air_experience = 50
 			add_tech_bonus = {
 				name = air_sup_bonus
-				bonus = 0.5
-				uses = 2
+				bonus = 0.75
+				uses = 1
 				category = air_doctrine
 			}
 			every_state = {
@@ -951,6 +951,12 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 50
+			add_tech_bonus = {
+				name = air_sup_bonus
+				bonus = 0.50
+				uses = 2
+				category = air_doctrine
+			}
 
 			add_ideas = GER_air_innovations_2_idea
 			# Balance research bonus to next tech among radio, radio_detection, decimetric_radar, improved_decimetric_radar, centimetric_radar, improved_centimetric_radar, advanced_centimetric_radar
@@ -1421,6 +1427,7 @@ focus_tree = {
 				NOT = { has_war_with = GER }
 				country_exists = SOV
 			}
+			date > 1939.1.1
 		}
 		cancel = {
 			OR = {
