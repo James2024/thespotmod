@@ -1163,7 +1163,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_mechanization_effort
-				bonus = 0.25
+				bonus = 0.75
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -1258,8 +1258,6 @@ focus_tree = {
 				name = special_forces_bonus
 				bonus = 0.5
 				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
 				technology = marines
 				technology = marines2
 				technology = tech_mountaineers
