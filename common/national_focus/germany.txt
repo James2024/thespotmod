@@ -621,7 +621,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 13
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -629,12 +629,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			air_experience = 25
+			air_experience = 50
 			add_tech_bonus = {
 				name = air_sup_bonus
 				bonus = 0.5
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
 			every_state = {
 				limit = { has_state_flag = GER_air_innovation_2air }
@@ -658,13 +658,13 @@ focus_tree = {
 
 		completion_reward = {
 
-			air_experience = 25
+			air_experience = 50
 
 			add_tech_bonus = {
 				name = air_sup_bonus
-				bonus = 0.5
-				uses = 2
-				category = battlefield_support_tree
+				bonus = 0.75
+				uses = 1
+				category = air_doctrine
 			}
 
 			if = {
@@ -741,7 +741,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -749,17 +749,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 150
+			air_experience = 50
 			add_tech_bonus = {
 				name = op_dest_bonus
-				bonus = 0.5
-				uses = 2
-				category = battlefield_support_tree
+				bonus = 0.75
+				uses = 1
+				category = air_doctrine
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 0.5
+				bonus = 0.50
 				uses = 1
-				category = tactical_bomber
 				category = cas_bomber
 			}
 		}

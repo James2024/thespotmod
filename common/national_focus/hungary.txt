@@ -2016,7 +2016,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_cas_focus
-				bonus = 0.5
+				bonus = 0.25 # don't do it don't make hun do it
 				uses = 1
 				technology = CAS1
 				technology = CAS2
@@ -2058,11 +2058,10 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_tac_focus
-				bonus = 0.5
+				bonus = 0.25
 				uses = 1
 				technology = tactical_bomber1 
 				technology = tactical_bomber2
-				technology = tactical_bomber3
 			}
 		}
 	}
