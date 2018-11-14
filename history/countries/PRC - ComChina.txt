@@ -179,11 +179,10 @@ set_politics = {
 }
 
 add_ideas = {
-	closed_economy
-	service_by_requirement
+	free_trade
+	extensive_conscription
 	partial_economic_mobilisation
 }
-
 if = {
 	limit = {
 		has_dlc = "Waking the Tiger"

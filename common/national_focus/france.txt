@@ -408,7 +408,17 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		available = {
+		16 = {
+				is_owned_and_controlled_by = FRA
+				arms_factory > 5
+				industrial_complex > 6
+			}
+			NOT = {
+				EFR = { exists = yes }
+			}
 
+		}
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = FRA_algerie_france_tt
@@ -1366,6 +1376,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = FRA_disjointed_government
 			set_rule = { can_send_volunteers = yes }
+			add_to_tech_sharing_group = commonwealth_research
 		}
 	}
 
