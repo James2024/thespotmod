@@ -4,7 +4,7 @@ oob = "HUN_1936"
 
 set_research_slots = 3
 set_stability = 0.7
-set_war_support = 0.69
+set_war_support = 0.71
 set_convoys = 50
 
 set_technology = {
@@ -287,11 +287,11 @@ create_corps_commander = {
 	name = "Lajos Veress"
 	gfx = GFX_Portrait_hungary_lajos_veress
 	traits = { armor_officer panzer_leader}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
+	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
