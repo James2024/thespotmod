@@ -8,9 +8,11 @@ set_war_support = 0.15
 
 # Starting tech
 set_technology = {
+	interwar_antitank = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
+	tech_engineers = 1
 	tech_recon = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
@@ -400,15 +402,6 @@ create_equipment_variant = {
 	}
 }
 
-create_equipment_variant = {
-	name = "Bretagne Class"
-	type = battleship_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-        ship_armor_upgrade = 1
-        ship_gun_upgrade = 1
-	}
-}
 
 1939.1.1 = {
 	

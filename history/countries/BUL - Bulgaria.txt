@@ -186,9 +186,9 @@ create_corps_commander = {
 	traits = { armor_officer panzer_leader }
 	skill = 3
 	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -196,8 +196,8 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { defensive_doctrine }
 	skill = 4
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 3
+	planning_skill = 4
 	logistics_skill = 4
 }

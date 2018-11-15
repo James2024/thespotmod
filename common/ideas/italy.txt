@@ -22,7 +22,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.05				
+				stability_factor = 0.1				
 			}
 		}
 		vittoria_mutilata = {			
@@ -47,7 +47,7 @@ ideas = {
 				democratic_acceptance = -10
 				fascism_acceptance = 10
 				ai_focus_aggressive_factor = 0.5
-				justify_war_goal_time = -0.05
+				justify_war_goal_time = -0.1
 			}
 		}
 
@@ -85,10 +85,10 @@ ideas = {
 			removal_cost = -1
 
 			research_bonus = {
-				land_doctrine = 0.05
+				land_doctrine = 0.07
 			}
 			research_bonus = {
-				air_doctrine = 0.05
+				air_doctrine = 0.07
 			}				
 		}
 	}
@@ -314,7 +314,7 @@ ideas = {
 			
 
 			
-			traits = { army_chief_maneuver_1 }
+			traits = { army_chief_maneuver_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -381,7 +381,7 @@ ideas = {
 			
 
 			
-			traits = { navy_chief_decisive_battle_1 }
+			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -547,7 +547,7 @@ ideas = {
 			
 
 			
-			traits = { navy_anti_submarine_1 }
+			traits = { navy_anti_submarine_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -563,7 +563,7 @@ ideas = {
 			
 
 			
-			traits = { navy_capital_ship_2 }
+			traits = { navy_capital_ship_3 }
 			
 			ai_will_do = {
 				factor = 1
