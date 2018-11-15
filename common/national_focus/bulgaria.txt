@@ -41,7 +41,7 @@ focus_tree = {
 		add_tech_bonus = {
 				name = BUL_Radar_Testing
 				uses = 1
-				bonus = 0.35
+				bonus = 0.5
 				category = electronics
 			}
 		}
@@ -140,7 +140,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = -25
+			add_political_power = -50
 		}
 	}
 
@@ -462,79 +462,7 @@ focus_tree = {
 	    }
     }
 
-	focus = {
-		id = BUL_The_Balkan_Strategy
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = BUL_German_Adivsors }
-		x = 1
-		y = 3
-		cost = 10
 
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 30
-			add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = BUL_oppress_macedonians
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = BUL_The_Balkan_Strategy }
-		x = 1
-		y = 4
-		cost = 10
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_state_core = 731
-			add_manpower = -25000
-	    }
-	}
-
-	focus = {
-		id = BUL_Prepare_For_War
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = BUL_oppress_macedonians}
-		x = 1
-		y = 5
-		cost = 10
-
-		available_if_capitulated = no
-
-		completion_reward = {
-        GER = { country_event = { id = germany.106 }}
-		add_state_core = 77
-
-	    }
-	}
-
-	focus = {
-		id = BUL_Reclaim_Greek_States
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = BUL_Prepare_For_War }
-		available = {
-			threat > 0.50
-			NOT = { is_in_faction_with = GRE }
-			country_exists = GRE
-		}
-		will_lead_to_war_with = GRE
-		x = 1
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = GRE
-				generator = { 184 }
-			}
-		}
-	}
 
 	focus = {
 		id = BUL_Highway_Development
@@ -770,9 +698,9 @@ focus_tree = {
 		id = BUL_War_Production
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = BUL_Efficent_Designs }
-		x = 13
+		x = 11
 		y = 3
-		cost = 15
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -987,9 +915,9 @@ focus_tree = {
 	focus = {
 		id = BUL_Aviation_Expansion
 		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = BUL_Efficent_Designs }
-		x = 11
-		y = 3
+		prerequisite = { focus = BUL_Modernize_Fighters }
+		x = 14
+		y = 5
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1071,8 +999,8 @@ focus_tree = {
 	focus = {
 		id = BUL_Modernize_Fighters
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = BUL_Aviation_Expansion }
-		x = 11
+		prerequisite = { focus = BUL_Advanced_Artillery focus = BUL_Tank_Development }
+		x = 14
 		y = 4
 		cost = 10
 
@@ -1092,12 +1020,33 @@ focus_tree = {
 		}
 	}
 
+	
+	focus = {
+		id = BUL_military_training
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 14
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = SAF_special_service_battalion
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
 	focus = {
 		id = BUL_Infantry_Weapons
 		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = BUL_military_training }
 		x = 13
-		y = 0
-		cost = 10
+		y = 1
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1115,11 +1064,11 @@ focus_tree = {
 	focus = {
 		id = BUL_Infantry_Support
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = BUL_Infantry_Weapons }
+		prerequisite = { focus = BUL_Infantry_Weapons focus = BUL_Mobile_Army }
 		x = 13
-		y = 1
+		y = 2
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1154,9 +1103,10 @@ focus_tree = {
 	focus = {
 		id = BUL_Mobile_Army
 		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = BUL_military_training }
 		x = 15
-		y = 0
-		cost = 10
+		y = 1
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1173,10 +1123,10 @@ focus_tree = {
 	focus = {
 		id = BUL_Mobile_Support
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = BUL_Mobile_Army }
+		prerequisite = { focus = BUL_Mobile_Army focus = BUL_Infantry_Weapons }
 		x = 15
-		y = 1
-		cost = 10
+		y = 2
+		cost = 5	
 		ai_will_do = {
 			factor = 1
 		}
@@ -1209,7 +1159,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = BUL_Mobile_Support }
 		x = 15
-		y = 2
+		y = 3
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1229,7 +1179,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = BUL_Infantry_Support }
 		x = 13
-		y = 2
+		y = 3
 		cost = 10
 
 		available_if_capitulated = yes
