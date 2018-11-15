@@ -2,7 +2,7 @@ state={
 	id=229
 	name="STATE_229"
 	resources={
-		oil=175 # was: 126.000
+		oil=150 # was: 126.000
 	}
 
 	history={
@@ -12,7 +12,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
 			air_base = 1
 
 		}

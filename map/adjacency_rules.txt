@@ -744,7 +744,7 @@ adjacency_rule
 {
 	contested =
 	{
-		army = no
+		army = yes
 		navy = no
 		submarine = no
 		trade = no
@@ -768,7 +768,7 @@ adjacency_rule
 		army = yes
 		navy = no
 		submarine = yes
-		trade = yes
+		trade = no
 	}
 
 	required_provinces = { 9990 4159 }

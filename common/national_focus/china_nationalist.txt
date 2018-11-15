@@ -794,26 +794,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					MAN = {
-						OR = {
-							is_in_faction_with = JAP
-							is_puppet_of = JAP
-						}
-					}
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = MAN
-				}
-				else = {
-					create_wargoal = {
-						type = annex_everything
-						target = JAP
-					}	
-				}
-			}
 			hidden_effect = {
 				news_event = { id = wtt_news.35 days = 1}
 			}

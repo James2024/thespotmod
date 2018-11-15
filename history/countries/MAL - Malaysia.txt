@@ -3,7 +3,9 @@
 oob = "MAL_1936"
 
 set_research_slots = 3
-
+add_ideas = {
+	extensive_conscription
+}
 # Starting tech
 # clone of UK
 set_technology = {

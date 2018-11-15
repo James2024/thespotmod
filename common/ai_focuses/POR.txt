@@ -1,0 +1,9 @@
+
+ai_historical_focus_list_POR = {
+	ai_national_focuses = {
+		industrial_effort
+		production_effort
+		production_effort_2
+		production_effort_3
+	}
+}

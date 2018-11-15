@@ -7,14 +7,14 @@ state=
 	state_category = town
 	
 	resources={
-		steel=4 # was: 8
+		steel=8 # was: 8
 	}
 	
 	history={
 		owner = CZE
 		buildings = {
 			infrastructure = 8
-			industrial_complex = 2
+			industrial_complex = 3
 			anti_air_building = 1
 			424 =
 			{
