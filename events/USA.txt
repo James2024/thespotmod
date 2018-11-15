@@ -279,6 +279,7 @@ country_event = {
 			factor = 75
 		}
 		add_political_power = 40
+		add_ideas = war_bonds_focus
 		remove_ideas = great_depression
 	}
 
