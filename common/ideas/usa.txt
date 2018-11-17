@@ -586,7 +586,9 @@ ideas = {
 				original_tag = "USA"
 			}
 			
-
+			available = {
+				has_completed_focus = USA_rubber_reserve_company
+			}
 			
 			traits = { captain_of_industry }
 	

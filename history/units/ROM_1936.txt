@@ -461,6 +461,19 @@ units = {
 	}				
 }
 
+air_wings = {
+		46 = {
+			# 1. Légi Ezred -- Fiat CR.32 fighters
+			# 2. Légi Ezred -- Fiat CR.32 fighters
+			fighter_equipment_1 = {
+				owner = "ROM" 
+				creator = "GER"
+				amount = 100
+			}
+
+		}
+}
+
 ### Starting Production ###
 instant_effect = {
 	add_equipment_production = {

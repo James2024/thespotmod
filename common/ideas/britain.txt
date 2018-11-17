@@ -347,6 +347,9 @@ ideas = {
 			allowed = {
 				original_tag = ENG
 			}
+			available = {
+				has_completed_focus = tizard_mission_focus
+			}
 			
 			traits = { captain_of_industry }
 		}

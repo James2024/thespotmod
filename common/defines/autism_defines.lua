@@ -1,6 +1,7 @@
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15
+NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 ---Diplomacy
 NDefines.NDiplomacy.BASE_STAGE_COUP_DAILY_PP = 999
 NDefines.NDiplomacy.BASE_STAGE_COUP_TOTAL_COST = 0
@@ -32,6 +33,7 @@ NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.04
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 70
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.10
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.13 -- air suppply? 0.05 original
 
 -- set default occupation law
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 3

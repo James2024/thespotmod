@@ -21,15 +21,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-
+		available = { has_completed_focus = GER_rhineland }
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_four_year_plan
-				bonus = 0.5
-				uses = 2
-				category = industry
-			}
-			#add_ideas = schacht
+			add_ideas = hjalmar_schacht
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = hjalmar_schacht
 		}
@@ -242,6 +236,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -321,6 +322,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -625,7 +633,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = { has_completed_focus = GER_rhineland }
 		available_if_capitulated = yes
 
 		complete_tooltip = {
@@ -857,13 +865,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = { has_completed_focus = GER_rhineland }
 		available_if_capitulated = yes
 
 		completion_reward = {
 			# Balance research bonus for 2 techs under land_doctrine
 
-			army_experience = 100
+			army_experience = 50
 
 
 			add_tech_bonus = {
@@ -994,7 +1002,7 @@ focus_tree = {
 
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
-			army_experience = 25
+			army_experience = 50
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5
@@ -1008,6 +1016,12 @@ focus_tree = {
 				technology = basic_medium_tank
 				technology = improved_medium_tank
 				technology = advanced_medium_tank
+				technology = mechanised_infantry
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = mech_army_bonus
 				technology = mechanised_infantry
 			}
 			# REVISIT Might want to add bonuses to Soviet through event, since focus branches from treaty

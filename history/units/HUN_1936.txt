@@ -238,20 +238,19 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	air_wings = {
-	43 = {
-		# 1. Légi Ezred -- Fiat CR.32 fighters
-		# 2. Légi Ezred -- Fiat CR.32 fighters
-		fighter_equipment_1 = {
-			owner = "HUN" 
-			creator = "GER"
-				amount = 100
-		}
-
-	}
 }
+air_wings = {
+		43 = {
+			# 1. Légi Ezred -- Fiat CR.32 fighters
+			# 2. Légi Ezred -- Fiat CR.32 fighters
+			fighter_equipment_1 = {
+				owner = "HUN" 
+				creator = "GER"
+				amount = 100
+			}
 
-
+		}
+}
 
 ### Starting Production ###
 instant_effect = {

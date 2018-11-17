@@ -28,7 +28,7 @@ buildings = {
 	industrial_complex = {
 		show_on_map = 6
 		base_cost = 10800
-		base_cost_conversion = 6000
+		base_cost_conversion = 9000
 		general_production = 1
 		icon_frame = 1
 		max_level = 40
@@ -71,7 +71,7 @@ buildings = {
 		disabled_in_dmz = yes
 		icon_frame = 7
 		land_fort = 1
-		max_level = 5
+		max_level = 7
 		value = 1
 	}
 
@@ -92,7 +92,7 @@ buildings = {
 	dockyard = {
 		show_on_map = 1
 		show_on_map_meshes = 3
-		base_cost = 6400
+		base_cost = 7200
 		only_costal = yes
 		naval_production = 1
 		icon_frame = 4
