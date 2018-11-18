@@ -660,7 +660,7 @@ ideas = {
 				original_tag = HUN
 			}
 			
-			cost = 150
+			cost = 100
 			removal_cost = 10
 			
 			research_bonus = {
@@ -681,7 +681,7 @@ ideas = {
 				original_tag = HUN
 			}
 			
-			cost = 150
+			cost = 100
 			removal_cost = 10
 			
 			research_bonus = {
@@ -704,7 +704,7 @@ ideas = {
 				original_tag = HUN
 			}
 			
-			cost = 150
+			cost = 100
 			removal_cost = 10
 			
 			research_bonus = {

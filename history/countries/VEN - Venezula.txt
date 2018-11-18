@@ -13,6 +13,10 @@ set_technology = {
 }
 set_country_flag = monroe_doctrine
 
+add_ideas = {
+	trade_unionism
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198

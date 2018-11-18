@@ -1362,7 +1362,7 @@ ideas = {
 			
 			picture = generic_air_manufacturer_2
 
-			cost = 150
+			cost = 100
 
 			allowed = {
 				original_tag = ROM

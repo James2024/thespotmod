@@ -127,6 +127,13 @@ ideas = {
 					has_government = communism
 					has_war = yes
 					threat > 0.15
+					if = {
+						limit = {
+							original_tag = HUN
+							has_dlc = "Death or Dishonor"
+						}
+							has_completed_focus = HUN_secret_rearmament
+					}
 				}
 				has_war_support > 0.15
 
