@@ -22,6 +22,7 @@ set_technology = {
 	early_fighter = 1
 	early_submarine = 1
 	early_destroyer = 1
+	early_heavy_cruiser = 1
 	interwar_antiair = 1
 	gwtank = 1
 	basic_light_tank = 1
