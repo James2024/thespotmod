@@ -2677,5 +2677,32 @@ focus_tree = {
 			custom_effect_tooltip = USA_pax_americana_tt
 		}
 	}
+	
+	focus = {
+		id = USA_preemptive_intervention
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = USA_pax_americana }
+		x = 0
+		y = 1
+		relative_position_id = USA_pax_americana
+		cost = 5
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = democratic
+			}
+		}
+		
+		completion_reward = {
+					add_named_threat = { 
+						threat = 1 name = USA_preemptive_intervention 
+					}					 
+					puppet = VEN 
+					
+		}						
+			
+		
+	}
 
 }
