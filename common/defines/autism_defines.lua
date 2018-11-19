@@ -92,7 +92,7 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --amount of potential max building slo
 NDefines.NBuildings.INFRA_TO_SUPPLY = 3
 ---Navy
 NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.6
-NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 32  --- before 16 testing 18
+NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 22  --- before 16 testing 18
 NDefines.NNavy.COMBAT_MIN_DURATION = 48
 NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.12
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 3	-- Vanilla: 1.5 How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
