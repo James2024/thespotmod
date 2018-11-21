@@ -2747,7 +2747,6 @@ focus_tree = {
 		}
 		
 		available = {
-			has_war_with = ENG
 		}
 		
 		completion_reward = {

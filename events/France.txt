@@ -238,6 +238,58 @@ country_event = {
 			country_event = { hours = 6 id = france.13 }
 		}
 	}
+	option = { # Agree to Union
+		name = france.11.b
+		ai_chance = {
+			factor = 90
+		}
+		FRA = {
+			country_event = { hours = 6 id = france.12 }
+		}
+	}
+}
+
+# Britain agrees to Union (France)
+country_event = {
+	id = france.12
+	title = france.12.t
+	desc = france.12.d
+	picture = GFX_report_event_chamberlain_announce
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = france.12.a
+		# Franco-British Union created
+		set_global_flag = fall_of_france
+		set_global_flag = flag_franco_british_union
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				ENG = {
+					add_state_core = PREV
+				}
+			}
+		}
+		FRA = {
+			every_unit_leader = {
+				set_unit_leader_flag = flag_former_french_general
+				set_nationality = ENG
+			}
+		}
+		ENG = {
+			annex_country = { target = FRA transfer_troops = yes }
+		}
+		custom_effect_tooltip = FRA_franco_british_cores
+		hidden_effect = {
+			ENG = { set_cosmetic_tag = FRA_UK }
+			GER = { 
+				country_event = { hours = 6 id = news.35 }
+			}
+		}
+	}
 }
 
 # Britain refuses Union (France)
@@ -249,6 +301,15 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	option = { # Become Vichy
+		name = france.13.a
+		trigger = { is_ai = no }
+		set_country_flag = become_vichy
+		set_global_flag = fall_of_france
+		GER = { country_event = france.14 }
+		custom_effect_tooltip = france.10.a_tt
+		# Switches to Vichy if GER accepts
+	}
 	option = { # Become Free France
 		name = france.13.b
 		GER = { country_event = france.14 }
@@ -1093,59 +1154,59 @@ country_event = {
 }
 
 # French ban on communism
-country_event = {
-	id = france.24
-	title = france.24.t
-	desc = france.24.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
-
-
-	trigger = {
-		tag = FRA
-		SOV = { has_government = communism }
-		has_government = democratic
-		communism < 0.5
-		has_global_flag = sov_yes_pact
-	}
-
-	fire_only_once = yes
-	
-	mean_time_to_happen = {	days = 2	}
-
-	option = {
-		ai_chance = {	factor = 10 }
-		add_political_power = -20
-		name = france.24.a
-		add_popularity = {
-			ideology = communism
-			popularity = -0.3
-		}
-		add_ideas = FRA_communism_banned
-
-		add_opinion_modifier = {
-			target = SOV
-			modifier = FRA_ban_communism
-		}
-		
-		every_other_country = {
-			limit = { 
-				has_government = communism
-			}
-			add_opinion_modifier = {
-				target = FRA
-				modifier = FRA_ban_communism
-			}
-		}
-		hidden_effect = {
-			news_event = { id = news.161 hours = 6 }
-		}
-
-	}
-	option = {
-		ai_chance = {	factor = 0 }
-		name = france.24.b
-	}
-}
+#country_event = {
+#	id = france.24
+#	title = france.24.t
+#	desc = france.24.d
+#	picture = GFX_report_event_molotov_ribentrop_handshake
+#
+#
+#	trigger = {
+#		tag = FRA
+#		SOV = { has_government = communism }
+#		has_government = democratic
+#		communism < 0.5
+#		has_global_flag = sov_yes_pact
+#	}
+#
+#	fire_only_once = yes
+#	
+#	mean_time_to_happen = {	days = 2	}
+#
+#	option = {
+#		ai_chance = {	factor = 10 }
+#		add_political_power = -20
+#		name = france.24.a
+#		add_popularity = {
+#			ideology = communism
+#			popularity = -0.3
+#		}
+#		add_ideas = FRA_communism_banned
+#
+#		add_opinion_modifier = {
+#			target = SOV
+#			modifier = FRA_ban_communism
+#		}
+#		
+#		every_other_country = {
+#			limit = { 
+#				has_government = communism
+#			}
+#			add_opinion_modifier = {
+#				target = FRA
+#				modifier = FRA_ban_communism
+#			}
+#		}
+#		hidden_effect = {
+#			news_event = { id = news.161 hours = 6 }
+#		}
+#
+#	}
+#	option = {
+#		ai_chance = {	factor = 0 }
+#		name = france.24.b
+#	}
+#}
 
 # British abandon yugoslavia
 country_event = {
@@ -1189,7 +1250,6 @@ country_event = {
 			ITA = { country_event = { id = italy.12 } }
 		}
 	}
-	
 }
 
 # British support yugoslavia
@@ -1690,67 +1750,6 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-	}
-}
-
-# Public Demands Rearmament
-country_event = {
-	id = france.34
-	title = election.3.t
-	desc = election.3.d
-	picture = GFX_report_event_tank_factory
-	
-	#is_triggered_only = yes
-	fire_only_once = yes
-	trigger = {
-		tag = FRA
-		has_government = democratic
-		has_war = no
-		date > 1936.3.20
-		NOT = { has_global_flag = fra_rearm }
-	}
-
-	mean_time_to_happen = {
-		days = 1	# Historical outbreak time after elections
-	}
-
-	option = {
-		name = election.3.a
-		if = {
-			limit = { has_idea = civilian_economy }
-			add_ideas = low_economic_mobilisation
-			add_war_support = 0.05
-		}
-		if = {
-			limit = { has_idea = isolation }
-			add_ideas = civilian_economy
-			add_war_support = 0.05
-		}
-		if = {
-			limit = { has_idea = undisturbed_isolation }
-			add_ideas = isolation
-			add_war_support = 0.05
-		}
-		if = {
-			limit = { has_idea = volunteer_only }
-			add_ideas = limited_conscription
-			add_war_support = 0.05
-		}
-		if = {
-			limit = { has_idea = disarmed_nation }
-			add_ideas = volunteer_only
-			add_war_support = 0.05
-		}
-		add_stability = 0.05
-		set_global_flag = fra_rearm
-	}
-
-	option = {
-		name = election.3.b
-		ai_chance = {
-			base = 0
-		}
-		add_stability = -0.05
 	}
 }
 

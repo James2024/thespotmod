@@ -1163,7 +1163,7 @@ ideas = {
 		CAN_fairchild_aircraft_ltd = {
 			picture = generic_air_manufacturer_2
 
-			cost = 150
+			cost = 100
 
 			allowed = {
 				original_tag = CAN
@@ -1190,7 +1190,7 @@ ideas = {
 		CAN_handley_page = {
 			picture = generic_air_manufacturer_3
 
-			cost = 150
+			cost = 100
 
 			allowed = {
 				original_tag = CAN
