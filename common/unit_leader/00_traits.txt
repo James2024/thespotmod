@@ -606,7 +606,7 @@ leader_traits = {
 		}
 		cost = 700
 		modifier = {
-			out_of_supply_factor = -0.5
+			out_of_supply_factor = -0.25
 		}
 		
 		ai_will_do = {

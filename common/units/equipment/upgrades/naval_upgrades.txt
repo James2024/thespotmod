@@ -54,7 +54,7 @@ upgrades = {
 	ship_anti_air_upgrade = {
 		max_level = 5	
 		cost = naval 
-		anti_air_attack = 0.05
+		anti_air_attack = 0.15
 		naval_speed = -0.01
 	}
 	ship_ASW_upgrade = {

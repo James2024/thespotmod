@@ -940,7 +940,7 @@ instant_effect = {
 			} 
 
 			requested_factories = 1 
-			progress = 0.30
+			progress = 0.80
 			amount = 1 
 		} 
 
@@ -952,7 +952,7 @@ instant_effect = {
 			} 
 
 			requested_factories = 1 
-			progress = 0.30
+			progress = 0.80
 			amount = 1 
 		} 
 
@@ -1014,6 +1014,46 @@ instant_effect = {
 			progress = 0.70 
 			amount = 1
 		} 
+		add_equipment_production = {				# "Suzuya"
+			equipment = {
+				type = heavy_cruiser_2
+
+				creator = "ITA" 
+			}
+			requested_factories = 1
+			progress = 0.8
+			amount = 1
+		}	
+		add_equipment_production = {				# "Suzuya"
+			equipment = {
+				type = heavy_cruiser_2
+
+				creator = "ITA" 
+			}
+			requested_factories = 1
+			progress = 0.8
+			amount = 1
+		}	
+		add_equipment_production = {				# "Suzuya"
+			equipment = {
+				type = heavy_cruiser_2
+
+				creator = "ITA" 
+			}
+			requested_factories = 1
+			progress = 0.8
+			amount = 1
+		}	
+		add_equipment_production = {				# "Suzuya"
+			equipment = {
+				type = heavy_cruiser_2
+
+				creator = "ITA" 
+			}
+			requested_factories = 1
+			progress = 0.8
+			amount = 1
+		}		
 		add_equipment_production = { 
 			equipment = { 
 				type = destroyer_1 

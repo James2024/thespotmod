@@ -33,7 +33,7 @@ NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.04
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 70
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.10
-NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.13 -- air suppply? 0.05 original
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.39 -- air suppply? 0.05 original but range is lower
 
 -- set default occupation law
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 3
@@ -92,8 +92,8 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --amount of potential max building slo
 NDefines.NBuildings.INFRA_TO_SUPPLY = 3
 ---Navy
 NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.6
-NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 22  --- before 16 testing 18
-NDefines.NNavy.COMBAT_MIN_DURATION = 48
+NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 22 --- before 16 testing 18
+NDefines.NNavy.COMBAT_MIN_DURATION = 32
 NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.12
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 3	-- Vanilla: 1.5 How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 7	--Vanilla: 7 Convoy starts regaining it's efficiency after X days without any convoys being sink.

@@ -314,8 +314,8 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Giuseppe Fioravanzo"
 		picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
-	traits = { superior_tactician }
-	skill = 3
+	traits = { superior_tactician blockade_runner }
+	skill = 4
 }
 
 create_navy_leader = {
@@ -338,9 +338,7 @@ create_equipment_variant = {
 	name = "Bandiera Class"
 	type = submarine_1
 	upgrades = {
-		ship_reliability_upgrade = 1
 		sub_engine_upgrade = 4
-		sub_stealth_upgrade = 1
 		sub_torpedo_upgrade = 4
 	}
 	obsolete = yes
@@ -350,9 +348,7 @@ create_equipment_variant = {
 	name = "Sirena Class"
 	type = submarine_1
 	upgrades = {
-		ship_reliability_upgrade = 2
 		sub_engine_upgrade = 5
-		sub_stealth_upgrade = 2
 		sub_torpedo_upgrade = 5
 	}
 }
@@ -429,9 +425,7 @@ create_equipment_variant = {
 		name = "Marcello Class"
 		type = submarine_2
 		upgrades = {
-			ship_reliability_upgrade = 1
 			sub_engine_upgrade = 5
-			sub_stealth_upgrade = 1
 			sub_torpedo_upgrade = 5
 		}
 	}
