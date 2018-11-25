@@ -1,5 +1,54 @@
 ideas = {
 
+	country = {
+		IRE_emergency_power_act = {
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				political_power_factor = -0.25
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		IRE_mobilise_idea = {
+		
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				conscription = 0.015
+			}
+		}
+		
+		IRE_economy = {
+		
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		
+		IRE_itegrate_the_militia = {
+		
+			picture = GFX_goal_generic_demand_territory
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		
+		IRE_Special_training_program = {
+			
+			picture = GFX_goal_generic_position_armies
+			
+			modifier = {
+				training_time_factor = -0.2
+			}
+		}
+		
+	}
+
 	political_advisor = {
 
 		IRE_sean_lemass = {

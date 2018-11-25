@@ -628,7 +628,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_Efficent_Designs
+		id = BUL_Efficient_Designs
 		prerequisite = { focus = BUL_Arms_Expansion }
 		icon = GFX_goal_generic_production2
 		x = 11
@@ -697,7 +697,7 @@ focus_tree = {
 	focus = {
 		id = BUL_War_Production
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = BUL_Efficent_Designs }
+		prerequisite = { focus = BUL_Efficient_Designs }
 		x = 11
 		y = 3
 		cost = 10
