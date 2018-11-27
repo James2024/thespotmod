@@ -23,6 +23,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
+				hidden_effect = {
+					country_event = spot.1
+				}
 		}
 	}
 	
@@ -893,6 +896,7 @@ focus = {
 		
 		completion_reward = {
 			add_ideas = IRE_emergency_power_act
+			remove_ideas = IRE_gained_ni
 		}
 	}
 	

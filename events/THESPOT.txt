@@ -1,0 +1,73 @@
+add_namespace = spot
+
+country_event = { #Mending ties with UK
+	id = spot.1
+	title = spot.1.t
+	desc = spot.1.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = { #want NI
+		name = spot.1.a
+		ENG = { country_event = spot.2 }
+	}
+	
+	option = { #want soft border
+		name = spot.1.b
+		country_event = spot.4
+		ENG = { country_event = spot.4 }
+	}
+}
+
+country_event = {
+	id = spot.2
+	title = spot.2.t
+	desc = spot.2.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = { #give
+		name = spot.2.a
+		IRE = {
+			set_state_owner = 119
+			add_ideas = IRE_gained_ni
+			country_event = spot.3
+		}
+		country_event = spot.3
+	}
+	
+	option = { #soft border
+		name = spot.2.b
+		IRE = {
+			country_event = spot.4
+		}
+	}
+}
+
+country_event = { #NI is given to Ireland
+	id = spot.3
+	title = spot.3.t
+	desc = spot.3.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = spot.3.a
+	}
+}
+
+country_event = { #Soft border is established between Ireland and NI
+	id = spot.4
+	title = spot.4.t
+	desc = spot.4.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = spot.4.a
+	}
+}

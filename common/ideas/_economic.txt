@@ -334,6 +334,7 @@ ideas = {
 
 			available = {
 				NOT = { tag = POR }
+				NOT = { tag = SWE }
 				NOT = { tag = ROM }
 				OR = {
 					AND = {
@@ -387,6 +388,7 @@ ideas = {
 
 
 			available = {
+				NOT = { tag = SWE }
 				has_war = yes
 				OR = {
 					has_government = fascism

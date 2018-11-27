@@ -25,7 +25,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 		
@@ -44,6 +44,15 @@ ideas = {
 			
 			modifier = {
 				training_time_factor = -0.2
+			}
+		}
+		
+		IRE_gained_ni = {
+		
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				stability_factor = -0.05
 			}
 		}
 		
