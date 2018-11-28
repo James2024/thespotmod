@@ -31,7 +31,7 @@ country_event = {
 	option = { #give
 		name = spot.2.a
 		IRE = {
-			set_state_owner = 119
+			transfer_state = 119
 			add_ideas = IRE_gained_ni
 			country_event = spot.3
 		}
