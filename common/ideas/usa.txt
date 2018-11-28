@@ -16,7 +16,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 1
-				consumer_goods_factor = 0.35
+				consumer_goods_factor = 0.3
 				conscription_factor = -0.5
 				join_faction_tension = 0.20
 			}
