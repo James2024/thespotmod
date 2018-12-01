@@ -232,14 +232,10 @@ country_event = {
 		has_war_with = SOV
 		surrender_progress > 0.25
 	}
-	
 
 	mean_time_to_happen = { days = 20 }
 
 	fire_only_once = yes
-	
-	
-	
 	
 	#Surrender and offer territory
 	option = {
@@ -255,9 +251,7 @@ country_event = {
 		transfer_state = 146
 		transfer_state = 147
 		}
-
 	}
-
 }
 
 #Soviet response to Finnish surrender
@@ -276,7 +270,6 @@ country_event = {
 		ai_chance = {
 			base = 9
 		}
-
 	}
 }
 
