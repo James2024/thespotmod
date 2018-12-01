@@ -746,6 +746,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = 0.05
 			if = {
 				limit = {
 					NOT = { has_idea = undisturbed_isolation }
@@ -861,6 +862,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_stability = 0.05
 			navy_experience = 50
 			army_experience = 50
 			air_experience = 100

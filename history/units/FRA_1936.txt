@@ -14,9 +14,11 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+		engineer = { x = 0 y = 0 }  
+		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 155mm battalions
 	}
 }
 division_template = {
@@ -36,7 +38,8 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+		engineer = { x = 0 y = 0 }  
+		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 155mm battalions
 	}
 }
 division_template = {

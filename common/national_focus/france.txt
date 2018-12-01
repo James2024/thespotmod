@@ -234,12 +234,8 @@ focus_tree = {
 		16 = {
 				is_owned_and_controlled_by = FRA
 				arms_factory > 5
-				industrial_complex > 6
+				industrial_complex > 2
 			}
-			NOT = {
-				EFR = { exists = yes }
-			}
-
 		}
 		bypass = {
 			custom_trigger_tooltip = {
@@ -1094,7 +1090,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			#add_ideas = {	FRA_support_the_centre_focus }
-			add_stability = 0.05
+			add_stability = 0.10
 		}
 	}
 

@@ -402,6 +402,15 @@ create_equipment_variant = {
 	}
 }
 
+create_equipment_variant = {
+	name = "Bretagne Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+        ship_armor_upgrade = 1
+        ship_gun_upgrade = 1
+	}
+}
 
 1939.1.1 = {
 	

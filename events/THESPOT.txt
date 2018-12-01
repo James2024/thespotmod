@@ -1,4 +1,4 @@
-add_namespace = spot
+﻿add_namespace = spot
 
 country_event = { #Mending ties with UK
 	id = spot.1

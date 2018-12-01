@@ -225,7 +225,6 @@ country_event = {
 		}
 		set_global_flag = fall_of_france
 		GER = { country_event = france.14 }
-		add_timed_idea = { idea = FRA_chaos_in_the_army days = 90 }
 		custom_effect_tooltip = france.10.b_tt
 	}
 	#option = { # Ask for British Union
@@ -1602,5 +1601,66 @@ news_event = {
 				}
 			}
 		}
+	}
+}
+
+# Public Demands Rearmament
+country_event = {
+	id = france.35
+	title = election.3.t
+	desc = election.3.d
+	picture = GFX_report_event_tank_factory
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_government = democratic
+		has_war = no
+		date > 1936.3.20
+		NOT = { has_global_flag = fra_rearm }
+	}
+
+	mean_time_to_happen = {
+		days = 1	# Historical outbreak time after elections
+	}
+
+	option = {
+		name = election.3.a
+		if = {
+			limit = { has_idea = civilian_economy }
+			add_ideas = low_economic_mobilisation
+			add_war_support = 0.05
+		}
+		if = {
+			limit = { has_idea = isolation }
+			add_ideas = civilian_economy
+			add_war_support = 0.05
+		}
+		if = {
+			limit = { has_idea = undisturbed_isolation }
+			add_ideas = isolation
+			add_war_support = 0.05
+		}
+		if = {
+			limit = { has_idea = volunteer_only }
+			add_ideas = limited_conscription
+			add_war_support = 0.05
+		}
+		if = {
+			limit = { has_idea = disarmed_nation }
+			add_ideas = volunteer_only
+			add_war_support = 0.05
+		}
+		add_stability = 0.05
+		set_global_flag = fra_rearm
+	}
+
+	option = {
+		name = election.3.b
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.05
 	}
 }
