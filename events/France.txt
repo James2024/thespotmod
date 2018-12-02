@@ -1655,12 +1655,4 @@ country_event = {
 		add_stability = 0.05
 		set_global_flag = fra_rearm
 	}
-
-	option = {
-		name = election.3.b
-		ai_chance = {
-			base = 0
-		}
-		add_stability = -0.05
-	}
 }
