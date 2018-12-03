@@ -312,7 +312,6 @@ ideas = {
 
 			available = {
 			NOT = { tag = POR }
-		    NOT = { tag = ROM }
 			NOT = { tag = SWE }
 			}
 
@@ -335,7 +334,6 @@ ideas = {
 			available = {
 				NOT = { tag = POR }
 				NOT = { tag = SWE }
-				NOT = { tag = ROM }
 				OR = {
 					AND = {
 						has_government = democratic
