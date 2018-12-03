@@ -13,7 +13,7 @@ ideas = {
                 conscription_factor = -1
 
                 research_time_factor = 1000
-                enemy_justify_war_goal_time = 50
+                enemy_justify_war_goal_time = 500
 
                 join_faction_tension = 2
                 lend_lease_tension = 2
