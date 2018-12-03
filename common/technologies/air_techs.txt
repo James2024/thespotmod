@@ -1299,10 +1299,10 @@ technologies = {
 			strat_bomber_equipment_1
 		}
 	
-		#path = {
-		#	leads_to_tech = strategic_bomber2
-		#	research_cost_coeff = 1
-		#}
+		path = {
+			leads_to_tech = strategic_bomber2
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		start_year = 1936
@@ -1338,10 +1338,10 @@ technologies = {
 			strat_bomber_equipment_2
 		}
 	
-		path = {
-			leads_to_tech = strategic_bomber3
-			research_cost_coeff = 1
-		}
+		#path = {
+		#	leads_to_tech = strategic_bomber3
+		#	research_cost_coeff = 1
+		#}
 		
 		research_cost = 2
 		start_year = 1940

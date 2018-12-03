@@ -849,28 +849,28 @@ air_wings = {
 	### RAF Fighter Command ###
 	129 = { 
 		### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "ENG" 
-			amount = 300
+			amount = 200
 		}
 	}
 	130 = { 
 		### No. 11 Fighter Command, Essex area -- Hawker Demons, Furys, Gloster Gauntlets
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "ENG" 
-			amount = 200
+			amount = 150
 		}
 	}	
 	127 = { 
 		### No. 12 Fighter Command, Nottingham area -- Hawker Demons, Furys, Gloster Gauntlets
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "ENG" 
 			amount = 100
 		}
 	}	
 	131 = { 
 		### No. 13 Fighter Command, Newcastle -- Hawker Demons, Furys, Gloster Gauntlets
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "ENG" 
 			amount = 100
 		}
@@ -887,23 +887,26 @@ air_wings = {
 	}
 	125 = { 
 		### No. 2 Bomber Command, East Anglia area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_0 = {
+		tac_bomber_equipment_1 = {
 			owner = "ENG" 
-			amount = 100
+			amount = 50
+			creator = "FRA"
 		}
 	}
 	126 = { 
 		### No. 3 Bomber Command, Suffolk area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_0 = {
+		tac_bomber_equipment_1 = {
 			owner = "ENG" 
-			amount = 100
+			amount = 150
+			creator = "FRA"
 		}
 	}
 	130 = { 
 		### No. 4 Bomber Command, York area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_0 = {
+		tac_bomber_equipment_1 = {
 			owner = "ENG" 
 			amount = 100
+			creator = "FRA"
 		}
 	}
 	128 = { 
@@ -925,14 +928,10 @@ air_wings = {
 
 	### RAF Middle East and Africa
 	447 = { 
-		### AHQ Egypt
-		fighter_equipment_0 = {
+		tac_bomber_equipment_1 = {
 			owner = "ENG" 
 			amount = 100
-		}
-		tac_bomber_equipment_0 = {
-			owner = "ENG" 
-			amount = 100
+			creator = "FRA"
 		}
 		CAS_equipment_1 = {
 			owner = "ENG" 
@@ -942,13 +941,6 @@ air_wings = {
 	454 = { 
 		### RAF Palestine & Iraq
 		CAS_equipment_1 = {
-			owner = "ENG" 
-			amount = 100
-		}
-	}
-	659 = { 
-		### RAF Aden
-		fighter_equipment_0 = {
 			owner = "ENG" 
 			amount = 100
 		}
@@ -1006,7 +998,7 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_0
+			type = fighter_equipment_1
 			creator = "ENG" 
 		}
 		requested_factories = 1

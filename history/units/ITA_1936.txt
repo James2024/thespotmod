@@ -786,9 +786,10 @@ air_wings = {
 			owner = "ITA" 
 		} 
 		# 3a Divisione Aerea 'Centauro'
-		tac_bomber_equipment_0 = { 
-			amount = 100
+		tac_bomber_equipment_1 = { 
+			amount = 50
 			owner = "ITA" 
+			creator = "GER"
 		} 
 	} 
 

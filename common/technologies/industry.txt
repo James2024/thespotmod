@@ -736,7 +736,7 @@ technologies = {
 
 		enable_building = {
 			building = synthetic_refinery
-			level = 6
+			level = 4
 		}
 				
 		path = {

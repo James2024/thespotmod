@@ -3,7 +3,7 @@
 oob = "BUL_1936"
 
 add_ideas = {
-	free_trade
+	limited_conscription
 }
 set_research_slots = 3
 set_stability = 0.8

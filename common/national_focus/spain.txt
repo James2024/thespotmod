@@ -400,7 +400,7 @@ focus_tree = {
 				name = SPR_mechanization
 				uses = 1
 				bonus = 0.5
-				ahead_reduction = 1
+				#ahead_reduction = 1
 				technology = mechanised_infantry
 				technology = mechanised_infantry2
 				technology = motorised_infantry
@@ -483,7 +483,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_electronics
-				uses = 4
+				uses = 2
 				bonus = 0.5
 				category = electronics
 			}
@@ -654,10 +654,8 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				technology = fighter3
 				technology = heavy_fighter1
 				technology = heavy_fighter2
-				technology = heavy_fighter3
 			}
 		}
 	}
@@ -681,7 +679,6 @@ focus_tree = {
 				uses = 2
 				technology = strategic_bomber1
 				technology = strategic_bomber2
-				technology = strategic_bomber3
 				category = tactical_bomber
 			}
 		}

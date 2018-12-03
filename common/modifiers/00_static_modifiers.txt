@@ -97,31 +97,32 @@ night = { # On province. Multiplied by amount of darkness.
 }
 
 occupation_policy_1 = { # Gentlest
-	resistance_tick = -0.6
-	local_resources = -0.3
-	local_manpower = -0.7
-	local_factories = -0.6
+	resistance_tick = 0.0
+	local_resources = 0.0
+	local_manpower = -1.0
+	local_factories = -0.1
+	occupation_cost = 0.02
 }
 occupation_policy_2 = { # Gentle
-	resistance_tick = -0.4
-	local_resources = -0.2
-	local_manpower = -0.8
-	local_factories = -0.4
-	occupation_cost = 0.01
+	resistance_tick = 0.0
+	local_resources = 0.0
+	local_manpower = -1.0
+	local_factories = -0.1
+	occupation_cost = 0.02
 }
 occupation_policy_3 = { # Harsh
-	resistance_tick = -0.2
-	local_resources = -0.1
-	local_manpower = -0.9
-	local_factories = -0.2
+	resistance_tick = 0.0
+	local_resources = 0.0
+	local_manpower = -1.0
+	local_factories = -0.1
 	occupation_cost = 0.02
 }
 occupation_policy_4 = { # Harshest
-	#resistance_tick = 0.0
-	#local_resources = 0.0
+	resistance_tick = 0.0
+	local_resources = 0.0
 	local_manpower = -1.0
-	#local_factories = 0.0
-	occupation_cost = 0.03
+	local_factories = -0.1
+	occupation_cost = 0.02
 }
 
 # The following is multiplied by local resistance strength.
@@ -134,7 +135,7 @@ resistance_effect = {
 
 # On States
 non_core = {
-	local_building_slots_factor = -0.40
+	local_building_slots_factor = -0.50
 }
 
 
@@ -300,32 +301,5 @@ diff_very_hard_ai = {
 
 
 diff_strong_ai_generic = {
-	# fightyness
-	dig_in_speed_factor = 0.25
-	planning_speed = 0.25
-	supply_consumption_factor = -0.25
-	army_morale_factor = 0.15
-	land_reinforce_rate = 0.02
-
-	# defensivness
-	army_core_attack_factor = 0.15
-	army_core_defence_factor = 0.15
-
-	attrition = -0.075
-
-	# production/research
-	production_factory_max_efficiency_factor = 0.15
-	production_factory_efficiency_gain_factor = 0.25
-	industrial_capacity_dockyard = 0.2
-	political_power_factor = 0.25
-	research_time_factor = -0.1
-	production_lack_of_resource_penalty_factor = -0.3
-
-	# xp gain
-	experience_gain_air_factor = 0.25
-	experience_gain_army_factor = 0.25
-	experience_gain_navy_factor = 0.25
-	experience_gain_army_unit_factor = 0.10
-	experience_gain_navy_unit_factor = 0.10
 }
 
