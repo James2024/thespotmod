@@ -145,22 +145,22 @@ ability = {
 	siege_artillery = {
 		name = ABILITY_SIEGE_ARTILLERY
 		desc = ABILITY_SIEGE_ARTILLERY_DESC
-		
+
 		type = army_leader
-		
+
 		allowed = {
 			has_ability = siege_artillery
 			is_border_war = no
 		}
-		
+
 		unit_modifiers = {
-			fort = {
-				attack = 0.5
-			}
-			fortification_damage = 0.2
-			fortification_collateral_chance = 3.0
+			#fort = {
+			#	attack = 0.1
+			#}
+			fortification_damage = 1.0
+			fortification_collateral_chance = 1.0
 		}
-		cost = 0.05
+		cost = 0.1
 		duration = 168
 		
 		
