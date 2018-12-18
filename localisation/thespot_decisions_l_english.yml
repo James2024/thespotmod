@@ -12,6 +12,9 @@
  SOV_soviet_offensive:0 "Soviet First Offensive"
  worker_conditions_running:0 " Already improving workers conditions"
  war_bonds_active:0 " Already issuing war bonds"
- promises_of_peace_running:0 " Already falsy promising peace"
+ promises_of_peace_running:0 " Already falsely promising peace"
  SOV_puppet_iran:0 "Puppet Iran"
+ GER_annex_vichy:0 "Annex Vichy"
+ GER_annex_vichy2:0 "Annex Vichy"
+ GER_annex_vichy3:0 "Annex Vichy"
 

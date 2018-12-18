@@ -353,13 +353,13 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { # Agree - Neutrality
-		name = france.14.c
+	option = { # Agree
+		name = france.14.a
 		ai_chance = {
 			factor = 50
 		}
 		trigger = {
-			has_government = neutrality
+			has_government = fascism
 		}
 		#Set same cosmetic tag they would get on capitulation
 		FRA = {
@@ -579,10 +579,10 @@ country_event = {
 					}
 			}
 			start_civil_war = {
-				ideology = neutrality
-				size = 0.5
+				ideology = fascism
+				size = 0.9
 				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 }
+				states = { 26 21 22 31 25 20 32 33 735 }
 				states_filter = {
 					owner = { original_tag = FRA }
 					OR = {		
@@ -611,22 +611,21 @@ country_event = {
 			}
 		}
 		random_other_country = {
-			limit = { original_tag = FRA has_government = neutrality }
+			limit = { original_tag = FRA has_government = fascism }
 			ROOT = { puppet = PREV }
+			ROOT = { set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet } }
+			set_country_flag = annexed_by_germany
 			set_capital = 26
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = fascism
 				elections_allowed = no
 				parties = {
 					democratic = { 
 						popularity = 22
 					}
 
-					neutrality = {
-						popularity = 60
-					}
 					fascism = {
-						popularity = 16
+						popularity = 76
 					}
 					
 					communism = {
@@ -644,20 +643,6 @@ country_event = {
 		country_event = { hours = 6 id = news.34 }
 		hidden_effect =  {
 			FRA = { news_event = { id = france.20 days = 1 } }
-		}
-	}
-
-	option = { # Conquer everything!
-		name = france.14.b
-		ai_chance = { 
-			factor = 50 
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-		FRA = {
-			country_event = { hours = 6 id = france.15 }
 		}
 	}
 }
