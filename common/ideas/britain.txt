@@ -547,6 +547,22 @@ ideas = {
 	}
 	
 	high_command = {
+	
+		ENG_Carton_de_Wiart = {
+			
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			picture = generic_army_europe_3
+			
+			traits = { army_commando_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		archibald_wavell = {
 			
