@@ -8,9 +8,6 @@ leader_traits = {
 			fighter_equipment = {
 				air_agility = 0.10 maximum_speed = 0.10 build_cost_ic = -0.10
 			}
-			jet_fighter_equipment = {
-				maximum_speed = 0.1 air_attack = 0.1 build_cost_ic = -0.10
-			}
 		}
 	}
 	

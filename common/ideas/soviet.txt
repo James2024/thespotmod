@@ -1447,7 +1447,7 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = { mig_design_bureau_aircraft_manufacturer }
 			
 			modifier = {
 			}
@@ -1466,7 +1466,7 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { medium_aircraft_manufacturer }
+			traits = { ilyushin_design_bureau_aircraft_manufacturer }
 			
 			modifier = {
 			}
@@ -1485,7 +1485,7 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { heavy_aircraft_manufacturer }
+			traits = { tupolev_design_bureau_aircraft_manufacturer }
 			
 			modifier = {
 			}
