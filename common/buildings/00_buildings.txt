@@ -162,6 +162,7 @@ buildings = {
 		nuclear_reactor = yes
 		nuclear_production_factor = 1
 		max_level = 1 # This is the max unlock level
+		infrastructure_construction_effect = yes
 		shares_slots = yes
 		value = 10
 	}
