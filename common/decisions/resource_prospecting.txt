@@ -4032,4 +4032,114 @@ prospect_for_resources = {
 			}
 		}
 	}
+	
+	develop_Amazonian_rubber_plantations = { #495
+
+		icon = rubber
+
+		allowed = {
+
+		}
+
+		available = {
+			owns_state = 495
+			controls_state = 495
+			num_of_civilian_factories_available_for_projects > 3
+			has_tech = excavation3
+		}
+
+		highlight_states = {
+			state = 495
+		}
+
+		visible = {
+			owns_state = 495
+			controls_state = 495
+			495 = {
+				NOT = {
+					has_state_flag = amazon_rubber_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			495 = {
+				set_state_flag = amazon_rubber_developed
+			}
+			495 = {
+				add_resource = {
+					type = rubber
+					amount = 20
+				}
+			}
+		}
+	}
+	
+	develop_Brazilian_rubber_plantations = { #280
+
+		icon = rubber
+
+		allowed = {
+
+		}
+
+		available = {
+			owns_state = 280
+			controls_state = 280
+			num_of_civilian_factories_available_for_projects > 3
+			has_tech = excavation4
+		}
+
+		highlight_states = {
+			state = 280
+		}
+
+		visible = {
+			owns_state = 280
+			controls_state = 280
+			280 = {
+				NOT = {
+					has_state_flag = amazon_rubber_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			280 = {
+				set_state_flag = amazon_rubber_developed
+			}
+			280 = {
+				add_resource = {
+					type = rubber
+					amount = 20
+				}
+			}
+		}
+	}
 }

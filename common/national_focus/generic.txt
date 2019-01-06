@@ -83,7 +83,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 50
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5
@@ -105,6 +105,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 50
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
 				bonus = 0.5
@@ -148,7 +149,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 50
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5

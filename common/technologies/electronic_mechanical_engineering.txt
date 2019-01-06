@@ -817,7 +817,7 @@ technologies = {
 		research_cost = 5
 		
 		allow = {
-			date > 1942.1.1 
+			date > 1941.6.1 
 		}
 		
 		folder = {
@@ -850,7 +850,7 @@ technologies = {
 		research_cost = 5
 		
 		allow = {
-			date > 1943.1.1 
+			date > 1942.1.1
 		}
 		
 		folder = {
