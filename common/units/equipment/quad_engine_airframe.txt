@@ -34,7 +34,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 80
+		build_cost_ic = 90
 		resources = {
 			oil = 1
 			aluminium = 3
@@ -100,7 +100,7 @@ equipments = {
 		air_defence = 30
 		air_bombing = 30
 		
-		# build_cost_ic = 36
+		# build_cost_ic = 39
 	}
 
 	# Improved strat_bomber

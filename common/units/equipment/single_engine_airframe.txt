@@ -498,7 +498,7 @@ equipments = {
 		air_attack = 27
 		air_defence = 13
 
-		build_cost_ic = 3 # cv_version costs 20% more of base archetype
+		build_cost_ic = 39 # cv_version costs 20% more of base archetype
 		resources = {
 			oil = 2
 			aluminium = 2
