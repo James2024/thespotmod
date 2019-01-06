@@ -752,7 +752,7 @@ equipments = {
 		air_attack = 6
 		air_defence = 13
 		
-		build_cost_ic = 36 # cv_version costs 20% more of base archetype
+		build_cost_ic = 39 # cv_version costs 20% more of base archetype
 	}
 	# Improved Carrier nav_bomber
 	cv_nav_bomber_equipment_2 = {
