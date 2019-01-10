@@ -119,7 +119,7 @@ NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.14 -- -0.12	5x levels = 60% defense from bombing
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER =	0.1	-- base 0.192 How much efficiency to regain per day. Gain applied hourly.
-NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.01 -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
+NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.65 -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.66 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.85 -- original 1.00 Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 ---AI
