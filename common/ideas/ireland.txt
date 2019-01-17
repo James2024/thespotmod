@@ -10,6 +10,15 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
+
+		IRE_emergency_power_act2 = {
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
 		
 		IRE_mobilise_idea = {
 		

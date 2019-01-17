@@ -69,6 +69,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = ITA }
 			ITA = {
 				army_experience = 50
+				air_experience = 100
 				}
 			}
 		}
@@ -92,7 +93,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = { type = fighter1 amount = 200 producer = GER }
 			GER = {
-				air_experience = 50
+				air_experience = 100
 				}
 			}
 		}

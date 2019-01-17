@@ -969,3 +969,20 @@ focus = {
 			
 		}
 	}
+	
+	focus = {
+		id = IRE_stabilise_the_country
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = IRE_mobalise focus = IRE_mobilise }
+		relative_position_id = { focus = IRE_Commit_to_war }
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = IRE_emergency_power_act
+				add_idea = IRE_emergency_power_act2
+			}

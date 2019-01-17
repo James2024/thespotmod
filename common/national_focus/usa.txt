@@ -72,7 +72,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_issue_war_bonds
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -91,7 +91,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_issue_war_bonds
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -110,7 +110,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_office_of_strategic_services
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -152,7 +152,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_wartime_industry
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -182,7 +182,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = USA_office_of_strategic_services
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -200,7 +200,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_manifest_destiny
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
