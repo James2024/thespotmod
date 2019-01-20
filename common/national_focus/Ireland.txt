@@ -976,8 +976,8 @@ focus = {
 		x = 1
 		y = 1
 		cost = 10
-		prerequisite = { focus = IRE_mobalise focus = IRE_mobilise }
-		relative_position_id = { focus = IRE_Commit_to_war }
+		prerequisite = { focus = IRE_mobalise focus = IRE_Commit_to_war }
+		relative_position_id = IRE_Commit_to_war
 		
 		available_if_capitulated = yes
 		
