@@ -2862,7 +2862,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_expand_the_galati_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -2898,7 +2898,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -2935,7 +2935,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -2975,7 +2975,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3013,7 +3013,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3054,7 +3054,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_expand_the_galati_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -3090,7 +3090,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_black_sea_dominance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3132,7 +3132,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
