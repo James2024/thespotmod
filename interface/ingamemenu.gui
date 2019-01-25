@@ -3,21 +3,57 @@ guiTypes = {
 	containerWindowType = {
 		name = "ingamemenu"
 		position = { x = 0 y = 0 }	
-		size = { width = 320 height = 415}
+		size = { width = 320 height = 535}
 		Orientation = center
 		Origo = center		
 		fade_time = 500
 		fade_type = linear
 		show_sound = click_expand
+	
 		
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_tiled_window"
 		}
+		
+		#######################
+		buttonType = {
+			name = "menu_wiki_button"
+			position = { x = 16 y = 98}
+			quadTextureSprite ="GFX_new_main_lobby_button"	
+			buttonText = spot_mod_rules
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+			web_link = "https://docs.google.com/document/d/1xpRu-Bh8kOCPw6J7niWDwnlGKbOpjU5mVSNArC-ytio/edit"
+		}
+		
+		buttonType = {
+			name = "menu_steam_button"
+			position = { x = 16 y = 58}
+			quadTextureSprite ="GFX_new_main_lobby_button"	
+			buttonText = spot_mod_steam
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+			web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=1442593120"
+		}
+		
+		buttonType = {
+			name = "menu_discord_button"
+			position = { x = 16 y = 18}
+			quadTextureSprite ="GFX_new_main_lobby_button"	
+			buttonText = spot_mod_discord
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+			web_link = "https://discord.gg/MEg9byb"
+		}
+		######################
 			
 		buttonType = {
 			name = "menu_load_button"
-			position = { x = 16 y = 18 }
+			position = { x = 16 y = 178 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_LOAD_GAME"
 			buttonFont = "hoi_24header"
@@ -27,7 +63,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "menu_save_button"
-			position = { x = 16 y = 58 }
+			position = { x = 16 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_SAVE_GAME"
 			buttonFont = "hoi_24header"
@@ -37,28 +73,18 @@ guiTypes = {
 		
 		buttonType = {
 			name = "menu_gamesettings_button"
-			position = { x = 16 y = 98}
+			position = { x = 16 y =258}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_GAME_OPTIONS"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
-		
-		buttonType = {
-			name = "menu_wiki_button"
-			position = { x = 16 y = 138}
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "TheSpot Mod Rules"
-			buttonFont = "hoi_24header"
-			clicksound = click_default
-			oversound = ui_menu_over
-			web_link = "https://docs.google.com/document/d/1xpRu-Bh8kOCPw6J7niWDwnlGKbOpjU5mVSNArC-ytio/edit"
-		}
+	
 		
 		buttonType = {
 			name = "menu_resign_button"
-			position = { x = 16 y = 178}
+			position = { x = 16 y = 298}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_GAME_RESIGN"
 			buttonFont = "hoi_24header"
@@ -68,7 +94,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "menu_quit_button"
-			position = {  x = 16 y = 218 }
+			position = {  x = 16 y = 338 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_QUIT"
 			buttonFont = "hoi_24header"
@@ -78,7 +104,7 @@ guiTypes = {
 				
 		buttonType = {
 			name = "menu_close_button"
-			position = { x = 16 y = 300 }
+			position = { x = 16 y = 420 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonFont = "hoi_24header"
 			buttonText = "CLOSE"
@@ -90,7 +116,7 @@ guiTypes = {
 		## facebook etc.
 		ButtonType = {
 			name = "homepage_button"
-			position = { x = 59 y = 349 }
+			position = { x = 59 y = 469 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "MENU_HOMEPAGE"
@@ -98,7 +124,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x = 99 y = 349 }
+			position = { x = 99 y = 469 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FORUM"
@@ -106,7 +132,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "facebook_button"
-			position = { x = 139 y = 349 }
+			position = { x = 139 y =469 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FACEBOOK"
@@ -115,7 +141,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "twitter_button"
-			position = { x = 179 y = 349 }
+			position = { x = 179 y = 469 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_TWITTER"
@@ -124,7 +150,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "privacy_policy_button"
-			position = { x = 219 y = 349 }
+			position = { x = 219 y = 469 }
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
