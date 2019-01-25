@@ -580,17 +580,12 @@ guiTypes = {
 			quadTextureSprite ="GFX_country_selection_bg"
 		}
 		
-	#	ButtonType = {
-	#		name = "back_button"
-	#		position = { x = -158 y = -52 }
-	#		quadTextureSprite ="GFX_button_148x34"	
-	#		buttonText = "BACK"
-	#		buttonFont = "hoi_18mbs"
-	#		Orientation = "CENTER_DOWN"
-	#		clicksound = click_close
-	#		oversound = ui_menu_over
-	#		shortcut = "ESCAPE"
-	#	}
+		ButtonType = {
+			name = "back_button"
+			buttonFont = "hoi_18mbs"
+			position = { x = 10000 y = 10000 }
+			quadTextureSprite ="GFX_button_148x34"
+		}
 		
 		ButtonType = {
 			name = "select_button"
