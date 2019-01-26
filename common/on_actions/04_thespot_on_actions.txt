@@ -23,7 +23,7 @@ on_actions = {
 						}
 					}
 			}
-			SOV = { country_event = { id = thespot.11 }}
+			#SOV = { country_event = { id = thespot.11 }}
 		}
 		
 		effect = {
@@ -38,7 +38,7 @@ on_actions = {
 							}
 						}
 					}
-				SOV = { country_event = { id = thespot.12 }}
+				#SOV = { country_event = { id = thespot.12 }}
 				}
 			}
 	
@@ -61,7 +61,7 @@ on_actions = {
 							}
 						}
 					}
-				SOV = { country_event = { id = thespot.13 }}
+				#SOV = { country_event = { id = thespot.13 }}
 				}
 			}
 	}
