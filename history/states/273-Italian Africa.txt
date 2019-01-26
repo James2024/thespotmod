@@ -12,7 +12,6 @@ state={
 		buildings = {
 			infrastructure = 0
 		}
-		add_core_of = LBA
 	}
 
 	provinces={
