@@ -24,6 +24,26 @@ country_event = {
   			type = annex_everything
   			target = SHX
   		}
+		create_wargoal = {
+  			type = annex_everything
+  			target = XSM
+  		}
+  		create_wargoal = {
+  			type = annex_everything
+  			target = PRC
+  		}
+		create_wargoal = {
+  			type = annex_everything
+  			target = GXC
+  		}
+  		create_wargoal = {
+  			type = annex_everything
+  			target = SIK
+  		}
+		create_wargoal = {
+  			type = annex_everything
+  			target = YUN
+  		}
 		hidden_effect = {
 			country_event = { days = 5 id = news.1 }
 		}
