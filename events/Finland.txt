@@ -1,4 +1,4 @@
-﻿###########################
+﻿ ###########################
 # Finland Events
 ###########################
 
@@ -237,6 +237,14 @@ country_event = {
 
 	fire_only_once = yes
 	
+	# FIGHT ON
+	option = {
+		name = finland.fighton
+		ai_chance = {
+			base = 0
+		}
+	}
+	
 	#Surrender and offer territory
 	option = {
 		name = finland.7.a
@@ -245,11 +253,6 @@ country_event = {
 		}
 		ai_chance = {
 			base = 8
-		}
-		white_peace = SOV
-		SOV = {
-		transfer_state = 146
-		transfer_state = 147
 		}
 	}
 }
@@ -263,12 +266,23 @@ country_event = {
 	picture = GFX_report_event_finnish_soldiers_snow
 	
 	is_triggered_only = yes
-
+	
+	option = {
+		name = finland.spot8.sovietcontinues
+		ai_chance = {
+			base = 20
+		}
+	}
 	#Accept surrender
 	option = {
 		name = finland.spot8.a
 		ai_chance = {
 			base = 9
+		}
+		white_peace = FIN
+		SOV = {
+		transfer_state = 146
+		transfer_state = 147
 		}
 	}
 }

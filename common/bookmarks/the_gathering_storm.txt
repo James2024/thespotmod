@@ -115,7 +115,66 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 
+		### SPOT MINORS  ###
+		
+		"SPR" = {
+			minor = yes
+			history = "SPA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+				SPR_prepare_for_opposition
+				SPR_axis_closer_ties
+				SPR_expand_the_army
+			}
+		}
+		
+		"IRE"={
+			minor = yes
+			history = "IRE_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				IRE_emergency_power_act
+				IRE_economy
+				IRE_itegrate_the_militia
+			}
+			focuses = {
+				IRE_pol
+				IRE_emergency_act
+				IRE_Commit_to_war
+			}
+		}
+		
+		"SIA"={
+			minor = yes
+			history = "SIA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				divided_nation_full
+				fascist_leanings
+			}
+			focuses = {
+				SIA_heal_the_divide_2
+				SIA_fascism_support
+			}
+		}
 
+		"FIN"={
+			minor = yes
+			history = "FIN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				sisu
+			}
+			focuses = {
+				fin_democracy
+				fin_continuation_war
+				fin_greater_dream
+			}
+		}
+
+		####################
 		# minors from DLC ####
 		"POL"={
 			minor = yes
