@@ -2689,6 +2689,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			navy_experience = 85
 			add_ideas = JAP_first_air_fleet
 			add_tech_bonus = {
 				name = USA_carrier_primacy
