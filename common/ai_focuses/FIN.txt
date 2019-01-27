@@ -1,0 +1,10 @@
+
+ai_historical_focus_list_FIN = {
+	ai_national_focuses = {
+		fin_expand_Pieksamaki
+		fin_cattlefarms
+		fin_logging
+		fin_industrialize_Helsinki
+		fin_extra_tech_slot
+	}
+}
