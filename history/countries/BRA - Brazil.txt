@@ -7,6 +7,8 @@ set_stability = 0.5
 set_war_support = 0.3
 add_ideas = {
 	undisturbed_isolation
+	BRA_rural_north
+	BRA_agricultural_regions
 }
 # Starting tech
 set_technology = {
