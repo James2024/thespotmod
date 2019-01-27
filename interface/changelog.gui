@@ -1,0 +1,87 @@
+guiTypes = {
+	containerWindowType = {
+		name = "changelog_top_container"
+		position = { x = 900 y = 4 }
+		
+		buttonType ={
+			name ="changelog_bg"
+			spriteType = "GFX_generic_box_small"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+c"
+		}
+		
+		#iconType = {
+		#	name ="fuhrer_mana_icon"
+		#	spriteType = "GFX_fuhrer_mana"
+		#	position = { x= 7 y = 6 }
+		#}
+		
+		instantTextBoxType = {
+			name ="changelog_text"
+			position = { x= -5 y = 4 }
+			font = "hoi_18mbs"
+			text = "Changelog"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "changelog_main_container"
+		size = { width = 1168 height = 676}
+		position = { x=-583 y=-297 }
+		Orientation = center
+		moveable = yes
+		clipping = no
+			
+		Background = {
+			name = "changelog_bg"
+			quadTextureSprite = "GFX_changelog_bg"
+		}
+		
+		instantTextBoxType = {
+			name ="changelog_text_title"
+			position = { x= 90 y = 25 }
+			font = "hoi_36header"
+			text = spot_mod_changelog_title
+			format = center
+			maxWidth = 1000
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name ="changelog_text_body"
+			position = { x= 20 y = 110 }
+			font = "hoi_24header"
+			text = spot_mod_changelog_main
+			format = left
+			maxWidth = 1000
+			maxHeight = 1000
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name ="changelog_text_body_title"
+			position = { x= 30 y = 100 }
+			font = "hoi_36header"
+			text = spot_mod_changelog_body_title
+			format = left
+			maxWidth = 1000
+			maxHeight = 1000
+			fixedsize = yes
+		}
+		
+		buttonType ={
+			name ="changelog_close"
+			spriteType = "GFX_main_lobby_button"
+			text = "Close"
+			font = "hoi_24header"
+			position = { x=450 y=600 }
+			#shortcut = "escape"
+		}
+	}
+}

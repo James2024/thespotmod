@@ -1,0 +1,43 @@
+scripted_gui = {
+
+	top_bar = {
+		context_type = player_context
+		
+		window_name = "changelog_top_container"
+		
+		visible = {
+            is_ai = no
+		}
+		
+		effects = {
+			changelog_bg_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = changelog_variable }
+				set_variable = { changelog_variable = show }
+			}
+		}
+	}
+
+	main_changelog = {
+		context_type = player_context
+		
+		window_name = "changelog_main_container"
+		
+		visible = {
+			AND = {
+				check_variable = { changelog_variable > 0.0 }
+				is_ai = no
+			}
+		}
+		
+		effects = {
+			changelog_close_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = changelog_variable }
+				set_variable = { changelog_variable = show }
+			}
+		}
+		
+    }
+}
+
