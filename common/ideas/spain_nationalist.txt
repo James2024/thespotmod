@@ -1,6 +1,17 @@
 ideas = {
 	country = {
-		
+		SPA_nazi_sympathisers = {
+			picture = generic_fascism_drift_bonus
+			
+			allowed {
+				always = yes
+			}
+			
+			modifier {
+				enemy_justify_war_goal_time = 0.3
+			}
+		}
+
 		SPA_recovering_from_civil_war = {
 			picture = FRA_matignon_agreements
 			allowed = {
