@@ -3,6 +3,44 @@ ideas = {
 	
 	country = {
 	
+		BRA_war_industry = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				production_speed_arms_factory_factor = 0.20
+			}
+		}
+		
+		BRA_conversion = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.20
+			}
+		}
+	
 		BRA_rural_north = {
 			
 			picture = generic_agrarian_reform

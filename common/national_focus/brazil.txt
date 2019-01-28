@@ -13,7 +13,7 @@ focus_tree = {
 		text = BRA_industry_1
 		icon = GFX_goal_generic_production
 		cost = 10.00
-		x = 20
+		x = 18
 		y = 0
 		
 		completion_reward = {
@@ -80,7 +80,7 @@ focus_tree = {
 		text = BRA_airforce_modernisation
 		icon = GFX_goal_generic_build_airforce
 		cost = 10.00
-		x = 15
+		x = 14
 		y = 0
 		
 		completion_reward = {
@@ -514,7 +514,7 @@ focus_tree = {
 				technology = heavy_fighter1
 			}
 		}
-		x = 14
+		x = 13
 		y = 1
 
 	}
@@ -538,7 +538,7 @@ focus_tree = {
 				category = tactical_bomber
 			}
 		}
-		x = 16
+		x = 15
 		y = 1
 
 	}
@@ -563,7 +563,7 @@ focus_tree = {
 				technology = heavy_fighter2
 			}
 		}
-		x = 14
+		x = 13
 		y = 2
 
 	}
@@ -588,7 +588,7 @@ focus_tree = {
 				category = tactical_bomber
 			}
 		}
-		x = 16
+		x = 15
 		y = 2
 
 	}
@@ -610,7 +610,7 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
-		x = 15
+		x = 14
 		y = 3
 
 	}
@@ -628,7 +628,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 1
+						size < 2
 						include_locked = yes
 					}
 				}
@@ -636,10 +636,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}		
@@ -668,10 +668,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -695,7 +695,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 1
+						size < 2
 						include_locked = yes
 					}
 				}
@@ -703,10 +703,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}		
@@ -735,10 +735,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 
 					instant_build = yes
 				}
 			}
@@ -748,16 +748,84 @@ focus_tree = {
 		y = 2
 
 	}
+	
+	focus = {
+		id = BRA_construction_effort_3
+		text = BRA_construction_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_construction_effort_2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		x = 19
+		y = 3
+
+	}
 	focus = {
 		id = BRA_infrastructure_1
 		text = BRA_infrastructure_1
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
-			focus = BRA_construction_effort_2
+			focus = BRA_industry_1
 		}
-		x = 19
-		y = 3
+		x = 17
+		y = 1
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
@@ -794,7 +862,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -802,7 +870,7 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 1
+						size > 2
 					}
 					OR = {
 						is_in_home_area = yes
@@ -811,7 +879,7 @@ focus_tree = {
 								any_owned_state = {
 									free_building_slots = {
 										building = infrastructure
-										size > 1
+										size > 2
 									}
 									is_in_home_area = yes
 								}
@@ -821,7 +889,34 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -836,8 +931,8 @@ focus_tree = {
 		prerequisite = {
 			focus = BRA_infrastructure_1
 		}
-		x = 19
-		y = 4
+		x = 17
+		y = 3
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
@@ -849,6 +944,7 @@ focus_tree = {
 				}
 			}
 		}
+
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -874,7 +970,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -882,7 +978,7 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 1
+						size > 2
 					}
 					OR = {
 						is_in_home_area = yes
@@ -891,7 +987,7 @@ focus_tree = {
 								any_owned_state = {
 									free_building_slots = {
 										building = infrastructure
-										size > 1
+										size > 2
 									}
 									is_in_home_area = yes
 								}
@@ -901,7 +997,34 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -914,14 +1037,17 @@ focus_tree = {
 		icon = GFX_focus_research
 		cost = 10.00
 		prerequisite = {
+			focus = BRA_construction_effort_3
+		}
+		prerequisite = {
 			focus = BRA_infrastructure_2
 		}
 		completion_reward = {
 			add_research_slot = 1
 		}
 		
-		x = 19
-		y = 5
+		x = 18
+		y = 4
 
 	}
 	focus = {
@@ -941,7 +1067,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 1
+						size < 2
 						include_locked = yes
 					}
 				}
@@ -949,10 +1075,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -981,10 +1107,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1009,7 +1135,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 1
+						size < 2
 						include_locked = yes
 					}
 				}
@@ -1017,10 +1143,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -1049,10 +1175,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1089,7 +1215,10 @@ focus_tree = {
 			}
 		}
 		available = {
-			threat > 0.4
+			OR = {
+				threat > 0.3
+				date > 2000.04.10
+			}
 		}
 		x = 24
 		y = 1
@@ -1167,58 +1296,89 @@ focus_tree = {
 		}
 
 	}
-	focus = {
-		id = BRA_allied_research_sharing
-		text = BRA_allied_research_sharing
-		icon = GFX_goal_generic_scientific_exchange
-		cost = 10.00
-		prerequisite = {
-			focus = BRA_allied_colaboration
-		}
-		
-		available = {
-			hidden_trigger = { has_dlc = "Together for Victory" }
-			is_in_faction = yes
-			num_faction_members > 1
-		}
-		
-		completion_reward = { add_to_tech_sharing_group = continuous_tech_share }
-
-		x = 27
-		y = 2
-
-	}
+#	focus = {
+#		id = BRA_allied_research_sharing
+#		text = BRA_allied_research_sharing
+#		icon = GFX_goal_generic_scientific_exchange
+#		cost = 10.00
+#		prerequisite = {
+#			focus = BRA_allied_colaboration
+#		}
+#		
+#		available = {
+#			hidden_trigger = { has_dlc = "Together for Victory" }
+#			is_in_faction = yes
+#			num_faction_members > 1
+#		}
+#		
+#		completion_reward = { add_to_tech_sharing_group = continuous_tech_share }
+#
+#		x = 27
+#		y = 2
+#
+#	}
 	focus = {
 		id = BRA_research_teams
 		text = BRA_research_teams
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 10.00
 		prerequisite = {
-			focus = BRA_war_rationing
-			focus = BRA_war_rationing
-			focus = BRA_allied_research_sharing
+			focus = BRA_allied_colaboration
 		}
 		completion_reward = {
 			add_ideas = BRA_research_teams
+		}
+		x = 27
+		y = 2
+
+	}
+	
+	focus = {
+		id = BRA_war_industry_focus
+		text = BRA_war_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_war_rationing
+		}
+		completion_reward = {
+			add_ideas = BRA_conversion
 		}
 		x = 25
 		y = 4
 
 	}
+	
+	focus = {
+		id = BRA_defensive_industry
+		text = BRA_defensive_industry
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_mobilise_the_people
+		}
+		completion_reward = {
+			add_ideas = BRA_war_industry
+		}
+		x = 23
+		y = 4
+
+	}
+	
+	
 	focus = {
 		id = BRA_extra_research_slot_2
 		text = BRA_extra_research_slot_2
 		icon = GFX_focus_research2
 		cost = 10.00
 		prerequisite = {
-			focus = BRA_allied_research_sharing
-			focus = BRA_war_rationing
+			focus = BRA_research_teams
 		}
 		completion_reward = {
 			add_research_slot = 1
 		}
 		x = 27
-		y = 4
+		y = 3
 
 	}
 	focus = {
@@ -1237,8 +1397,8 @@ focus_tree = {
 				category = nuclear
 			}
 		}
-		x = 18
-		y = 6
+		x = 17
+		y = 5
 
 	}
 	focus = {
@@ -1259,8 +1419,8 @@ focus_tree = {
 				category = rocketry
 			}
 		}
-		x = 20
-		y = 6
+		x = 19
+		y = 5
 
 	}
 	focus = {
