@@ -2,7 +2,7 @@
 
 oob = "MEX_1936"
 add_ideas = {
-	undisturbed_isolation
+	isolation
 }
 # Starting tech
 set_research_slots = 3

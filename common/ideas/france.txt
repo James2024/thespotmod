@@ -712,6 +712,22 @@ ideas = {
 	
 	high_command = {
 		
+		FRA_Philippe_Kieffer = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			picture = generic_army_europe_3
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
 		rene_prioux = {
 			
 			

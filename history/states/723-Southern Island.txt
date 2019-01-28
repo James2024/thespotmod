@@ -12,6 +12,7 @@ state={
 	history={
 		owner = NZL
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 5
 			air_base = 1
 			2197 = {
