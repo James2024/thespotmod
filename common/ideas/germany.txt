@@ -1,6 +1,22 @@
 ideas = {
 
 	country = {
+	
+		GER_SS = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				enemy_partisan_effect = -1
+				}
+			}
+			
 		sour_loser = {
 			
 			allowed = {
