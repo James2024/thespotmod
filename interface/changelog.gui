@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "changelog_top_container"
-		position = { x = 900 y = 4 }
+		position = { x = 1000 y = 4 }
 		
 		buttonType ={
 			name ="changelog_bg"
@@ -10,11 +10,6 @@ guiTypes = {
 			shortcut = "ctrl+c"
 		}
 		
-		#iconType = {
-		#	name ="fuhrer_mana_icon"
-		#	spriteType = "GFX_fuhrer_mana"
-		#	position = { x= 7 y = 6 }
-		#}
 		
 		instantTextBoxType = {
 			name ="changelog_text"

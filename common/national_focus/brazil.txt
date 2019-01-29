@@ -357,7 +357,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = inf_1_bra
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = artillery
 			}
 		}
@@ -396,7 +396,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = inf_1_bra
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = artillery
 			}
 		}
@@ -426,7 +426,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		cost = 5.00
 		prerequisite = {
-			focus = BRA_army_reforms
+			focus = BRA_motorisation_effort
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -446,7 +446,7 @@ focus_tree = {
 			}
 		}
 		x = 11
-		y = 2
+		y = 3
 
 	}
 	focus = {
@@ -455,7 +455,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
 		prerequisite = {
-			focus = BRA_armour_focus
+			focus = BRA_army_reforms
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -466,7 +466,7 @@ focus_tree = {
 			}
 		}
 		x = 11
-		y = 3
+		y = 2
 
 	}
 	focus = {
@@ -477,7 +477,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BRA_artillery_effort_2
 			focus = BRA_equipment_2
-			focus = BRA_motorisation_effort
+			focus = BRA_armour_focus
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -827,38 +827,26 @@ focus_tree = {
 		}
 		x = 17
 		y = 1
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			500 = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
 						size > 0
 					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			496 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
 					}
 				}
 				add_building_construction = {
@@ -867,52 +855,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
+			501 = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
 						size > 2
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 2
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 2
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
 					}
 				}
 				add_building_construction = {
@@ -934,39 +881,26 @@ focus_tree = {
 		}
 		x = 17
 		y = 3
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			501 = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
 						size > 0
 					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			500 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
 					}
 				}
 				add_building_construction = {
@@ -975,52 +909,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
+			503 = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
 						size > 2
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 2
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 2
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
 					}
 				}
 				add_building_construction = {
@@ -1347,7 +1240,7 @@ focus_tree = {
 			focus = BRA_war_rationing
 		}
 		completion_reward = {
-			add_ideas = BRA_conversion
+			add_ideas = BRA_war_industry
 		}
 		x = 25
 		y = 4
@@ -1363,7 +1256,7 @@ focus_tree = {
 			focus = BRA_mobilise_the_people
 		}
 		completion_reward = {
-			add_ideas = BRA_war_industry
+			add_ideas = BRA_conversion
 		}
 		x = 23
 		y = 4
