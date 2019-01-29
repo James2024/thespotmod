@@ -1,0 +1,1501 @@
+focus_tree = {
+	id = Brazil_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+	}
+	default = no
+	focus = {
+		id = BRA_industry_1
+		text = BRA_industry_1
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 18
+		y = 0
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus_1
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+
+	}
+	focus = {
+		id = BRA_naval_research
+		text = BRA_naval_research
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
+		x = 3
+		y = 0
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_tech_1
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+		
+		completion_reward = {
+			navy_experience = 75
+			500 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = BRA_army_effort
+		text = BRA_army_effort
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		x = 9
+		y = 0
+		
+		completion_reward = {
+			army_experience = 75
+			add_tech_bonus = {
+				name = army_effort_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = BRA_airforce_modernisation
+		text = BRA_airforce_modernisation
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		x = 14
+		y = 0
+		
+		completion_reward = {
+			air_experience = 100
+			add_tech_bonus = {
+				name = air_doctrine_1
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = BRA_political_reforms
+		text = BRA_political_reforms
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		x = 27
+		y = 0
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+#	focus = {
+#		id = BRA_coastal_facilities
+#		text = BRA_coastal_facilities
+#		icon = GFX_goal_generic_build_navy
+#		cost = 10.00
+#		prerequisite = {
+#			focus = BRA_naval_research
+#		}
+#		completion_reward = {
+#			10980 = {
+#				add_building_construction = {
+#					type = naval_base
+#					level = 4
+#					instant_build = yes
+#				}
+#			}
+#		}
+#		x = 1
+#		y = 1
+#
+#	}
+	focus = {
+		id = BRA_further_naval_industrial_expansion
+		text = BRA_further_naval_industrial_expansion
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_naval_research
+		}
+		completion_reward = {
+			500 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = BRA_battleship_research
+		text = BRA_battleship_research
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		prerequisite = {
+			focus = BRA_further_naval_industrial_expansion
+		}
+		mutually_exclusive = {
+			focus = BRA_cruiser_research
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = basic_battlecruiser
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = heavy_battleship
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+			}
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = BRA_cruiser_research
+		text = BRA_cruiser_research
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5
+		prerequisite = {
+			focus = BRA_further_naval_industrial_expansion
+		}
+		mutually_exclusive = {
+			focus = BRA_battleship_research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = improved_light_cruiser
+				technology = improved_heavy_cruiser
+			}
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = BRA_destroyer_research
+		text = BRA_destroyer_research
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 5
+		prerequisite = {
+			focus = BRA_battleship_research
+			focus = BRA_cruiser_research
+		}
+		mutually_exclusive = {
+			focus = BRA_submarine_research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = improved_destroyer
+			}
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = BRA_submarine_research
+		text = BRA_submarine_research
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5
+		prerequisite = {
+			focus = BRA_cruiser_research
+			focus = BRA_battleship_research
+		}
+		mutually_exclusive = {
+			focus = BRA_destroyer_research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+			}
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = BRA_landing_craft
+		text = BRA_landing_craft
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 5
+		prerequisite = {
+			focus = BRA_submarine_research
+			focus = BRA_destroyer_research
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = BRA_marines_and_landing_craft
+				bonus = 0.5
+				uses = 2
+				technology = transport
+				technology = landing_craft
+				technology = tank_landing_craft
+			}
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = BRA_naval_doctrine
+		text = BRA_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5
+		prerequisite = {
+			focus = BRA_naval_research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_tech_1
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = BRA_army_reforms
+		text = BRA_army_reforms
+		icon = GFX_focus_chi_army_reform
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_army_effort
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_tech_2
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = BRA_equipment_1
+		text = BRA_equipment_1
+		icon = GFX_focus_secret_rearmament
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_army_reforms
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = inf_1_bra
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = BRA_artillery_effort
+		text = BRA_artillery_effort
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_equipment_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = inf_1_bra
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = BRA_doctrine_effort
+		text = BRA_doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_army_reforms
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doctrine_3
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = BRA_doctrinal_reforms
+		text = BRA_doctrinal_reforms
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doctrine_3
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		prerequisite = {
+			focus = BRA_doctrine_effort
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = BRA_expand_special_forces_corps
+		text = BRA_expand_special_forces_corps
+		icon = GFX_focus_generic_paratrooper
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_army_effort
+		}
+		completion_reward = { add_ideas = BRA_expand_special_forces }
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = BRA_armour_focus
+		text = BRA_armour_focus
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_army_reforms
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				technology = basic_light_tank
+				technology = improved_light_tank
+				technology = advanced_light_tank
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = advanced_medium_tank
+				technology = main_battle_tank
+				technology = basic_heavy_tank
+				technology = improved_heavy_tank
+				technology = advanced_heavy_tank
+			}
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = BRA_motorisation_effort
+		text = BRA_motorisation_effort
+		icon = GFX_goal_generic_army_motorized
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_armour_focus
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = BRA_special_forces
+		text = BRA_special_forces
+		icon = GFX_focus_generic_paratrooper
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_artillery_effort
+			focus = BRA_doctrinal_reforms
+			focus = BRA_motorisation_effort
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = BRA_fighter_research
+		text = BRA_fighter_research
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_airforce_modernisation
+		}
+		mutually_exclusive = {
+			focus = BRA_bomber_research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = heavy_fighter1
+			}
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = BRA_bomber_research
+		text = BRA_bomber_research
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_airforce_modernisation
+		}
+		mutually_exclusive = {
+			focus = BRA_fighter_research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 2
+				technology = strategic_bomber1
+				category = tactical_bomber
+			}
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = BRA_modern_fighters
+		text = BRA_modern_fighters
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_bomber_research
+			focus = BRA_fighter_research
+		}
+		mutually_exclusive = {
+			focus = BRA_modern_bombers
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = modern_fighter_bra
+				bonus = 0.5
+				uses = 2
+				technology = fighter2
+				technology = heavy_fighter2
+			}
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = BRA_modern_bombers
+		text = BRA_modern_bombers
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_bomber_research
+			focus = BRA_fighter_research
+		}
+		mutually_exclusive = {
+			focus = BRA_modern_fighters
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = modern_bomber_bra
+				bonus = 0.5
+				uses = 2
+				technology = strategic_bomber2
+				category = tactical_bomber
+			}
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = BRA_air_doctrine
+		text = BRA_air_doctrine
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_modern_fighters
+			focus = BRA_modern_fighters
+			focus = BRA_modern_bombers
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_final_bra
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = BRA_construction_effort
+		text = BRA_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_industry_1
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = BRA_construction_effort_2
+		text = BRA_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_construction_effort
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2 
+					instant_build = yes
+				}
+			}
+		}
+
+		x = 19
+		y = 2
+
+	}
+	
+	focus = {
+		id = BRA_construction_effort_3
+		text = BRA_construction_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_construction_effort_2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = BRA_infrastructure_1
+		text = BRA_infrastructure_1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_industry_1
+		}
+		x = 17
+		y = 1
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = BRA_infrastructure_2
+		text = BRA_infrastructure_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_infrastructure_1
+		}
+		x = 17
+		y = 3
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = BRA_extra_research_slot
+		text = BRA_extra_research_slot
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_construction_effort_3
+		}
+		prerequisite = {
+			focus = BRA_infrastructure_2
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = BRA_armament_effort
+		text = BRA_armament_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_industry_1
+		}
+		x = 21
+		y = 1
+		
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_armament_effort_2
+		text = BRA_armament_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_armament_effort
+		}
+
+		x = 21
+		y = 2
+		
+				bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_southern_giant_awakes
+		text = BRA_southern_giant_awakes
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_political_reforms
+		}
+		completion_reward = {
+			remove_ideas = BRA_rural_north
+			remove_ideas = BRA_agricultural_regions
+			add_stability = 0.05
+			if = {
+				limit = {
+					NOT = { has_idea = undisturbed_isolation }
+					NOT = { has_idea = isolation }
+				}
+				add_political_power = 100
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = isolation 
+						has_idea = undisturbed_isolation 
+					}
+				}
+				add_ideas = civilian_economy
+			}
+		}
+		available = {
+			OR = {
+				threat > 0.3
+				date > 2000.04.10
+			}
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = BRA_national_war_act
+		text = BRA_national_war_act
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_southern_giant_awakes
+		}
+		bypass = {
+			AND = {
+				NOT = { has_idea = volunteer_only }
+				NOT = { has_idea = disarmed_nation }
+			}
+		}
+		completion_reward = {
+			add_ideas = limited_conscription
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = BRA_mobilise_the_people
+		text = BRA_mobilise_the_people
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_national_war_act
+		}
+		x = 23
+		y = 3
+		
+		completion_reward = {
+			add_ideas = BRA_mobilise_the_people_ideas
+		}
+
+	}
+	focus = {
+		id = BRA_war_rationing
+		text = BRA_war_rationing
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_national_war_act
+		}
+		x = 25
+		y = 3
+		
+		completion_reward = {
+			add_ideas = BRA_war_rationing
+		}
+	}
+	focus = {
+		id = BRA_allied_colaboration
+		text = BRA_allied_colaboration
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_political_reforms
+		}
+		x = 27
+		y = 1
+		
+		available = {
+			is_in_faction_with = ENG
+		}
+		
+		completion_reward = {
+			add_ideas = BRA_collaborate_with_allies
+		}
+
+	}
+#	focus = {
+#		id = BRA_allied_research_sharing
+#		text = BRA_allied_research_sharing
+#		icon = GFX_goal_generic_scientific_exchange
+#		cost = 10.00
+#		prerequisite = {
+#			focus = BRA_allied_colaboration
+#		}
+#		
+#		available = {
+#			hidden_trigger = { has_dlc = "Together for Victory" }
+#			is_in_faction = yes
+#			num_faction_members > 1
+#		}
+#		
+#		completion_reward = { add_to_tech_sharing_group = continuous_tech_share }
+#
+#		x = 27
+#		y = 2
+#
+#	}
+	focus = {
+		id = BRA_research_teams
+		text = BRA_research_teams
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_allied_colaboration
+		}
+		completion_reward = {
+			add_ideas = BRA_research_teams
+		}
+		x = 27
+		y = 2
+
+	}
+	
+	focus = {
+		id = BRA_war_industry_focus
+		text = BRA_war_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_war_rationing
+		}
+		completion_reward = {
+			add_ideas = BRA_conversion
+		}
+		x = 25
+		y = 4
+
+	}
+	
+	focus = {
+		id = BRA_defensive_industry
+		text = BRA_defensive_industry
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_mobilise_the_people
+		}
+		completion_reward = {
+			add_ideas = BRA_war_industry
+		}
+		x = 23
+		y = 4
+
+	}
+	
+	
+	focus = {
+		id = BRA_extra_research_slot_2
+		text = BRA_extra_research_slot_2
+		icon = GFX_focus_research2
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_research_teams
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = BRA_nuclear_effort
+		text = BRA_nuclear_effort
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_extra_research_slot
+		}
+		completion_reward = {
+				add_tech_bonus = {
+				name = nuclear_bonus_1
+				bonus = 0.5
+				uses = 2
+				category = nuclear
+			}
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = BRA_secret_weapons
+		text = BRA_secret_weapons
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_extra_research_slot
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = BRA_army_modernisation
+		text = BRA_army_modernisation
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_special_forces
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_tech_4
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}	
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = inf_4_bra
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = BRA_democratic_leanings
+		text = BRA_democratic_leanings
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_national_security
+		}
+		completion_reward = {
+			add_ideas = { BRA_democratic_leanings }
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = BRA_national_movement
+		text = BRA_national_movement
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_political_reforms
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = BRA_national_security
+		text = BRA_national_security
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_national_movement
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
+		x = 30
+		y = 2
+
+	}
+}
