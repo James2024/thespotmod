@@ -830,12 +830,6 @@ focus_tree = {
 
 		completion_reward = {
 			500 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -843,12 +837,6 @@ focus_tree = {
 				}
 			}
 			496 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -856,12 +844,6 @@ focus_tree = {
 				}
 			}
 			501 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -884,12 +866,6 @@ focus_tree = {
 
 		completion_reward = {
 			501 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -897,12 +873,6 @@ focus_tree = {
 				}
 			}
 			500 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -910,12 +880,6 @@ focus_tree = {
 				}
 			}
 			503 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 2
