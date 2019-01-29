@@ -336,7 +336,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = inf_1_bra
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = infantry_weapons
 			}
 		}
@@ -349,59 +349,62 @@ focus_tree = {
 		text = BRA_artillery_effort
 		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
-		prerequisite = {
-			focus = BRA_equipment_1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = inf_1_bra
-				bonus = 0.5
-				uses = 2
-				category = artillery
-			}
-		}
-		x = 7
-		y = 3
-
-	}
-	focus = {
-		id = BRA_doctrine_effort
-		text = BRA_doctrine_effort
-		icon = GFX_goal_generic_army_doctrines
-		cost = 5.00
+		relative_position_id = BRA_army_reforms
 		prerequisite = {
 			focus = BRA_army_reforms
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				name = land_doctrine_3
+				name = inf_1_bra
 				bonus = 0.5
 				uses = 1
-				category = land_doctrine
+				category = artillery
 			}
 		}
-		x = 9
-		y = 2
+		x = 0
+		y = 1
 
 	}
 	focus = {
-		id = BRA_doctrinal_reforms
-		text = BRA_doctrinal_reforms
-		icon = GFX_goal_generic_air_doctrine
-		cost = 10.00
+		id = BRA_equipment_2
+		text = BRA_equipment_2
+		icon = GFX_goal_generic_army_doctrines
+		x = 0
+		y = 1
+		cost = 5.00
+		relative_position_id = BRA_equipment_1
+		prerequisite = {
+			focus = BRA_equipment_1
+		}
 		completion_reward = {
 			add_tech_bonus = {
-				name = land_doctrine_3
+				name = inf_2_bra
 				bonus = 0.5
 				uses = 1
-				category = land_doctrine
+				category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = BRA_artillery_effort_2
+		text = BRA_artillery_effort_2
+		icon = GFX_goal_generic_air_doctrine
+		relative_position_id = BRA_artillery_effort
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = inf_1_bra
+				bonus = 0.5
+				uses = 1
+				category = artillery
 			}
 		}
 		prerequisite = {
-			focus = BRA_doctrine_effort
+			focus = BRA_artillery_effort
 		}
-		x = 9
-		y = 3
+		x = 0
+		y = 1
 
 	}
 	focus = {
@@ -472,8 +475,8 @@ focus_tree = {
 		icon = GFX_focus_generic_paratrooper
 		cost = 5.00
 		prerequisite = {
-			focus = BRA_artillery_effort
-			focus = BRA_doctrinal_reforms
+			focus = BRA_artillery_effort_2
+			focus = BRA_equipment_2
 			focus = BRA_motorisation_effort
 		}
 		completion_reward = {
@@ -534,7 +537,6 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 0.5
 				uses = 2
-				technology = strategic_bomber1
 				category = tactical_bomber
 			}
 		}
@@ -584,7 +586,6 @@ focus_tree = {
 				name = modern_bomber_bra
 				bonus = 0.5
 				uses = 2
-				technology = strategic_bomber2
 				category = tactical_bomber
 			}
 		}
@@ -1215,9 +1216,13 @@ focus_tree = {
 			}
 		}
 		available = {
-			OR = {
-				threat > 0.3
-				date > 2000.04.10
+			OR = { 
+				threat > 0.4 
+				has_war = yes 
+			AND = { 
+				threat > 0.35 
+				date > 1939.6.1 
+				} 
 			}
 		}
 		x = 24
