@@ -279,20 +279,20 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x=139 y = 309 }
+			position = { x=10000 y = 10000 }
 			quadTextureSprite ="privacy"
 			clicksound = click_default
 			pdx_tooltip = "SPOT_RULES"
 			web_link = "https://docs.google.com/document/d/1xpRu-Bh8kOCPw6J7niWDwnlGKbOpjU5mVSNArC-ytio/edit?usp=sharing"
 		}
-#		ButtonType = {
-#			name = "facebook_button"
-#			position = { x = 139 y = 309 }
-#			quadTextureSprite ="facebook"
-#			clicksound = click_default
-#			pdx_tooltip = "MENU_FACEBOOK"
-#			web_link = "https://www.facebook.com/Heartsofiron"
-#		}			
+		ButtonType = {
+			name = "facebook_button"
+			quadTextureSprite ="facebook"
+			position = { x=139 y = 309 }
+			clicksound = click_default
+			pdx_tooltip = "MENU_FACEBOOK"
+			web_link = "https://www.facebook.com/Heartsofiron"
+		}			
 		
 		ButtonType = {
 			name = "twitter_button"
@@ -303,12 +303,12 @@ guiTypes = {
 			web_link = "https://twitter.com/spot_mod"
 		}
 		
-#		ButtonType = {
-#			name = "privacy_policy_button"
-#			position = { x = 219 y = 309 }
-#			quadTextureSprite ="privacy"
-#			#clicksound = click_default
-#			pdx_tooltip = "MENU_PRIVACY_POLICY"
-#		}
+		ButtonType = {
+			name = "privacy_policy_button"
+			quadTextureSprite ="privacy"
+			position = { x=10000 y = 10000 }
+			#clicksound = click_default
+			pdx_tooltip = "MENU_PRIVACY_POLICY"
+		}
 	}
 }
