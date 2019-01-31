@@ -258,7 +258,7 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-			NOT = { tag = MAN }
+
 		}
 
 		available = {
@@ -267,6 +267,7 @@ prospect_for_resources = {
 			owns_state = 328
 			controls_state = 328
 		}
+		
 		highlight_states = {
 			state = 328
 		}
@@ -296,6 +297,109 @@ prospect_for_resources = {
 		remove_effect = {
 			328 = { set_state_flag = kirin_aluminium_developed }
 			328 = {
+				add_resource = {
+					type = aluminium
+					amount = 25
+				}
+			}
+		}
+	}
+	
+	develop_liaoning_aluminium_deposits = { #715
+
+		icon = aluminium
+
+		allowed = {
+
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 715
+			controls_state = 715
+		}
+		
+		highlight_states = {
+			state = 715
+		}
+
+		visible = {
+			owns_state =715
+			controls_state =715
+			715 = {
+				NOT = {
+					has_state_flag = liaoning_aluminium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			715 = { set_state_flag = liaoning_aluminium_developed }
+			715 = {
+				add_resource = {
+					type = aluminium
+					amount = 25
+				}
+			}
+		}
+	}
+	
+	develop_jehol_aluminium_deposits = { #610
+
+		icon = aluminium
+
+		allowed = {
+
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 610
+			controls_state =610
+		}
+		highlight_states = {
+			state = 610
+		}
+
+		visible = {
+			owns_state = 610
+			controls_state = 610
+			610 = {
+				NOT = {
+					has_state_flag = jehol_aluminium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			610 = { set_state_flag = jehol_aluminium_developed }
+			610 = {
 				add_resource = {
 					type = aluminium
 					amount = 25
