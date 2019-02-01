@@ -45,7 +45,7 @@ buildings = {
 		air_base = yes
 		max_level = 10
 		value = 1
-		damage_factor = 0.5
+		damage_factor = 0.75
 		infrastructure_construction_effect = yes
 	}
 
@@ -139,7 +139,7 @@ buildings = {
 		radar = yes
 		#max_level = 0 # max: 5
 		max_level = 6 # This is the max unlock level
-		damage_factor = 0.5
+		damage_factor = 0.75
 		value = 4
 		infrastructure_construction_effect = yes
 	}
