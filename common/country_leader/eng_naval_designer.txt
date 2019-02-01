@@ -20,7 +20,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			carrier = {
-				carrier_size = 0.10 armor_value = 0.2 naval_speed = 0.1 naval_range = -0.35
+				carrier_size = 0.25 armor_value = 0.2 naval_speed = 0.1 naval_range = -0.35
 			}
 			capital_ship = {
 				armor_value = 0.2 attack = 0.1 naval_speed = 0.1 naval_range = -0.35
