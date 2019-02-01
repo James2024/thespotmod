@@ -20,7 +20,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = industry_bonus_1
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = industry
 			}
 		}
@@ -357,7 +357,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = inf_1_bra
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = artillery
 			}
 		}
@@ -396,7 +396,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = inf_1_bra
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = artillery
 			}
 		}
@@ -473,7 +473,7 @@ focus_tree = {
 		id = BRA_special_forces
 		text = BRA_special_forces
 		icon = GFX_focus_generic_paratrooper
-		cost = 5.00
+		cost = 10
 		prerequisite = {
 			focus = BRA_artillery_effort_2
 			focus = BRA_equipment_2
@@ -1052,8 +1052,6 @@ focus_tree = {
 			focus = BRA_political_reforms
 		}
 		completion_reward = {
-			remove_ideas = BRA_rural_north
-			remove_ideas = BRA_agricultural_regions
 			add_stability = 0.05
 			if = {
 				limit = {
@@ -1094,14 +1092,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BRA_southern_giant_awakes
 		}
-		bypass = {
-			AND = {
-				NOT = { has_idea = volunteer_only }
-				NOT = { has_idea = disarmed_nation }
-			}
-		}
+
 		completion_reward = {
-			add_ideas = limited_conscription
+			remove_ideas = BRA_agricultural_regions
 		}
 		x = 24
 		y = 2
@@ -1150,7 +1143,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			is_in_faction_with = ENG
+			has_war_with = GER
 		}
 		
 		completion_reward = {
@@ -1255,7 +1248,7 @@ focus_tree = {
 				add_tech_bonus = {
 				name = nuclear_bonus_1
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = nuclear
 			}
 		}
@@ -1275,7 +1268,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 0.5
-				uses = 4
+				uses = 2
 				category = electronics
 				category = nuclear
 				category = rocketry
@@ -1289,7 +1282,7 @@ focus_tree = {
 		id = BRA_army_modernisation
 		text = BRA_army_modernisation
 		icon = GFX_focus_generic_commonwealth_build_infantry
-		cost = 5.00
+		cost = 10	
 		prerequisite = {
 			focus = BRA_special_forces
 		}
@@ -1337,8 +1330,8 @@ focus_tree = {
 			focus = BRA_political_reforms
 		}
 		completion_reward = {
-			add_political_power = 100
-			add_stability = 0.1
+			add_political_power = 50
+			add_stability = 0.05
 		}
 		x = 30
 		y = 1
@@ -1354,7 +1347,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
-			add_stability = 0.1
+			add_stability = 0.05
 		}
 		x = 30
 		y = 2
