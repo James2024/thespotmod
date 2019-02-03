@@ -287,6 +287,25 @@ ideas = {
 
 	
 high_command = {
+
+
+
+	SPR_armoured_advisor = {
+
+		picture = generic_army_europe_5
+			
+		allowed = {
+			original_tag = SPR
+			has_government = fascism
+		}
+			
+		traits = { army_armored_1 }
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
 	SPA_emilio_esteban_infantes = {
 		
 		picture = generic_army_europe_5

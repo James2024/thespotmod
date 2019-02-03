@@ -143,6 +143,21 @@ ideas = {
 
 	high_command = {
 
+		SIA_armoured_advisor = {
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { army_armored_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 		SIA_tianliang_huntrakool = {
 
 			picture = generic_army_asia_3

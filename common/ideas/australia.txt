@@ -676,6 +676,21 @@ high_command = {
 			factor = 1
 		}
 	}
+
+	AST_armoured_advisor = {
+		picture = generic_army_europe_1
+			
+		allowed = {
+			original_tag = AST
+		}
+			
+		traits = { army_armored_1 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	AST_arthur_drakeford = {
 
 		picture = generic_army_europe_4

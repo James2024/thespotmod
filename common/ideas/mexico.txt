@@ -257,6 +257,7 @@ ideas = {
 				factor = 1
 			}
 		}
+
 	}
 
 	tank_manufacturer = { 
