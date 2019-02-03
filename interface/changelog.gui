@@ -7,15 +7,15 @@ guiTypes = {
 		buttonType ={
 			name ="changelog_bg"
 			spriteType = "GFX_generic_box_small"
-			position = { x=545 y=-25 }
+			position = { x=555 y=220 }
 			shortcut = "ctrl+c"
 		}
 		
 		
 		instantTextBoxType = {
 			name ="changelog_text"
-			position = {x=540 y=-21 }
-			font = "hoi_18mbs"
+			position = { x=545 y=226 }
+			font = "hoi_16mbs"
 			text = "Changelog"
 			format = center
 			maxWidth = 100
