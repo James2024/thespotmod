@@ -715,7 +715,7 @@ ideas = {
 				factor = 1
 			}
 		}
-		
+	
 		SAF_c_de_weenburg_du_toit = {
 
 			picture = generic_army_europe_5

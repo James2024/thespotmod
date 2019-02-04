@@ -117,6 +117,21 @@ bookmarks = {
 
 		### SPOT MINORS  ###
 		
+		"BRA" = {
+			minor = yes
+			history = "BRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				BRA_rural_north 
+				BRA_agricultural_regions
+			}
+			focuses = {
+				BRA_southern_giant_awakes
+				BRA_war_industry_focus
+				BRA_democratic_leanings
+			}
+		}
+		
 		"SPR" = {
 			minor = yes
 			history = "SPA_GATHERING_STORM_DESC"

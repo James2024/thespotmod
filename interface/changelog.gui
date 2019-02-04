@@ -1,20 +1,21 @@
 guiTypes = {
 	containerWindowType = {
 		name = "changelog_top_container"
-		position = { x = 1000 y = 4 }
+		position = {  x=-631 y=-244 }
+		Orientation = lower_RIGHT
 		
 		buttonType ={
 			name ="changelog_bg"
 			spriteType = "GFX_generic_box_small"
-			position = { x=0 y=0 }
+			position = { x=555 y=220 }
 			shortcut = "ctrl+c"
 		}
 		
 		
 		instantTextBoxType = {
 			name ="changelog_text"
-			position = { x= -5 y = 4 }
-			font = "hoi_18mbs"
+			position = { x=545 y=226 }
+			font = "hoi_16mbs"
 			text = "Changelog"
 			format = center
 			maxWidth = 100

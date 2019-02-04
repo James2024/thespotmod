@@ -323,8 +323,23 @@ ideas = {
 				factor = 1
 			}
 		}
+		
+		BRA_special_forces_advisor = {
 
-		BRA_artur_da_costa_e_silva = {
+			picture = generic_navy_south_america_2
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { army_commando_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BRA_armoured_advisor = {
 
 			picture = generic_army_south_america_4
 			
@@ -332,7 +347,7 @@ ideas = {
 				original_tag = BRA
 			}
 			
-			traits = { army_armored_3 }
+			traits = { army_armored_1 }
 			
 			ai_will_do = {
 				factor = 1

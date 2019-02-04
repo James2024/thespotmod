@@ -32,11 +32,11 @@ state={
 				naval_base = 8
 				coastal_bunker = 3
 			}
-			7329 = {
-				naval_base = 1
-			}
 			10297 = {
 				naval_base = 5
+			}
+			7329 = {
+				naval_base = 1
 			}
 		}
 		add_core_of = MAL

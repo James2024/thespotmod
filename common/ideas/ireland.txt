@@ -202,6 +202,35 @@ ideas = {
 	}
 
 	high_command = {
+		IRE_special_forces_advisor = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { army_commando_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		IRE_armoured_advisor = {
+
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { army_armored_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		IRE_dan_mckenna = {
 			picture = generic_army_europe_1
