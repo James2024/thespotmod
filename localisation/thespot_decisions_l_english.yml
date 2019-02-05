@@ -22,3 +22,8 @@
  GER_the_ss:0 "The SS Initiative"
  develop_jehol_aluminium_deposits:0 "Develop Jehol Alumnium Deposits"
  develop_liaoning_aluminium_deposits:0 "Develop Lianoning Aluminium Deposits"
+ GER_fighter_alexandria_bonus_category:0 "Victory in Egypt"
+ ITA_fighter_alexandria_bonus_category:0 "Victory in Egypt"
+ ITA_bonus_alexandria:0 "Fighter Bonus for Capturing Alexandria"
+ GER_bonus_alexandria:0 "Fighter Bonus for Capturing Alexandria"
+ axis_alexandria_buff_idea_name:0 "Alexandria Fighter Bonus"

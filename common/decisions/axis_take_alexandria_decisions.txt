@@ -1,0 +1,73 @@
+# controls_state
+
+ITA_fighter_alexandria_bonus_category = {
+	ITA_bonus_alexandria = {
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			OR = {
+				any_allied_country = {
+					controls_state = 447
+				}
+			    controls_state = 447
+			}
+		}
+
+		cost = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_war_with = ENG
+		}
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = axis_alexandria_buff_idea
+				days = 360
+			}
+		}
+	}
+}
+
+
+GER_fighter_alexandria_bonus_category = {
+	GER_bonus_alexandria = {
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+				OR = {
+					any_allied_country = {
+						controls_state = 447
+					}
+					controls_state = 447
+				}
+			}
+
+			cost = 0
+			fire_only_once = yes
+			
+			ai_will_do = {
+				factor = 200
+			}
+
+			visible = {
+				ITA = { has_war_with = ENG }
+			}
+
+			complete_effect = {
+				add_timed_idea = {
+					idea = axis_alexandria_buff_idea
+					days = 360
+				}
+			}
+	}
+}
+
