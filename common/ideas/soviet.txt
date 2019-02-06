@@ -1,6 +1,26 @@
 ideas = {
 	country = {
 	
+		SOV_isolated_economy = {
+			allowed = {
+				always = no
+				}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				research_time_factor = -0.1
+				production_speed_infrastructure_factor = 0.2
+				consumer_goods_factor = -0.1
+			}
+		}
+				
+	
 		SOV_war_bonds = {
 			
 			allowed = {
