@@ -7,11 +7,19 @@ ITA_fighter_alexandria_bonus_category = {
 		}
 
 		available = {
-			OR = {
-				any_allied_country = {
+			AND = {
+				OR = {
+					any_allied_country = { controls_state = 447 }
 					controls_state = 447
 				}
-			    controls_state = 447
+				OR = {
+					any_allied_country = { controls_state = 446 }
+					controls_state = 446
+				}
+				OR = {
+					any_allied_country = { controls_state = 453 }
+					controls_state = 453
+				}
 			}
 		}
 
@@ -29,7 +37,7 @@ ITA_fighter_alexandria_bonus_category = {
 		complete_effect = {
 			add_timed_idea = {
 				idea = axis_alexandria_buff_idea
-				days = 360
+				days = 365
 			}
 		}
 	}
@@ -43,13 +51,21 @@ GER_fighter_alexandria_bonus_category = {
 			}
 
 			available = {
+			AND = {
 				OR = {
-					any_allied_country = {
-						controls_state = 447
-					}
+					any_allied_country = { controls_state = 447 }
 					controls_state = 447
 				}
+				OR = {
+					any_allied_country = { controls_state = 446 }
+					controls_state = 446
+				}
+				OR = {
+					any_allied_country = { controls_state = 453 }
+					controls_state = 453
+				}
 			}
+		}
 
 			cost = 0
 			fire_only_once = yes
@@ -65,7 +81,7 @@ GER_fighter_alexandria_bonus_category = {
 			complete_effect = {
 				add_timed_idea = {
 					idea = axis_alexandria_buff_idea
-					days = 360
+					days = 365
 				}
 			}
 	}
