@@ -1,0 +1,60 @@
+########################
+## Custom Spot Events ##
+########################
+
+add_namespace = spot_commander_event
+
+country_event = {
+	id = spot_commander_event.1
+	title = spot_commander_event.1
+	desc = spot_commander_event.1.desc
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = spot_commander_event.1.a
+		
+		create_corps_commander = {
+			name = "Infantry Leader"
+			picture = ""
+			traits = { infantry_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		
+	}
+	
+	option = {
+		name = spot_commander_event.1.b
+		
+		create_corps_commander = {
+			name = "Panzer Leader"
+			picture = ""
+			traits = { panzer_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	option = {
+		name = spot_commander_event.1.c
+		
+		create_corps_commander = {
+			name = "Special forces Leader"
+			picture = ""
+			traits = { commando trait_engineer trickster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}
