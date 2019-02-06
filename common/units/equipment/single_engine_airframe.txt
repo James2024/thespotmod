@@ -480,8 +480,8 @@ equipments = {
 			rubber = 1
 		}
 
-		naval_strike_attack = 9
-		naval_strike_targetting = 12.5
+		naval_strike_attack = 4
+		naval_strike_targetting = 10
 	}
 	# Improved Carrier Fighter
 	cv_fighter_equipment_2 = {
@@ -504,8 +504,8 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
-		naval_strike_attack = 18
-		naval_strike_targetting = 15
+		naval_strike_attack = 9
+		naval_strike_targetting = 10
 	}
 	# Advanced Carrier Fighter
 	cv_fighter_equipment_3 = {

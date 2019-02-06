@@ -37,7 +37,7 @@ ITA_fighter_alexandria_bonus_category = {
 		complete_effect = {
 			add_timed_idea = {
 				idea = axis_alexandria_buff_idea
-				days = 365
+				days = 360
 			}
 		}
 	}
@@ -81,7 +81,7 @@ GER_fighter_alexandria_bonus_category = {
 			complete_effect = {
 				add_timed_idea = {
 					idea = axis_alexandria_buff_idea
-					days = 365
+					days = 360
 				}
 			}
 	}
