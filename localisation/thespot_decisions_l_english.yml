@@ -1,4 +1,6 @@
 ﻿l_english:
+ commander_decision:0 "Recruit Strong Commander"
+ commander_decision_desc:0 "Invest In A Special Training Program For One Commander"
  GER_war_with_the_USSR:0 "War with the USSR"
  GER_barbarossa_decision:0 "Barbarossa Actions"
  USA_building_slot_output:0 "Building Slot Output"
