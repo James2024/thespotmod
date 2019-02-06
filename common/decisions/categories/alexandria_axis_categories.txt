@@ -1,0 +1,31 @@
+ITA_fighter_alexandria_bonus_category = {
+	icon = military_operation
+
+	#picture = GFX_decision_cat_picture_ger_case_anton
+
+	allowed = {
+		original_tag = ITA
+	}
+
+	visible = {
+		original_tag = ITA
+		has_government = fascism
+		has_war_with = ENG
+	}
+}
+
+GER_fighter_alexandria_bonus_category = {
+	icon = military_operation
+
+	#picture = GFX_decision_cat_picture_ger_case_anton
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		original_tag = GER
+		has_government = fascism
+		ITA = { has_war_with = ENG }
+	}
+}

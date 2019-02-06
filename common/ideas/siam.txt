@@ -158,20 +158,20 @@ ideas = {
 			}
 		}
 
-		SIA_tianliang_huntrakool = {
-
-			picture = generic_army_asia_3
-			
-			allowed = {
-				original_tag = SIA
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		#SIA_tianliang_huntrakool = {
+		#
+		#	picture = generic_army_asia_3
+		#	
+		#	allowed = {
+		#		original_tag = SIA
+		#	}
+		#	
+		#	traits = { army_armored_2 }
+		#	
+		#	ai_will_do = {
+		#		factor = 1
+		#	}
+		#}
 		
 		SIA_sindhu_kamalanavin = {
 
