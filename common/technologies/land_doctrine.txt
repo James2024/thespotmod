@@ -1481,7 +1481,7 @@ technologies = {
 	
 	assault_concentration = {
 	
-		max_planning = 0.1
+		max_planning = 0.05
 
 		enable_tactic = tactic_overwhelming_fire
 		
