@@ -452,7 +452,7 @@ leader_traits = {
 		
 		cost = 1000
 		modifier = {
-			army_infantry_defence_factor = 0.15
+			army_infantry_defence_factor = 0.075
 		}
 		
 		ai_will_do = {
@@ -581,8 +581,8 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
 		cost = 700
 		modifier = {
-			army_armor_speed_factor = 0.05 
-			army_armor_attack_factor = 0.1 
+			army_armor_speed_factor = 0.025 
+			army_armor_attack_factor = 0.05
 		}
 		
 		ai_will_do = {
