@@ -1,6 +1,6 @@
 ﻿l_english:
  spot_commander_event.1:0 "Recruiting A Strong Commander"
- spot_commander_event.1.desc:0: "Gain a special commander trained by the best."
+ spot_commander_event.1.desc:0 "Gain a special commander trained by the best."
  spot_commander_event.1.a:0 "Recruit Infantry Commander"
  spot_commander_event.1.b:0 "Recruit Panzer Commander"
  spot_commander_event.1.c:0 "Recruit Sepcial Forces Commander"
