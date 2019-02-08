@@ -8,7 +8,9 @@ state=
 
 	resources={
 		rubber=100 # was: 116
+		aluminium=50
 	}
+
 
 	history={
 		owner = ENG

@@ -288,6 +288,10 @@ ideas = {
 		law = yes
 
 		free_trade = {
+		
+			available = {
+				NOT = {	tag = SOV }
+			}
 
 
 			cost = 150
@@ -313,6 +317,7 @@ ideas = {
 			available = {
 			NOT = { tag = POR }
 			NOT = { tag = SWE }
+			NOT = {	tag = SOV }
 			}
 
 			modifier = {
@@ -334,6 +339,7 @@ ideas = {
 			available = {
 				NOT = { tag = POR }
 				NOT = { tag = SWE }
+				NOT = {	tag = SOV }
 				OR = {
 					AND = {
 						has_government = democratic

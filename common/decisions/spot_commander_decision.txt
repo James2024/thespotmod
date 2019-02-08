@@ -1,0 +1,15 @@
+political_actions = {
+	
+	commander_decision = {
+		icon = generic_operation
+		fire_only_once = yes
+		
+		cost = 50
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = { id = spot_commander_event.1 }
+		}
+	}
+}
