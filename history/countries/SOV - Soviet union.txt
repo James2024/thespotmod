@@ -40,6 +40,11 @@ set_technology = {
 	fleet_in_being = 1
 }
 
+add_ideas = {
+SOV_isolated_economy
+closed_economy
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198
