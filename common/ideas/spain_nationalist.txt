@@ -2,9 +2,10 @@ ideas = {
 	country = {
 		SPA_nazi_sympathisers = {
 			picture = generic_fascism_drift_bonus
-			
-			allowed {
-				always = yes
+		
+			allowed = {
+				original_tag = SPR
+				has_government = fascism
 			}
 			
 			modifier {
