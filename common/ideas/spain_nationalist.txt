@@ -12,6 +12,19 @@ ideas = {
 				enemy_justify_war_goal_time = -0.6
 			}
 		}
+		
+		SPR_low_stability = {
+			picture = generic_fascism_drift_bonus
+		
+			allowed = {
+				original_tag = SPR
+				has_government = fascism
+			}
+			
+			modifier {
+				stability_factor = -0.45
+			}
+		}
 
 		SPA_recovering_from_civil_war = {
 			picture = FRA_matignon_agreements

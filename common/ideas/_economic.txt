@@ -192,6 +192,7 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				NOT = { original_tag = SPR }
 			}
 
 			cost = 150
