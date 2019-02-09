@@ -1301,7 +1301,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 200
+			air_experience = 50
 			add_tech_bonus = {
 				name = USA_air_war_plans_division
 				bonus = 0.5
