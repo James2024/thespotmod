@@ -40,6 +40,22 @@ form_greater_italian_empire_category = {
 			hidden_effect = {
 				set_global_flag = greater_italian_empire_formed
 			}
+			if = {
+				limit = {
+					has_country_leader = { ruling_only = yes name = "Benito Mussolini" }
+				}
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Augustus Mussolini"
+					desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+					picture = "GFX_portrait_italy_emperor_mussolini"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						
+					}
+				}
+			}
 		}
 
 		
