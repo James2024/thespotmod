@@ -846,7 +846,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			cavalry_attack_factor = 0.5
+			cavalry_attack_factor = 0.05
 			cavalry_defence_factor = 0.075
 		}
 		

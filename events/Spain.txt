@@ -84,6 +84,7 @@ country_event = {
 			load_oob = "SPA_Civil_War"
 			set_stability = 0.9
 			set_war_support = 0.8
+			add_ideas = { SPA_nazi_sympathisers }
 			add_popularity = {
 				ideology = fascism
 				popularity = 1

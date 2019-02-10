@@ -1301,7 +1301,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 200
+			air_experience = 50
 			add_tech_bonus = {
 				name = USA_air_war_plans_division
 				bonus = 0.5
@@ -1327,7 +1327,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 50
+			#air_experience = 50
 			add_ideas = air_support_focus
 			add_tech_bonus = {
 				name = USA_air_war_plans_division
@@ -1353,7 +1353,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 50
+			#air_experience = 50
 			add_ideas = strategic_bombing_focus
 			add_tech_bonus = {
 				name = USA_air_war_plans_division
@@ -1379,7 +1379,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 25
 			add_tech_bonus = {
 				name = USA_TAC
 				uses = 1
@@ -1441,7 +1441,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 25
 			add_tech_bonus = {
 				name = USA_combined_bomber_offensive
 				bonus = 0.5
