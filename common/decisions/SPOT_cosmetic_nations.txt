@@ -42,6 +42,46 @@ form_greater_italian_empire_category = {
 			}
 		}
 
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+form_greater_german_reich_category = {
+
+	form_greater_german_reich = {
+
+		icon = generic_form_nation
+
+		available = {
+			is_subject = no
+			has_full_control_of_state = 195
+			has_full_control_of_state = 217
+			has_full_control_of_state = 16
+			all_owned_state = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		visible = {
+			AND = {
+				original_tag = GER
+				has_government = fascism
+			}
+			NOT = { has_global_flag = form_greater_german_reich_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GER_greater_german_reich
+			set_province_name = { id = 6521 name = "Germania" }
+			hidden_effect = {
+				set_global_flag = form_greater_german_reich_flag
+			}
+		}
+
+		
 		ai_will_do = {
 			factor = 0
 		}
