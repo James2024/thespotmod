@@ -1384,18 +1384,18 @@ ideas = {
 				air_equipment = 0.1
 			}			
 			
-			equipment_bonus = {
-				
-				fighter_equipment = {
-					air_agility = 0.15
-				}
-				cv_fighter_equipment = {
-					air_agility = 0.15
-				}
-				heavy_fighter_equipment = {
-					air_agility = 0.15
-				}
-			}
+			#equipment_bonus = {
+			#	
+			#	fighter_equipment = {
+			#		air_agility = 0.15
+			#	}
+			#	cv_fighter_equipment = {
+			#		air_agility = 0.15
+			#	}
+			#	heavy_fighter_equipment = {
+			#		air_agility = 0.15
+			#	}
+			#}
 			
 			ai_will_do = {
 				factor = 1

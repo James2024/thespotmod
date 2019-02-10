@@ -511,7 +511,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			winter_attrition_factor = -0.5
+			winter_attrition_factor = -0.75
 		}
 		
 		ai_will_do = {
