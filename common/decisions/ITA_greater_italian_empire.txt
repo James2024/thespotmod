@@ -1,0 +1,49 @@
+form_greater_italian_empire_category = {
+		
+	form_greater_italian_empire = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			is_subject = no
+			has_full_control_of_state = 446
+			has_full_control_of_state = 447
+			has_full_control_of_state = 453
+			has_full_control_of_state = 461
+			has_full_control_of_state = 462
+			has_full_control_of_state = 44
+			has_full_control_of_state = 47
+			has_full_control_of_state = 107
+			all_owned_state = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		visible = {
+			AND = {
+				original_tag = ITA
+				has_government = fascism
+			}
+			NOT = { has_global_flag = greater_italian_empire_formed }
+			#OR = {
+			#	has_war_with = ENG
+			#	has_war_with = FRA
+			#}
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = ITA_greater_italian_empire
+			hidden_effect = {
+				set_global_flag = greater_italian_empire_formed
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
