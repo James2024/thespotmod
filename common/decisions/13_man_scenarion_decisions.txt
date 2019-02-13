@@ -1,0 +1,72 @@
+JAP_13_man_scenario_categories = {
+	
+	annex_siam = {
+		icon = generic_operation
+		fire_only_once = yes
+		
+		#cost = 50
+		
+		fire_only_once = yes
+		
+		available = {
+			original_tag = JAP
+			has_start_date > 1936.1.2
+		}
+		
+		complete_effect = {
+			annex_country = {
+				target = SIA
+				transfer_troops = no
+			}
+		}
+	}
+}
+
+ENG_13_man_scenario_categories = {
+	
+	annex_new_zealand = {
+		icon = generic_operation
+		fire_only_once = yes
+		
+		#cost = 50
+		
+		fire_only_once = yes
+		
+		available = {
+			original_tag = ENG
+			has_start_date > 1936.1.2
+			has_war_with = GER
+		}
+		
+		complete_effect = {
+			annex_country = {
+				target = NZL
+				transfer_troops = no
+			}
+		}
+	}
+}
+
+GER_13_man_scenario_categories = {
+	
+	annex_bulgaria = {
+		icon = generic_operation
+		fire_only_once = yes
+		
+		#cost = 50
+		
+		fire_only_once = yes
+		
+		available = {
+			original_tag = GER
+			has_start_date > 1936.1.2
+		}
+		
+		complete_effect = {
+			annex_country = {
+				target = BUL
+				transfer_troops = no
+			}
+		}
+	}
+}

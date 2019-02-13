@@ -1,0 +1,41 @@
+JAP_13_man_scenario_categories = {
+	icon = military_operation
+
+	allowed = {
+		original_tag = JAP
+		has_start_date > 1936.1.2
+	}
+
+	visible = {
+		original_tag = JAP
+		has_start_date > 1936.1.2
+	}
+}
+
+ENG_13_man_scenario_categories = {
+	icon = military_operation
+
+	allowed = {
+		original_tag = ENG
+		has_start_date > 1936.1.2
+	}
+
+	visible = {
+		original_tag = ENG
+		has_start_date > 1936.1.2
+	}
+}
+
+GER_13_man_scenario_categories = {
+	icon = military_operation
+
+	allowed = {
+		original_tag = GER
+		has_start_date > 1936.1.2
+	}
+
+	visible = {
+		original_tag = GER
+		has_start_date > 1936.1.2
+	}
+}
