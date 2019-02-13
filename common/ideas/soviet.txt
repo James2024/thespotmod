@@ -1463,7 +1463,7 @@ ideas = {
 
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = 0.10
 			}
 			
 			traits = { mig_design_bureau_aircraft_manufacturer }
@@ -1482,7 +1482,7 @@ ideas = {
 
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = 0.10
 			}
 			
 			traits = { ilyushin_design_bureau_aircraft_manufacturer }
@@ -1501,7 +1501,7 @@ ideas = {
 
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = 0.10
 			}
 			
 			traits = { tupolev_design_bureau_aircraft_manufacturer }
@@ -1520,7 +1520,7 @@ ideas = {
 
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = 0.10
 			}
 			
 			traits = { naval_aircraft_manufacturer }
