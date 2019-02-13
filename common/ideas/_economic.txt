@@ -319,6 +319,7 @@ ideas = {
 			NOT = { tag = POR }
 			NOT = { tag = SWE }
 			NOT = {	tag = SOV }
+			NOT = {	tag = HOL }
 			}
 
 			modifier = {
@@ -341,6 +342,7 @@ ideas = {
 				NOT = { tag = POR }
 				NOT = { tag = SWE }
 				NOT = {	tag = SOV }
+				NOT = {	tag = HOL }
 				OR = {
 					AND = {
 						has_government = democratic
@@ -394,6 +396,7 @@ ideas = {
 
 			available = {
 				NOT = { tag = SWE }
+				NOT = {	tag = HOL }
 				has_war = yes
 				OR = {
 					has_government = fascism

@@ -6,6 +6,10 @@ set_research_slots = 3
 set_stability = 0.8
 set_war_support = 0.1
 
+add_ideas = {
+	free_trade
+	}
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
