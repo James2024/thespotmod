@@ -1,0 +1,25 @@
+form_greater_italian_empire_category = {
+		
+	allowed = {
+		original_tag = ITA
+	}
+
+	visible = {
+		original_tag = ITA
+		has_government = fascism
+	}
+}
+
+form_greater_german_reich_category = {
+	
+	picture = GFX_decision_cat_generic_hre
+	
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		original_tag = GER
+		has_government = fascism
+	}
+}

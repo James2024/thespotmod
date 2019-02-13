@@ -102,7 +102,7 @@ adjacency_rule
 	enemy =
 	{
 		army = yes
-		navy = yes
+		navy = no
 		submarine = yes
 		trade = no
 	}

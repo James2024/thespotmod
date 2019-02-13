@@ -1,0 +1,347 @@
+guiTypes = {
+	#containerWindowType = {
+	#	name = "changelog_top_container"
+	#	position = {  x=-631 y=-244 }
+	#	Orientation = lower_RIGHT
+	#	
+	#	buttonType ={
+	#		name ="changelog_bg"
+	#		spriteType = "GFX_generic_box_small"
+	#		position = { x=555 y=220 }
+	#		shortcut = "ctrl+c"
+	#	}
+	#	
+	#	
+	#	instantTextBoxType = {
+	#		name ="changelog_text"
+	#		position = { x=545 y=226 }
+	#		font = "hoi_16mbs"
+	#		text = "Changelog"
+	#		format = center
+	#		maxWidth = 100
+	#		maxHeight = 24
+	#		fixedsize = yes
+	#	}
+	#}
+	
+	containerWindowType = {
+		name = "information_top_container"
+		position = {  x=-631 y=-244 }
+		Orientation = lower_RIGHT
+		
+		buttonType ={
+			name ="information_bg"
+			spriteType = "GFX_generic_box_small"
+			position = { x=555 y=220 }
+			shortcut = "ctrl+c"
+		}
+		
+		
+		instantTextBoxType = {
+			name ="information_text"
+			position = { x=545 y=226 }
+			font = "hoi_16mbs"
+			text = "Information"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+		}
+	}
+
+
+	containerWindowType = {
+		name = "info_main_container"
+		size = { width = 1168 height = 676}
+		position = { x=-583 y=-297 }
+		Orientation = center
+		moveable = yes
+		clipping = no
+			
+		Background = {
+			name = "changelog_bg"
+			quadTextureSprite = "GFX_tiled_paper_bg2"
+		}
+		
+		instantTextBoxType = {
+			name ="information_header"
+			position = { x=400 y=50 }
+			font = "hoi_36header"
+			text = "Essential Information"
+			format = center
+			maxWidth = 400
+			maxHeight = 24
+			fixedsize = yes
+		}
+	
+		buttonType ={
+			name ="changelog_open"
+			spriteType = "GFX_main_lobby_button"
+			text = "Changelog"
+			font = "hoi_24header"
+			position = { x=800 y=150 }
+			#shortcut = "escape"
+		}
+		
+		instantTextBoxType = {
+			name ="changelog_open_text"
+			position = { x=-50 y=155 }
+			font = "hoi_24header"
+			text = "The changelog provide all the recent updates to the Spot Mod"
+			format = center
+			maxWidth = 1000
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		#########
+		buttonType ={
+			name ="tips_and_tricks_open"
+			spriteType = "GFX_main_lobby_button"
+			text = "Tips"
+			font = "hoi_24header"
+			position = { x=800 y=225 }
+			#shortcut = "escape"
+		}
+		
+		instantTextBoxType = {
+			name ="tips_and_tricks_open_text"
+			position = { x=-5 y=230 }
+			font = "hoi_24header"
+			text = "General tips and tricks for playing multiplayer HOI4"
+			format = center
+			maxWidth = 1000
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		#########
+		buttonType ={
+			name ="how_to_play_open"
+			spriteType = "GFX_main_lobby_button"
+			text = "How To Play"
+			font = "hoi_24header"
+			position = { x=800 y=300 }
+			#shortcut = "escape"
+		}
+		
+		instantTextBoxType = {
+			name ="how_to_play_text"
+			position = { x=60 y=305 }
+			font = "hoi_24header"
+			text = "Tips and tricks for playing your country"
+			format = center
+			maxWidth = 1000
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		#########
+		
+		#buttonType ={
+		#	name ="information_close"
+		#	spriteType = "GFX_main_lobby_button"
+		#	text = "Close"
+		#	font = "hoi_24header"
+		#	position = { x=450 y=600 }
+		#	#shortcut = "escape"
+		#}
+		
+		
+		buttonType ={
+			name ="information_close"
+			spriteType = "GFX_main_lobby_button"
+			text = "Close"
+			font = "hoi_24header"
+			position = { x=450 y=600 }
+			#shortcut = "escape"
+		}
+	
+	}
+	
+	containerWindowType = {
+		name = "changelog_main_container"
+		size = { width = 1168 height = 676}
+		position = { x=-583 y=-297 }
+		Orientation = center
+		moveable = yes
+		clipping = no
+			
+		Background = {
+			name = "changelog_bg"
+			quadTextureSprite = "GFX_tiled_paper_bg2"
+		}
+		
+		instantTextBoxType = {
+			name ="changelog_text_title"
+			position = { x= 90 y = 25 }
+			font = "hoi_36header"
+			text = spot_mod_changelog_title
+			format = center
+			maxWidth = 1000
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name ="changelog_text_body"
+			position = { x= 20 y = 110 }
+			font = "hoi_24header"
+			text = spot_mod_changelog_main
+			format = left
+			maxWidth = 1000
+			maxHeight = 1000
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name ="changelog_text_body_title"
+			position = { x= 30 y = 100 }
+			font = "hoi_36header"
+			text = spot_mod_changelog_body_title
+			format = left
+			maxWidth = 1000
+			maxHeight = 1000
+			fixedsize = yes
+		}
+		
+		buttonType ={
+			name ="changelog_close"
+			spriteType = "GFX_main_lobby_button"
+			text = "Close"
+			font = "hoi_24header"
+			position = { x=450 y=610 }
+			#shortcut = "escape"
+		}
+	}
+
+	
+	containerWindowType = {
+		name = "tips_and_tricks_main_container"
+		size = { width = 1168 height = 676}
+		position = { x=-583 y=-297 }
+		Orientation = center
+		#moveable = yes
+		verticalScrollbar = "right_vertical_slider"
+		margin = { top = 50 bottom = 50 }
+		smooth_scrolling = yes
+			
+		Background = {
+			name = "tips_and_tricks_bg"
+			quadTextureSprite = "GFX_tiled_paper_bg2"
+		}
+		
+		instantTextBoxType = {
+			name ="tips_and_tricks_text_title"
+			position = { x= 90 y = 0 }
+			font = "hoi_36header"
+			text = "Tips and Tricks"
+			format = center
+			maxWidth = 1000
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name ="tips_and_tricks_text_main"
+			position = { x= 90 y = 50 }
+			font = "hoi_18"
+			text = tips_and_tricks_main_text
+			format = left
+			maxWidth = 1000
+			maxHeight = 1000
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name ="tips_and_tricks_close"
+			spriteType = "GFX_main_lobby_button"
+			text = "Close"
+			font = "hoi_24header"
+			position = { x=450 y=610 }
+			#shortcut = "escape"
+		}
+
+	}
+	
+	containerWindowType = {
+		name = "tips_and_tricks_main_container_button"
+		size = { width = 1168 height = 676}
+		position = { x=-583 y=-297 }
+		Orientation = center
+		
+		buttonType = {
+			name ="tips_and_tricks_close"
+			spriteType = "GFX_main_lobby_button"
+			text = "Close"
+			font = "hoi_24header"
+			position = { x=450 y=610 }
+			#shortcut = "escape"
+		}
+	}
+	
+	containerWindowType = {
+		name = "how_to_play_main_container_button"
+		size = { width = 1168 height = 676}
+		position = { x=-583 y=-297 }
+		Orientation = center
+		
+		buttonType = {
+			name ="how_to_play_close"
+			spriteType = "GFX_main_lobby_button"
+			text = "Close"
+			font = "hoi_24header"
+			position = { x=450 y=610 }
+			#shortcut = "escape"
+		}
+	}
+	
+	containerWindowType = {
+		name = "how_to_play_main_container"
+		size = { width = 1168 height = 676}
+		position = { x=-583 y=-297 }
+		Orientation = center
+		#moveable = yes
+		verticalScrollbar = "right_vertical_slider"
+		margin = { top = 50 bottom = 50 }
+		smooth_scrolling = yes
+			
+		Background = {
+			name = "how_to_play_bg"
+			quadTextureSprite = "GFX_tiled_paper_bg2"
+		}
+		
+		instantTextBoxType = {
+			name ="how_to_play_text_title"
+			position = { x= 90 y = 0 }
+			font = "hoi_36header"
+			text = "How To Play Your Nation"
+			format = center
+			maxWidth = 1000
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name ="how_to_play_text_main"
+			position = { x= 90 y = 50 }
+			font = "hoi_18"
+			text = magicmain
+			format = left
+			maxWidth = 1000
+			maxHeight = 1000
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name ="how_to_play_close"
+			spriteType = "GFX_main_lobby_button"
+			text = "Close"
+			font = "hoi_24header"
+			position = { x=450 y=610 }
+			#shortcut = "escape"
+		}
+
+	}
+
+}

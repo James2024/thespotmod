@@ -1,0 +1,105 @@
+form_greater_italian_empire_category = {
+		
+	form_greater_italian_empire = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			is_subject = no
+			has_full_control_of_state = 446
+			has_full_control_of_state = 447
+			has_full_control_of_state = 453
+			has_full_control_of_state = 461
+			has_full_control_of_state = 462
+			has_full_control_of_state = 44
+			has_full_control_of_state = 47
+			has_full_control_of_state = 107
+			all_owned_state = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		visible = {
+			AND = {
+				original_tag = ITA
+				has_government = fascism
+			}
+			NOT = { has_global_flag = greater_italian_empire_formed }
+			#OR = {
+			#	has_war_with = ENG
+			#	has_war_with = FRA
+			#}
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = ITA_greater_italian_empire
+			hidden_effect = {
+				set_global_flag = greater_italian_empire_formed
+			}
+			if = {
+				limit = {
+					has_country_leader = { ruling_only = yes name = "Benito Mussolini" }
+				}
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Augustus Mussolini"
+					desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+					picture = "GFX_portrait_italy_emperor_mussolini"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						
+					}
+				}
+			}
+		}
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+form_greater_german_reich_category = {
+
+	form_greater_german_reich = {
+
+		icon = generic_form_nation
+
+		available = {
+			is_subject = no
+			has_full_control_of_state = 195
+			has_full_control_of_state = 217
+			has_full_control_of_state = 16
+			all_owned_state = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		visible = {
+			AND = {
+				original_tag = GER
+				has_government = fascism
+			}
+			NOT = { has_global_flag = form_greater_german_reich_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GER_greater_german_reich
+			set_province_name = { id = 6521 name = "Germania" }
+			hidden_effect = {
+				set_global_flag = form_greater_german_reich_flag
+			}
+		}
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
