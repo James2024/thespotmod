@@ -22,5 +22,25 @@ ideas = {
 				}
 			}
 		}
+		
+		allies_efficient_artillery_production = {
+			
+			allowed = {
+				OR = {
+					original_tag = ENG
+					original_tag = FRA
+				}
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			picture = generic_artillery_regiments
+
+			removal_cost = -1
+			
+			research_bonus = { artillery = +0.10 }
+		}
 	}
 }
