@@ -1,0 +1,53 @@
+﻿add_namespace = thirteen_man
+
+# IF BASE GAME GIVE PORTUGAL RESOURCES
+country_event = {
+	id = thirteen_man.1
+	title = thirteen_man.1.t
+	desc = thirteen_man.1.d
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	trigger = {
+		has_start_date < 1936.1.2
+		original_tag = POR
+	}
+	
+	option = {
+		name = thirteen_man.1.a
+		add_resource = {
+			type = tungsten
+			amount = 124
+			state = 181
+		}
+	}
+}
+
+# IF BASE GAME GIVE PORTUGAL RESOURCES
+country_event = {
+	id = thirteen_man.2
+	title = thirteen_man.2.t
+	desc = thirteen_man.2.d
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	trigger = {
+		has_start_date > 1936.1.2
+		original_tag = YUG
+	}
+	
+	option = {
+		name = thirteen_man.2.a
+		add_resource = {
+			type = tungsten
+			amount = 124
+			state = 107
+		}
+	}
+}
