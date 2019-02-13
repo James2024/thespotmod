@@ -1,0 +1,26 @@
+ideas = {
+
+	country = {
+	
+		ENG_efficient_fighter_production = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			picture = generic_fighter_production_diverted
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.15
+				}
+			}
+		}
+	}
+}
