@@ -3,9 +3,6 @@ state={
 	id=437
 	name="STATE_437" # Indore
 	manpower = 8402500
-	resources={
-		aluminium=10
-	}
 
 	state_category = rural
 
