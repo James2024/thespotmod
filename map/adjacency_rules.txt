@@ -745,15 +745,15 @@ adjacency_rule
 	contested =
 	{
 		army = yes
-		navy = no
-		submarine = no
+		navy = yes
+		submarine = yes
 		trade = no
 	}
 	enemy =
 	{
-		army = no
-		navy = no
-		submarine = no
+		army = yes
+		navy = yes
+		submarine = yes
 		trade = no
 	}
 	friend =
