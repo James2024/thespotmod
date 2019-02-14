@@ -84,7 +84,7 @@ ideas = {
 					has_war = yes
 					threat > 0.05
 				}
-				has_war_support > 0.10
+				has_war_support > 0.15
 
 				if = {
 					limit = {
@@ -128,7 +128,7 @@ ideas = {
 					has_war = yes
 					threat > 0.15
 				}
-				has_war_support > 0.15
+				has_war_support > 0.2
 
 				if = {
 					limit = {
