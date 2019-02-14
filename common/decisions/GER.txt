@@ -11,22 +11,17 @@ war_measures = {
 		D01 = { is_subject_of = GER }
 		original_tag = GER
 		has_war = yes
-		}
+	}
 	available = {
 		date > 1941.1.1
-		}
+	}
 	
 	complete_effect = {
 		annex_country = {
 			target = D01
 			transfer_troops = no
-				if = {
-					limit = {
-					is_subject_of = GER
-					}
-				}
-			}
 		}
+	}
 	}
 
 	GER_annex_vichy2 = {
@@ -46,11 +41,6 @@ war_measures = {
 		annex_country = {
 			target = D02
 			transfer_troops = no
-				if = {
-					limit = {
-					is_subject_of = GER
-					}
-				}
 			}
 		}
 	}
@@ -72,11 +62,6 @@ war_measures = {
 		annex_country = {
 			target = D03
 			transfer_troops = no
-				if = {
-					limit = {
-					is_subject_of = GER
-					}
-				}
 			}
 		}
 	}
