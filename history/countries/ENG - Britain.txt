@@ -109,6 +109,12 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
+1936.1.2 = {
+	add_ideas = { ENG_efficient_fighter_production }
+	add_ideas = { allies_efficient_artillery_production }
+}
+
+
 1939.1.1 = {
 
 	add_political_power = 1198

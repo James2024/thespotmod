@@ -25,6 +25,9 @@ state={
 				naval_base = 12
 			}
 		}
+		1936.1.2 = {
+			owner = ENG
+		}
 		add_core_of = IRE
 	}
 
