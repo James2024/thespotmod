@@ -1,0 +1,14 @@
+
+ai_historical_focus_list_SIA = {
+	ai_national_focuses = {
+		SIA_investors
+		SIA_production_effort_3
+		SIA_production_effort_2
+		SIA_military_effort_3
+		SIA_military_effort_2
+		SIA_infrastructure_1
+		SIA_infrastructure_2
+		SIA_production_effort_1
+		SIA_military_effort_1
+	}
+}
