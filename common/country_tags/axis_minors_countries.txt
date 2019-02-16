@@ -1,0 +1,4 @@
+
+EFR	= "countries/Etat_Francais.txt"
+#to edit color you need to go to common/countries/colorstxt
+#to edit leader names go to histort/countries/ country name txt

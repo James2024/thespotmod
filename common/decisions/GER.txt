@@ -1,4 +1,5 @@
 #Category only allowed for GER
+
 war_measures = {
 	GER_annex_vichy = {
 	
@@ -8,65 +9,22 @@ war_measures = {
 		original_tag = GER
 		}
 	visible = {
-		D01 = { is_subject_of = GER }
 		original_tag = GER
 		has_war = yes
-	}
+		}
 	available = {
 		date > 1941.1.1
-	}
-	
-	complete_effect = {
-		annex_country = {
-			target = D01
-			transfer_troops = no
-		}
-	}
-	}
-
-	GER_annex_vichy2 = {
-	
-	icon = generic_political_discourse
-	
-	allowed = {
-		original_tag = GER
-		}
-	visible = {
-		original_tag = GER
-		has_war = yes
-		D02 = { is_subject_of = GER }
 		}
 	
 	complete_effect = {
 		annex_country = {
-			target = D02
-			transfer_troops = no
-			}
-		}
-	}
-
-	GER_annex_vichy3 = {
-	
-	icon = generic_political_discourse
-	
-	allowed = {
-		original_tag = GER
-		}
-	visible = {
-		original_tag = GER
-		has_war = yes
-		D03 = { is_subject_of = GER }
-		}
-	
-	complete_effect = {
-		annex_country = {
-			target = D03
+			target = EFR
 			transfer_troops = no
 			}
 		}
 	}
 }
-	
+
 GER_mefo_bills_category = {
 
 	GER_mefo_bills_mission = {

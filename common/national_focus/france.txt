@@ -1617,7 +1617,6 @@ focus_tree = {
 		completion_reward = {
 			add_state_core = 539
 			add_political_power = 150
-			set_capital = 539
 			539 = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {

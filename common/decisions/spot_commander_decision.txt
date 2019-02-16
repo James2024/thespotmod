@@ -12,6 +12,10 @@ political_actions = {
 			is_major = no
 		}
 		
+		visible = {
+			is_major = no
+		}
+		
 		complete_effect = {
 			country_event = { id = spot_commander_event.1 }
 		}
