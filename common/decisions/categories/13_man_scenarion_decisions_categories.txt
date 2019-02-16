@@ -61,3 +61,25 @@ thirteen_man_allies_research_bonus_category = {
 		has_start_date > 1936.1.2
 	}
 }
+
+thirteen_man_choose_air_doctrine_category = {
+	icon = military_operation
+
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = GER
+			original_tag = SOV
+		}
+		has_start_date > 1936.1.2
+	}
+
+	visible = {
+		OR = {
+			original_tag = ENG
+			original_tag = GER
+			original_tag = SOV
+		}
+		has_start_date > 1936.1.2
+	}
+}

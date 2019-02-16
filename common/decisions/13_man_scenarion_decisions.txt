@@ -98,13 +98,44 @@ thirteen_man_allies_research_bonus_category = {
 		remove_effect = {
 			remove_ideas = { allies_research_underway }
             add_tech_bonus = {
-				name = 13_man_allies_reseach_effort_bonus
+				name = thirteen_man_allies_reseach_effort_bonus
 				bonus = 0.5
 				uses = 2
 				category = infantry_weapons
 				category = artillery
 			}
         }
+	}
+
+
+}
+
+thirteen_man_choose_air_doctrine_category = {
+
+	thirteen_man_choose_air_doctrine = {
+		icon = generic_operation
+		
+		#cost = 50
+		fire_only_once = yes
+		
+		available = {
+			OR = {
+				original_tag = ENG
+				original_tag = GER
+				original_tag = SOV
+			}
+			has_start_date > 1936.1.2
+		}
+	
+		complete_effect = {
+			add_tech_bonus = {
+				name = thirteen_man_air_doc_bonus
+				bonus = 1
+				uses = 10
+				category = air_doctrine
+			}
+		}
+
 	}
 
 
