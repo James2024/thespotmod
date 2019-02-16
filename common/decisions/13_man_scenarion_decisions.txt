@@ -70,3 +70,42 @@ GER_13_man_scenario_categories = {
 		}
 	}
 }
+
+
+
+thirteen_man_allies_research_bonus_category = {
+
+	thirteen_man_allies_reseach_effort = {
+		icon = generic_operation
+		
+		#cost = 50
+		
+		days_re_enable = 5 # POSSIBLE CHANGE?
+		days_remove = 90
+		
+		available = {
+			OR = {
+				original_tag = ENG
+				original_tag = USA
+				original_tag = FRA
+			}
+			has_start_date > 1936.1.2
+		}
+		
+		complete_effect = {
+			add_ideas = { allies_research_underway }
+		}
+		remove_effect = {
+			remove_ideas = { allies_research_underway }
+            add_tech_bonus = {
+				name = 13_man_allies_reseach_effort_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+        }
+	}
+
+
+}

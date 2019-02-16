@@ -29,3 +29,6 @@
  ITA_bonus_alexandria:0 "Fighter Bonus for Capturing Alexandria"
  GER_bonus_alexandria:0 "Fighter Bonus for Capturing Alexandria"
  axis_alexandria_buff_idea_name:0 "Alexandria Fighter Bonus"
+ thirteen_man_allies_research_bonus_category:0 "Allied Research"
+ thirteen_man_allies_reseach_effort:0 "Arms Research"
+ allies_research_underway:0 "Allies Research Underway"

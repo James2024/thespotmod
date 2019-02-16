@@ -39,3 +39,25 @@ GER_13_man_scenario_categories = {
 		has_start_date > 1936.1.2
 	}
 }
+
+thirteen_man_allies_research_bonus_category = {
+	icon = military_operation
+
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = USA
+			original_tag = FRA
+		}
+		has_start_date > 1936.1.2
+	}
+
+	visible = {
+		OR = {
+			original_tag = ENG
+			original_tag = USA
+			original_tag = FRA
+		}
+		has_start_date > 1936.1.2
+	}
+}

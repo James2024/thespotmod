@@ -42,5 +42,27 @@ ideas = {
 			
 			research_bonus = { artillery = +0.10 }
 		}
+		
+		allies_research_underway = {
+			allowed = {
+				OR = {
+					original_tag = ENG
+					original_tag = FRA
+					original_tag = USA
+				}
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			picture = generic_research_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.25	
+			}
+		}
 	}
 }
