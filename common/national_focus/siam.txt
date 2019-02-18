@@ -36,7 +36,7 @@ focus_tree = {
 
    focus = {
        id = SIA_production_effort_1
-       icon = GFX_idea_rice_reforms
+       icon = GFX_goal_generic_construct_civ_factory   
 		x = 4
 		y = 5
 		cost = 10
@@ -588,7 +588,7 @@ focus_tree = {
 
 	focus = {
 		id = SIA_fascism_support
-		icon = GFX_focus_SIA_fascism_leanings
+		icon = GFX_goal_support_fascism
 		prerequisite = { focus = SIA_adressing_political_issues }
 		x = 11
 		y = 1
