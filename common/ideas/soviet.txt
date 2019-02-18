@@ -18,6 +18,20 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
+		
+		SOV_cold_acclimatization_army = {
+			allowed = {
+				always = no
+				}
+			
+			removal_cost = -1
+			
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.5
+			}
+		}
 				
 	
 		SOV_war_bonds = {

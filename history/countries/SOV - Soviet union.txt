@@ -43,6 +43,7 @@ set_technology = {
 add_ideas = {
 SOV_isolated_economy
 closed_economy
+SOV_cold_acclimatization_army
 }
 
 1939.1.1 = {
