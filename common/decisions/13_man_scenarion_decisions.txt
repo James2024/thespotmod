@@ -11,6 +11,7 @@ JAP_13_man_scenario_categories = {
 		available = {
 			original_tag = JAP
 			has_start_date > 1936.1.2
+			has_start_date < 1936.1.4
 		}
 		
 		complete_effect = {
@@ -35,6 +36,7 @@ ENG_13_man_scenario_categories = {
 		available = {
 			original_tag = ENG
 			has_start_date > 1936.1.2
+			has_start_date < 1936.1.4
 			has_war_with = GER
 		}
 		
@@ -60,6 +62,7 @@ GER_13_man_scenario_categories = {
 		available = {
 			original_tag = GER
 			has_start_date > 1936.1.2
+			has_start_date < 1936.1.4
 		}
 		
 		complete_effect = {
@@ -125,6 +128,7 @@ thirteen_man_choose_air_doctrine_category = {
 				original_tag = SOV
 			}
 			has_start_date > 1936.1.2
+			has_start_date < 1936.1.4
 		}
 	
 		complete_effect = {
