@@ -59,7 +59,7 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.40
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.30
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0002
-NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.5 }
+NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.6 }
 NDefines.NMilitary.SLOWEST_SPEED = 3
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.5
@@ -69,6 +69,7 @@ NDefines.NMilitary.OVERSEAS_LOSE_EQUIPMENT_FACTOR = 1
 NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 6.0
 NDefines.NMilitary.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.018
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.1
 ---XP for leaders
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0
@@ -115,7 +116,7 @@ NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.90
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.10 -- -0.12	5x levels = 60% defense from bombing
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12 -- -0.12	5x levels = 60% defense from bombing
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER =	0.1	-- base 0.192 How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.4 -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.7 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
