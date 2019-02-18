@@ -489,6 +489,11 @@ country_event = {
 				set_state_controller = 680
 				set_state_controller = 554
 				set_state_controller = 458
+				set_state_controller = 543
+				set_state_controller = 741
+				set_state_controller = 286
+				set_state_controller = 670
+				set_state_controller = 671
 				if = {
 					limit = {
 						1 = {
@@ -549,13 +554,8 @@ country_event = {
 
 			transfer_state = 665
 			#transfer_state = 557
-			transfer_state = 671
-			transfer_state = 670
-			transfer_state = 741
-			transfer_state = 286
 			transfer_state = 513
 
-			transfer_state = 543
 			#transfer_state = 708
 			#transfer_state = 706
 			#transfer_state = 268

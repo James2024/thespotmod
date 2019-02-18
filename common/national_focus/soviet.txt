@@ -96,7 +96,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = yes
+			has_war_with = GER
 			573 = {
 				is_owned_and_controlled_by = SOV
 			}
@@ -732,7 +732,7 @@ focus_tree = {
 		available_if_capitulated = yes	
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 425
 
 			add_tech_bonus = {
 				name = air_bonus

@@ -455,7 +455,7 @@ equipments = {
 		
 		build_cost_ic =	33 # cv_version costs 20% more of base archetype
 
-		naval_strike_attack = 6
+		naval_strike_attack = 3
 		naval_strike_targetting = 9
 	}
 	# Basic Carrier Fighter
