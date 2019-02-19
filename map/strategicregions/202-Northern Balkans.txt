@@ -4,11 +4,11 @@ strategic_region={
 	provinces={
 		414 438 462 476 491 536 565 577 723 741 744 754 3407 3430 3434 3457 3483 3511 3562 3575 3577 3701 3704 3707 3724 3728 3738 3741 3743 3757 6429 6431 6455 6460 6480 6483 6509 6584 6600 6706 6727 6729 6743 6747 6761 9423 9425 9435 9454 9468 9481 9548 9558 9576 9683 9698 9701 9714 9716 11411 11427 11479 11534 11550 11652 11655 11670 11672 11686 11689 11703 11705 
 	}
-		weather={
+	weather={
 		period={
 			between={ 0.0 30.0 }
-			temperature={ -25.0 -15.0 }
-			temperature_day_night={ 5.0 -15.0 }
+			temperature={ -25.0 -15.0 }  # LOWER - HIGHER
+			temperature_day_night={ 0.0 -15.0 } # HIGHER - LOWER
 			no_phenomenon=0.500
 			rain_light=0.050
 			rain_heavy=0.010
@@ -21,7 +21,7 @@ strategic_region={
 		period={
 			between={ 0.1 27.1 }
 			temperature={ -13.0 -6.0 }
-			temperature_day_night={ 2.0 -12.0 }
+			temperature_day_night={ 0.0 -12.0 }
 			no_phenomenon=0.550
 			rain_light=0.020
 			rain_heavy=0.010
@@ -34,7 +34,7 @@ strategic_region={
 		period={
 			between={ 0.2 30.2 }
 			temperature={ -10.0 -1.0 }
-			temperature_day_night={ 2.0 -10.0 }
+			temperature_day_night={ 0.0 -10.0 }
 			no_phenomenon=0.700
 			rain_light=0.080
 			rain_heavy=0.020
@@ -123,10 +123,12 @@ strategic_region={
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
+		
+		######### WINTER #############
 		period={
 			between={ 0.9 30.9 }
 			temperature={ 0.0 8.0 }
-			temperature_day_night={ 10.0 -10.0 }
+			temperature_day_night={ 0.0 -15.0 }
 			no_phenomenon=0.650
 			rain_light=0.200
 			rain_heavy=0.050
@@ -137,12 +139,11 @@ strategic_region={
 			min_snow_level=0.000
 		}
 		
-		
-		######### WINTER #############
+
 		period={
 			between={ 0.10 29.10 }
 			temperature={ -8.0 1.0 }
-			temperature_day_night={ 2.0 -10.0 }
+			temperature_day_night={ 0.0 -10.0 }
 			no_phenomenon=0.350
 			rain_light=0.080
 			rain_heavy=0.000
@@ -155,7 +156,7 @@ strategic_region={
 		period={
 			between={ 0.11 30.11 }
 			temperature={ -17.0 -3.0 }
-			temperature_day_night={ 2.0 -10.0 }
+			temperature_day_night={ 0.0 -10.0 }
 			no_phenomenon=0.400
 			rain_light=0.000
 			rain_heavy=0.050
