@@ -1,5 +1,41 @@
 FRA_vichy_france = {
 
+	FRA_annex_vichy = {
+
+		icon = revolt
+		
+		available = {
+			NOT = { ITA = { has_full_control_of_state = 448 } }
+			NOT = { ITA = { has_full_control_of_state = 661 } }
+			NOT = { ITA = { has_full_control_of_state = 449 } }
+			NOT = { ITA = { has_full_control_of_state = 662 } }
+			NOT = { ITA = { has_full_control_of_state = 450 } }
+			NOT = { ITA = { has_full_control_of_state = 663 } }
+			NOT = { ITA = { has_full_control_of_state = 448 } }
+		}
+			
+		visible = {
+			EFR = { has_full_control_of_state = 459 }
+		}
+		
+		days_remove = 30
+		
+		cost = 50
+		
+		fire_only_once = no
+		
+		remove_effect = {
+			set_state_controller = 461
+			set_state_controller = 462
+			set_state_controller = 459
+			set_state_controller = 513
+			set_state_controller = 460
+			set_state_controller = 458
+			set_state_controller = 665
+		}
+	}
+		
+
 	FRA_scuttle_the_fleet = {
 
 		icon = generic_ignite_civil_war
