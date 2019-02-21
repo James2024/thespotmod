@@ -97,8 +97,8 @@ NDefines.NNavy.COMBAT_SHIP_SPEED_TO_FIELD_FACTOR = 0.12
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 3	-- Vanilla: 1.5 How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 7	--Vanilla: 7 Convoy starts regaining it's efficiency after X days without any convoys being sink.
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.04 --Vanilla: 0.04 How much efficiency regains every day.
-NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1
-NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.004
+NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05
+NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001
 NDefines.NNavy.CARRIER_STACK_PENALTY = 4
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 99.999
 NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT = 3.0
@@ -119,7 +119,7 @@ NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12 -- -0.12	5x levels = 60% defense from bombing
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER =	0.1	-- base 0.192 How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.4 -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
-NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.7 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.9 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
 ---AI
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 0
