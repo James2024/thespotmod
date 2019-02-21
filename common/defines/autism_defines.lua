@@ -19,7 +19,7 @@ NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 0
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 0
 NDefines.NDiplomacy.FRONT_IS_DANGEROUS = 0
 ---Country
-NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
+NDefines.NCountry.VP_TO_SUPPLY_BASE = 1.5
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 3
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 140
@@ -62,9 +62,9 @@ NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0002
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.6 }
 NDefines.NMilitary.SLOWEST_SPEED = 3
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
-NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.5
+---NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.5 ---vanilla 0.7
 NDefines.NMilitary.TRAINING_ATTRITION = 0.01
-NDefines.NMilitary.SPEED_REINFORCEMENT_BONUS = 0.1
+NDefines.NMilitary.SPEED_REINFORCEMENT_BONUS = 0.05
 NDefines.NMilitary.OVERSEAS_LOSE_EQUIPMENT_FACTOR = 1
 NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 6.0
@@ -88,7 +88,7 @@ NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.0
 
 ---Building
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --amount of potential max building slots in a state
-NDefines.NBuildings.INFRA_TO_SUPPLY = 3
+NDefines.NBuildings.INFRA_TO_SUPPLY = 2.5
 ---Navy
 NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.6
 NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 22 --- before 16 testing 18
