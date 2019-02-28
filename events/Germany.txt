@@ -44,6 +44,9 @@ country_event = {
 		set_country_flag = AUS_annexed
 		add_war_support = 0.1
 		add_stability = 0.05
+		USA = {
+			set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
+		}
 		
 		custom_effect_tooltip = anschluss_mefo_bills_tt
 		hidden_effect = { # Having it appear twice might be confusing
@@ -256,6 +259,9 @@ country_event = {
 		}
 		diplomatic_relation = { country = SOV relation = non_aggression_pact }
 		add_opinion_modifier = { target = SOV modifier = MR_pact }# pact
+		USA = {
+			set_country_flag = { flag = USA_MR_window days = 60 value = 1 }
+		}
 		hidden_effect = {
 			country_event = { hours = 6 id = news.32 }
 		}
@@ -285,6 +291,7 @@ country_event = {
 				owns_state = 91
 				owns_state = 97
 				owns_state = 89
+				owns_state = 784
 			}
 			AND = {
 				POL = { has_capitulated = yes }
@@ -296,6 +303,7 @@ country_event = {
 					controls_state = 91
 					controls_state = 97
 					controls_state = 89
+					controls_state = 784
 				}
 			}
 			OR = {
@@ -312,6 +320,7 @@ country_event = {
 						owns_state = 91
 						owns_state = 97
 						owns_state = 89
+						owns_state = 784
 						AND = {
 							POL = { has_capitulated = yes }
 							OR = {
@@ -322,6 +331,7 @@ country_event = {
 								controls_state = 91
 								controls_state = 97
 								controls_state = 89
+								controls_state = 784
 							}
 						}		
 					}
@@ -453,6 +463,21 @@ country_event = {
 				}
 			}
 			SOV = { transfer_state = 89 }
+		}
+		if = {
+			limit = {
+				784 = {
+					OR = {
+						is_controlled_by = GER
+						any_other_country = {
+							controls_state = 784
+							is_in_faction_with = GER
+							GER = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 784 }
 		}
 		SOV = { country_event = germany.15 }
 	}
@@ -745,6 +770,9 @@ country_event = {
 		set_country_flag = sudetenland_acquired
 		add_war_support = 0.1
 		add_stability = 0.05
+		USA = {
+			set_country_flag = { flag = USA_munich_window days = 60 value = 1 }
+		}
 		if = {
 			limit = {
 				88 = { is_owned_by = POL }
@@ -761,6 +789,7 @@ country_event = {
 					country_exists = YUG
 					YUG = { has_war = no }
 					ENG = { NOT = { has_war_with = YUG } }
+					ENG = { has_government = democratic }
 				}
 				ENG = {
 					country_event = {
@@ -1046,9 +1075,18 @@ country_event = {
 		name = germany.60.b
 		ai_chance = { 
 			factor = 99 
-			modifier = {
-				has_global_flag = GER_has_started_war
+		modifier = {
 				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior 
+						option = DEMOCRATIC_ALTERNATE
+					}
+					has_game_rule = {
+						rule = ENG_ai_behavior 
+						option = FASCIST
+					}
+				}
 			}
 		}
 		ENG = { country_event = germany.62 }
@@ -1080,6 +1118,9 @@ country_event = {
 	}
 	option = { # Support France
 		name = germany.61.b
+		trigger = {
+			NOT = { has_completed_focus = ENG_a_change_in_course }
+		}
 		ai_chance = { 
 			factor = 10
 			modifier = {
@@ -1088,7 +1129,14 @@ country_event = {
 					tag = GER
 					ratio > 0.7
 				}
-			} 
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = ENG_ai_behavior 
+					option = NEUTRALITY
+				}
+			}			
 		}
 		add_political_power = -150
 		add_stability = -0.2
@@ -1739,12 +1787,12 @@ country_event = {
 		# REVISIT Balance research bonus
 		add_tech_bonus = {
 			name = med_armor_bonus
-			ahead_reduction = 1
+			ahead_reduction = 2
 			category = cat_medium_armor
 		}
 		add_tech_bonus = {
 			name = armor_bonus
-			bonus = 0.5
+			bonus = 1.0
 			uses = 1
 			category = armor
 		}
@@ -1766,12 +1814,12 @@ country_event = {
 		# REVISIT Balance research bonus
 		add_tech_bonus = {
 			name = GER_soviet_treaty
-			ahead_reduction = 1
+			ahead_reduction = 2
 			technology = basic_medium_tank
 		}
 		add_tech_bonus = {
 			name = GER_soviet_treaty
-			bonus = 0.5
+			bonus = 1.0
 			uses = 2
 			category = armor
 		}
@@ -1811,7 +1859,7 @@ country_event = {
 		add_ideas = GER_air_innovations_2_idea
 		add_tech_bonus = {
 				name = radar_tech_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = radar_tech
 			}

@@ -22,7 +22,7 @@ ideas = {
 			}
 			
 			modifier {
-				stability_factor = -0.45
+				stability_factor = -0.35
 			}
 		}
 
